@@ -1,0 +1,6 @@
+./cgi_main.go
+./child.go
+./host.go
+./child_test.go
+./host_test.go
+./integration_test.go

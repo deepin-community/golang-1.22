@@ -1,0 +1,2429 @@
+# command-line-arguments
+command-line-arguments.compMem1<1> STEXT nosplit size=80 args=0x0 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:15)	TEXT	command-line-arguments.compMem1(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:15)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:15)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:17)	CMPB	command-line-arguments.x+1(SB), $0
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:17)	JNE	74
+	0x0009 00009 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:21)	CMPB	command-line-arguments.x8+1(SB), $7
+	0x0010 00016 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:21)	JEQ	68
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:25)	CMPW	command-line-arguments.x16+2(SB), $7
+	0x001a 00026 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:25)	JEQ	62
+	0x001c 00028 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:29)	CMPL	command-line-arguments.x32+4(SB), $7
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:29)	JEQ	56
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:33)	CMPQ	command-line-arguments.x64+8(SB), $7
+	0x002d 00045 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:33)	JNE	53
+	0x002f 00047 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:34)	MOVL	$1, AX
+	0x0034 00052 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:34)	RET
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:36)	XORL	AX, AX
+	0x0037 00055 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:36)	RET
+	0x0038 00056 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:30)	MOVL	$1, AX
+	0x003d 00061 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:30)	RET
+	0x003e 00062 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:26)	MOVL	$1, AX
+	0x0043 00067 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:26)	RET
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:22)	MOVL	$1, AX
+	0x0049 00073 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:22)	RET
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:18)	MOVL	$1, AX
+	0x004f 00079 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:18)	RET
+	0x0000 80 3d 00 00 00 00 00 75 41 80 3d 00 00 00 00 07  .=.....uA.=.....
+	0x0010 74 32 66 83 3d 00 00 00 00 07 74 22 83 3d 00 00  t2f.=.....t".=..
+	0x0020 00 00 07 74 13 48 83 3d 00 00 00 00 07 75 06 b8  ...t.H.=.....u..
+	0x0030 01 00 00 00 c3 31 c0 c3 b8 01 00 00 00 c3 b8 01  .....1..........
+	0x0040 00 00 00 c3 b8 01 00 00 00 c3 b8 01 00 00 00 c3  ................
+	rel 2+4 t=R_PCREL command-line-arguments.x<0>+0
+	rel 11+4 t=R_PCREL command-line-arguments.x8<0>+0
+	rel 21+4 t=R_PCREL command-line-arguments.x16<0>+1
+	rel 30+4 t=R_PCREL command-line-arguments.x32<0>+3
+	rel 40+4 t=R_PCREL command-line-arguments.x64<0>+7
+command-line-arguments.compMem2<1> STEXT nosplit size=71 args=0x20 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:48)	TEXT	command-line-arguments.compMem2(SB), NOSPLIT|NOFRAME|ABIInternal, $0-32
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:48)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:48)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:48)	FUNCDATA	$5, command-line-arguments.compMem2.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:50)	CMPB	command-line-arguments.t+8(SP), $0
+	0x0005 00005 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:50)	JNE	65
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:54)	CMPB	command-line-arguments.t+9(SP), $7
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:54)	JEQ	58
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:58)	CMPW	command-line-arguments.t+10(SP), $7
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:58)	JEQ	52
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:62)	CMPL	command-line-arguments.t+12(SP), $7
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:62)	JEQ	46
+	0x001d 00029 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:66)	CMPQ	command-line-arguments.t+16(SP), $7
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:66)	JNE	43
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:67)	MOVL	$1, AX
+	0x002a 00042 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:67)	RET
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:69)	XORL	AX, AX
+	0x002d 00045 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:69)	RET
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:63)	MOVL	$1, AX
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:63)	RET
+	0x0034 00052 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:59)	MOVL	$1, AX
+	0x0039 00057 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:59)	RET
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:55)	MOVL	$1, AX
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:55)	NOP
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:55)	RET
+	0x0041 00065 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:51)	MOVL	$1, AX
+	0x0046 00070 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:51)	RET
+	0x0000 80 7c 24 08 00 75 3a 80 7c 24 09 07 74 2c 66 83  .|$..u:.|$..t,f.
+	0x0010 7c 24 0a 07 74 1e 83 7c 24 0c 07 74 11 48 83 7c  |$..t..|$..t.H.|
+	0x0020 24 10 07 75 06 b8 01 00 00 00 c3 31 c0 c3 b8 01  $..u.......1....
+	0x0030 00 00 00 c3 b8 01 00 00 00 c3 b8 01 00 00 00 90  ................
+	0x0040 c3 b8 01 00 00 00 c3                             .......
+command-line-arguments.compMem3<1> STEXT nosplit size=10 args=0x10 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:72)	TEXT	command-line-arguments.compMem3(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:72)	FUNCDATA	$0, gclocals·TjPuuCwdlCpTaRQGRKTrYw==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:72)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:72)	FUNCDATA	$5, command-line-arguments.compMem3.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:72)	FUNCDATA	$6, command-line-arguments.compMem3.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:72)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:75)	MOVQ	(AX), AX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:78)	CMPQ	(BX), AX
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:78)	SETGT	BL
+	0x0009 00009 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:78)	RET
+	0x0000 48 8b 00 48 39 03 0f 9f c3 c3                    H..H9.....
+command-line-arguments.idxInt8<1> STEXT nosplit size=81 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	TEXT	command-line-arguments.idxInt8(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	MOVQ	DI, command-line-arguments.y+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	FUNCDATA	$5, command-line-arguments.idxInt8.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	FUNCDATA	$6, command-line-arguments.idxInt8.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:83)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	JLS	69
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	MOVBLZX	1(R9)(AX*1), BX
+	0x0021 00033 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	CMPQ	SI, DX
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	JLS	55
+	0x0026 00038 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	MOVB	BL, 1(R9)(DI*1)
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:93)	MOVB	$77, 1(R9)(AX*1)
+	0x0031 00049 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:94)	ADDQ	$16, SP
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:94)	POPQ	BP
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:94)	RET
+	0x0037 00055 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	MOVQ	DX, AX
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	MOVQ	SI, CX
+	0x003d 00061 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	PCDATA	$1, $1
+	0x003d 00061 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	NOP
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:90)	CALL	runtime.panicIndex(SB)
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	MOVQ	DX, AX
+	0x0048 00072 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	MOVQ	BX, CX
+	0x004b 00075 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	CALL	runtime.panicIndex(SB)
+	0x0050 00080 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:87)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 76 2a 41 0f b6 5c 01  $8I.Q.H9.v*A..\.
+	0x0020 01 48 39 d6 76 11 41 88 5c 39 01 41 c6 44 01 01  .H9.v.A.\9.A.D..
+	0x0030 4d 48 83 c4 10 5d c3 48 89 d0 48 89 f1 0f 1f 00  MH...].H..H.....
+	0x0040 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00  .....H..H.......
+	0x0050 90                                               .
+	rel 65+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 76+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxInt16<1> STEXT nosplit size=145 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	TEXT	command-line-arguments.idxInt16(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	MOVQ	DI, command-line-arguments.y+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	FUNCDATA	$5, command-line-arguments.idxInt16.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	FUNCDATA	$6, command-line-arguments.idxInt16.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:96)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	JLS	133
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	MOVWLZX	2(AX)(R9*2), R8
+	0x0021 00033 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	CMPQ	SI, DX
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	JLS	120
+	0x0026 00038 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	MOVW	R8, 2(DI)(R9*2)
+	0x002c 00044 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	MOVQ	R9, DX
+	0x002f 00047 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	SHLQ	$4, R9
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	LEAQ	1(R9), R8
+	0x0037 00055 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	CMPQ	BX, R8
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	JLS	109
+	0x003c 00060 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	MOVWLZX	2(AX)(R9*2), BX
+	0x0042 00066 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	CMPQ	SI, R8
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	JLS	98
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	MOVW	BX, 2(DI)(R9*2)
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:112)	MOVW	$77, 2(AX)(DX*2)
+	0x0054 00084 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:115)	MOVW	$77, 2(AX)(R9*2)
+	0x005c 00092 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:116)	ADDQ	$16, SP
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:116)	POPQ	BP
+	0x0061 00097 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:116)	RET
+	0x0062 00098 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	MOVQ	R8, AX
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	MOVQ	SI, CX
+	0x0068 00104 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	PCDATA	$1, $1
+	0x0068 00104 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:109)	CALL	runtime.panicIndex(SB)
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	MOVQ	R8, AX
+	0x0070 00112 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	MOVQ	BX, CX
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:106)	CALL	runtime.panicIndex(SB)
+	0x0078 00120 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	MOVQ	DX, AX
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	MOVQ	SI, CX
+	0x007e 00126 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:103)	CALL	runtime.panicIndex(SB)
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	MOVQ	DX, AX
+	0x0088 00136 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	MOVQ	BX, CX
+	0x008b 00139 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	CALL	runtime.panicIndex(SB)
+	0x0090 00144 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:100)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 76 6a 46 0f b7 44 48  $8I.Q.H9.vjF..DH
+	0x0020 02 48 39 d6 76 52 66 46 89 44 4f 02 4c 89 ca 49  .H9.vRfF.DO.L..I
+	0x0030 c1 e1 04 4d 8d 41 01 4c 39 c3 76 31 42 0f b7 5c  ...M.A.L9.v1B..\
+	0x0040 48 02 4c 39 c6 76 1b 66 42 89 5c 4f 02 66 c7 44  H.L9.v.fB.\O.f.D
+	0x0050 50 02 4d 00 66 42 c7 44 48 02 4d 00 48 83 c4 10  P.M.fB.DH.M.H...
+	0x0060 5d c3 4c 89 c0 48 89 f1 e8 00 00 00 00 4c 89 c0  ].L..H.......L..
+	0x0070 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 f1 66 90  H.......H..H..f.
+	0x0080 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00  .....H..H.......
+	0x0090 90                                               .
+	rel 105+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 116+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 129+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 140+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxInt32<1> STEXT nosplit size=199 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	TEXT	command-line-arguments.idxInt32(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	MOVQ	DI, command-line-arguments.y+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	FUNCDATA	$5, command-line-arguments.idxInt32.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	FUNCDATA	$6, command-line-arguments.idxInt32.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:118)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	JLS	187
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	MOVL	4(AX)(R9*4), R8
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:125)	CMPQ	SI, DX
+	0x0027 00039 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:125)	JLS	176
+	0x002d 00045 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:125)	MOVL	R8, 4(DI)(R9*4)
+	0x0032 00050 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	LEAQ	(R9)(R9*1), DX
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	LEAQ	1(DX), DX
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	CMPQ	BX, DX
+	0x003d 00061 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	JLS	165
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	MOVL	4(AX)(R9*8), R8
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:129)	CMPQ	SI, DX
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:129)	JLS	154
+	0x0049 00073 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:129)	MOVL	R8, 4(DI)(R9*8)
+	0x004e 00078 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	MOVQ	R9, DX
+	0x0051 00081 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	SHLQ	$4, R9
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	LEAQ	1(R9), R8
+	0x0059 00089 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	CMPQ	BX, R8
+	0x005c 00092 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	JLS	143
+	0x005e 00094 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	MOVL	4(AX)(R9*4), BX
+	0x0063 00099 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	CMPQ	SI, R8
+	0x0066 00102 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	JLS	132
+	0x0068 00104 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	MOVL	BX, 4(DI)(R9*4)
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:138)	MOVL	$77, 4(AX)(DX*4)
+	0x0075 00117 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:141)	MOVL	$77, 4(AX)(R9*4)
+	0x007e 00126 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:142)	ADDQ	$16, SP
+	0x0082 00130 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:142)	POPQ	BP
+	0x0083 00131 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:142)	RET
+	0x0084 00132 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	MOVQ	R8, AX
+	0x0087 00135 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	MOVQ	SI, CX
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	PCDATA	$1, $1
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:135)	CALL	runtime.panicIndex(SB)
+	0x008f 00143 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	MOVQ	R8, AX
+	0x0092 00146 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	MOVQ	BX, CX
+	0x0095 00149 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:132)	CALL	runtime.panicIndex(SB)
+	0x009a 00154 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:129)	MOVQ	DX, AX
+	0x009d 00157 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:129)	MOVQ	SI, CX
+	0x00a0 00160 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:129)	CALL	runtime.panicIndex(SB)
+	0x00a5 00165 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	MOVQ	DX, AX
+	0x00a8 00168 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	MOVQ	BX, CX
+	0x00ab 00171 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:127)	CALL	runtime.panicIndex(SB)
+	0x00b0 00176 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:125)	MOVQ	DX, AX
+	0x00b3 00179 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:125)	MOVQ	SI, CX
+	0x00b6 00182 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:125)	CALL	runtime.panicIndex(SB)
+	0x00bb 00187 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	MOVQ	DX, AX
+	0x00be 00190 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	MOVQ	BX, CX
+	0x00c1 00193 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	CALL	runtime.panicIndex(SB)
+	0x00c6 00198 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:122)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 0f 86 9c 00 00 00 46  $8I.Q.H9.......F
+	0x0020 8b 44 88 04 48 39 d6 0f 86 83 00 00 00 46 89 44  .D..H9.......F.D
+	0x0030 8f 04 4b 8d 14 09 48 8d 52 01 48 39 d3 76 66 46  ..K...H.R.H9.vfF
+	0x0040 8b 44 c8 04 48 39 d6 76 51 46 89 44 cf 04 4c 89  .D..H9.vQF.D..L.
+	0x0050 ca 49 c1 e1 04 4d 8d 41 01 4c 39 c3 76 31 42 8b  .I...M.A.L9.v1B.
+	0x0060 5c 88 04 4c 39 c6 76 1c 42 89 5c 8f 04 c7 44 90  \..L9.v.B.\...D.
+	0x0070 04 4d 00 00 00 42 c7 44 88 04 4d 00 00 00 48 83  .M...B.D..M...H.
+	0x0080 c4 10 5d c3 4c 89 c0 48 89 f1 e8 00 00 00 00 4c  ..].L..H.......L
+	0x0090 89 c0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 f1  ..H.......H..H..
+	0x00a0 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00  .....H..H.......
+	0x00b0 48 89 d0 48 89 f1 e8 00 00 00 00 48 89 d0 48 89  H..H.......H..H.
+	0x00c0 d9 e8 00 00 00 00 90                             .......
+	rel 139+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 150+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 161+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 172+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 183+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 194+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxInt64<1> STEXT nosplit size=145 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	TEXT	command-line-arguments.idxInt64(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	MOVQ	DI, command-line-arguments.y+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	FUNCDATA	$5, command-line-arguments.idxInt64.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	FUNCDATA	$6, command-line-arguments.idxInt64.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:144)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	JLS	133
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	MOVQ	8(AX)(R9*8), R8
+	0x0020 00032 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	CMPQ	SI, DX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	JLS	120
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	MOVQ	R8, 8(DI)(R9*8)
+	0x002a 00042 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	MOVQ	R9, DX
+	0x002d 00045 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	SHLQ	$4, R9
+	0x0031 00049 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	LEAQ	1(R9), R8
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	CMPQ	BX, R8
+	0x0038 00056 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	JLS	109
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	MOVQ	8(AX)(R9*8), BX
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	NOP
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	CMPQ	SI, R8
+	0x0043 00067 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	JLS	98
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	MOVQ	BX, 8(DI)(R9*8)
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:155)	MOVQ	$77, 8(AX)(DX*8)
+	0x0053 00083 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:157)	MOVQ	$77, 8(AX)(R9*8)
+	0x005c 00092 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:158)	ADDQ	$16, SP
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:158)	POPQ	BP
+	0x0061 00097 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:158)	RET
+	0x0062 00098 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	MOVQ	R8, AX
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	MOVQ	SI, CX
+	0x0068 00104 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	PCDATA	$1, $1
+	0x0068 00104 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:153)	CALL	runtime.panicIndex(SB)
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	MOVQ	R8, AX
+	0x0070 00112 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	MOVQ	BX, CX
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:151)	CALL	runtime.panicIndex(SB)
+	0x0078 00120 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	MOVQ	DX, AX
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	MOVQ	SI, CX
+	0x007e 00126 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:149)	CALL	runtime.panicIndex(SB)
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	MOVQ	DX, AX
+	0x0088 00136 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	MOVQ	BX, CX
+	0x008b 00139 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	CALL	runtime.panicIndex(SB)
+	0x0090 00144 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:147)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 76 6a 4e 8b 44 c8 08  $8I.Q.H9.vjN.D..
+	0x0020 48 39 d6 76 53 4e 89 44 cf 08 4c 89 ca 49 c1 e1  H9.vSN.D..L..I..
+	0x0030 04 4d 8d 41 01 4c 39 c3 76 33 4a 8b 5c c8 08 90  .M.A.L9.v3J.\...
+	0x0040 4c 39 c6 76 1d 4a 89 5c cf 08 48 c7 44 d0 08 4d  L9.v.J.\..H.D..M
+	0x0050 00 00 00 4a c7 44 c8 08 4d 00 00 00 48 83 c4 10  ...J.D..M...H...
+	0x0060 5d c3 4c 89 c0 48 89 f1 e8 00 00 00 00 4c 89 c0  ].L..H.......L..
+	0x0070 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 f1 66 90  H.......H..H..f.
+	0x0080 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00  .....H..H.......
+	0x0090 90                                               .
+	rel 105+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 116+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 129+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 140+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxFloat32<1> STEXT nosplit size=134 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	TEXT	command-line-arguments.idxFloat32(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	MOVQ	DI, command-line-arguments.y+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	FUNCDATA	$5, command-line-arguments.idxFloat32.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	FUNCDATA	$6, command-line-arguments.idxFloat32.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:160)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	JLS	117
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	MOVSS	4(AX)(R9*4), X0
+	0x0022 00034 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:169)	CMPQ	SI, DX
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:169)	JLS	106
+	0x0027 00039 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:169)	MOVSS	X0, 4(DI)(R9*4)
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	SHLQ	$4, R9
+	0x0032 00050 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	LEAQ	1(R9), DX
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	CMPQ	BX, DX
+	0x0039 00057 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	JLS	95
+	0x003b 00059 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	MOVSS	4(AX)(R9*4), X0
+	0x0042 00066 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	CMPQ	SI, DX
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	JLS	84
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	MOVSS	X0, 4(DI)(R9*4)
+	0x004e 00078 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:176)	ADDQ	$16, SP
+	0x0052 00082 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:176)	POPQ	BP
+	0x0053 00083 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:176)	RET
+	0x0054 00084 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	MOVQ	DX, AX
+	0x0057 00087 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	MOVQ	SI, CX
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	PCDATA	$1, $1
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:175)	CALL	runtime.panicIndex(SB)
+	0x005f 00095 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	MOVQ	DX, AX
+	0x0062 00098 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	MOVQ	BX, CX
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:172)	CALL	runtime.panicIndex(SB)
+	0x006a 00106 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:169)	MOVQ	DX, AX
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:169)	MOVQ	SI, CX
+	0x0070 00112 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:169)	CALL	runtime.panicIndex(SB)
+	0x0075 00117 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	MOVQ	DX, AX
+	0x0078 00120 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	MOVQ	BX, CX
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	CALL	runtime.panicIndex(SB)
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:165)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 76 5a f3 42 0f 10 44  $8I.Q.H9.vZ.B..D
+	0x0020 88 04 48 39 d6 76 43 f3 42 0f 11 44 8f 04 49 c1  ..H9.vC.B..D..I.
+	0x0030 e1 04 49 8d 51 01 48 39 d3 76 24 f3 42 0f 10 44  ..I.Q.H9.v$.B..D
+	0x0040 88 04 48 39 d6 76 0d f3 42 0f 11 44 8f 04 48 83  ..H9.v..B..D..H.
+	0x0050 c4 10 5d c3 48 89 d0 48 89 f1 e8 00 00 00 00 48  ..].H..H.......H
+	0x0060 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 f1  ..H.......H..H..
+	0x0070 e8 00 00 00 00 48 89 d0 48 89 d9 0f 1f 44 00 00  .....H..H....D..
+	0x0080 e8 00 00 00 00 90                                ......
+	rel 91+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 102+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 113+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 129+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxFloat64<1> STEXT nosplit size=134 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	TEXT	command-line-arguments.idxFloat64(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	MOVQ	DI, command-line-arguments.y+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	FUNCDATA	$5, command-line-arguments.idxFloat64.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	FUNCDATA	$6, command-line-arguments.idxFloat64.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:178)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	JLS	117
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	MOVSD	8(AX)(R9*8), X0
+	0x0022 00034 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:187)	CMPQ	SI, DX
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:187)	JLS	106
+	0x0027 00039 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:187)	MOVSD	X0, 8(DI)(R9*8)
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	SHLQ	$4, R9
+	0x0032 00050 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	LEAQ	1(R9), DX
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	CMPQ	BX, DX
+	0x0039 00057 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	JLS	95
+	0x003b 00059 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	MOVSD	8(AX)(R9*8), X0
+	0x0042 00066 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	CMPQ	SI, DX
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	JLS	84
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	MOVSD	X0, 8(DI)(R9*8)
+	0x004e 00078 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:194)	ADDQ	$16, SP
+	0x0052 00082 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:194)	POPQ	BP
+	0x0053 00083 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:194)	RET
+	0x0054 00084 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	MOVQ	DX, AX
+	0x0057 00087 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	MOVQ	SI, CX
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	PCDATA	$1, $1
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:193)	CALL	runtime.panicIndex(SB)
+	0x005f 00095 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	MOVQ	DX, AX
+	0x0062 00098 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	MOVQ	BX, CX
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:190)	CALL	runtime.panicIndex(SB)
+	0x006a 00106 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:187)	MOVQ	DX, AX
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:187)	MOVQ	SI, CX
+	0x0070 00112 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:187)	CALL	runtime.panicIndex(SB)
+	0x0075 00117 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	MOVQ	DX, AX
+	0x0078 00120 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	MOVQ	BX, CX
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	CALL	runtime.panicIndex(SB)
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:183)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 76 5a f2 42 0f 10 44  $8I.Q.H9.vZ.B..D
+	0x0020 c8 08 48 39 d6 76 43 f2 42 0f 11 44 cf 08 49 c1  ..H9.vC.B..D..I.
+	0x0030 e1 04 49 8d 51 01 48 39 d3 76 24 f2 42 0f 10 44  ..I.Q.H9.v$.B..D
+	0x0040 c8 08 48 39 d6 76 0d f2 42 0f 11 44 cf 08 48 83  ..H9.v..B..D..H.
+	0x0050 c4 10 5d c3 48 89 d0 48 89 f1 e8 00 00 00 00 48  ..].H..H.......H
+	0x0060 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 f1  ..H.......H..H..
+	0x0070 e8 00 00 00 00 48 89 d0 48 89 d9 0f 1f 44 00 00  .....H..H....D..
+	0x0080 e8 00 00 00 00 90                                ......
+	rel 91+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 102+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 113+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 129+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxLoadPlusOp32<1> STEXT nosplit size=208 args=0x20 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	TEXT	command-line-arguments.idxLoadPlusOp32(SB), NOSPLIT|ABIInternal, $24-32
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	FUNCDATA	$5, command-line-arguments.idxLoadPlusOp32.arginfo1(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	FUNCDATA	$6, command-line-arguments.idxLoadPlusOp32.argliveinfo(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:196)	PCDATA	$3, $1
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	TESTQ	BX, BX
+	0x0010 00016 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	JLS	197
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	LEAQ	1(DI), DX
+	0x001a 00026 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	NOP
+	0x0020 00032 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	CMPQ	BX, DX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	JLS	181
+	0x0029 00041 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	MOVL	(AX), DX
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	LEAQ	2(DI), SI
+	0x002f 00047 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	ADDL	4(AX)(DI*4), DX
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	CMPQ	BX, SI
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	JLS	170
+	0x0038 00056 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	LEAQ	3(DI), SI
+	0x003c 00060 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	SUBL	8(AX)(DI*4), DX
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	CMPQ	BX, SI
+	0x0043 00067 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	JLS	159
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	MOVL	12(AX)(DI*4), SI
+	0x0049 00073 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	LEAQ	4(DI), R8
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	IMULL	SI, DX
+	0x0050 00080 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	CMPQ	BX, R8
+	0x0053 00083 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	JLS	148
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	LEAQ	5(DI), SI
+	0x0059 00089 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	ANDL	16(AX)(DI*4), DX
+	0x005d 00093 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	NOP
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	CMPQ	BX, SI
+	0x0063 00099 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	JLS	137
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	LEAQ	6(DI), SI
+	0x0069 00105 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	ORL	20(AX)(DI*4), DX
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	CMPQ	BX, SI
+	0x0070 00112 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	JLS	126
+	0x0072 00114 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	XORL	24(AX)(DI*4), DX
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:215)	MOVL	DX, AX
+	0x0078 00120 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:215)	ADDQ	$16, SP
+	0x007c 00124 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:215)	POPQ	BP
+	0x007d 00125 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:215)	RET
+	0x007e 00126 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	MOVQ	SI, AX
+	0x0081 00129 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	MOVQ	BX, CX
+	0x0084 00132 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	PCDATA	$1, $1
+	0x0084 00132 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:214)	CALL	runtime.panicIndex(SB)
+	0x0089 00137 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	MOVQ	SI, AX
+	0x008c 00140 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	MOVQ	BX, CX
+	0x008f 00143 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:211)	CALL	runtime.panicIndex(SB)
+	0x0094 00148 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	MOVQ	R8, AX
+	0x0097 00151 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	MOVQ	BX, CX
+	0x009a 00154 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:208)	CALL	runtime.panicIndex(SB)
+	0x009f 00159 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	MOVQ	SI, AX
+	0x00a2 00162 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	MOVQ	BX, CX
+	0x00a5 00165 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:205)	CALL	runtime.panicIndex(SB)
+	0x00aa 00170 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	MOVQ	SI, AX
+	0x00ad 00173 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	MOVQ	BX, CX
+	0x00b0 00176 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:203)	CALL	runtime.panicIndex(SB)
+	0x00b5 00181 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	MOVQ	DX, AX
+	0x00b8 00184 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	MOVQ	BX, CX
+	0x00bb 00187 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	NOP
+	0x00c0 00192 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:200)	CALL	runtime.panicIndex(SB)
+	0x00c5 00197 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	XORL	AX, AX
+	0x00c7 00199 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	MOVQ	AX, CX
+	0x00ca 00202 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	CALL	runtime.panicIndex(SB)
+	0x00cf 00207 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:197)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 85 db  UH..H...H.D$ H..
+	0x0010 0f 86 af 00 00 00 48 8d 57 01 66 0f 1f 44 00 00  ......H.W.f..D..
+	0x0020 48 39 d3 0f 86 8c 00 00 00 8b 10 48 8d 77 02 03  H9.........H.w..
+	0x0030 54 b8 04 48 39 f3 76 72 48 8d 77 03 2b 54 b8 08  T..H9.vrH.w.+T..
+	0x0040 48 39 f3 76 5a 8b 74 b8 0c 4c 8d 47 04 0f af d6  H9.vZ.t..L.G....
+	0x0050 4c 39 c3 76 3f 48 8d 77 05 23 54 b8 10 0f 1f 00  L9.v?H.w.#T.....
+	0x0060 48 39 f3 76 24 48 8d 77 06 0b 54 b8 14 48 39 f3  H9.v$H.w..T..H9.
+	0x0070 76 0c 33 54 b8 18 89 d0 48 83 c4 10 5d c3 48 89  v.3T....H...].H.
+	0x0080 f0 48 89 d9 e8 00 00 00 00 48 89 f0 48 89 d9 e8  .H.......H..H...
+	0x0090 00 00 00 00 4c 89 c0 48 89 d9 e8 00 00 00 00 48  ....L..H.......H
+	0x00a0 89 f0 48 89 d9 e8 00 00 00 00 48 89 f0 48 89 d9  ..H.......H..H..
+	0x00b0 e8 00 00 00 00 48 89 d0 48 89 d9 0f 1f 44 00 00  .....H..H....D..
+	0x00c0 e8 00 00 00 00 31 c0 48 89 c1 e8 00 00 00 00 90  .....1.H........
+	rel 133+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 144+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 155+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 166+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 177+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 193+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 203+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxLoadPlusOp64<1> STEXT nosplit size=170 args=0x20 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	TEXT	command-line-arguments.idxLoadPlusOp64(SB), NOSPLIT|ABIInternal, $24-32
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	FUNCDATA	$5, command-line-arguments.idxLoadPlusOp64.arginfo1(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	FUNCDATA	$6, command-line-arguments.idxLoadPlusOp64.argliveinfo(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:218)	PCDATA	$3, $1
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	TESTQ	BX, BX
+	0x0010 00016 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	JLS	159
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	LEAQ	1(DI), DX
+	0x001a 00026 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	CMPQ	BX, DX
+	0x001d 00029 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	JLS	148
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	MOVQ	(AX), DX
+	0x0022 00034 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	LEAQ	2(DI), SI
+	0x0026 00038 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	ADDQ	8(AX)(DI*8), DX
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	CMPQ	BX, SI
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	JLS	137
+	0x0030 00048 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	LEAQ	3(DI), SI
+	0x0034 00052 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	SUBQ	16(AX)(DI*8), DX
+	0x0039 00057 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	CMPQ	BX, SI
+	0x003c 00060 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	JLS	126
+	0x003e 00062 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	LEAQ	4(DI), SI
+	0x0042 00066 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	ANDQ	24(AX)(DI*8), DX
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	CMPQ	BX, SI
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	JLS	115
+	0x004c 00076 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	LEAQ	5(DI), SI
+	0x0050 00080 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	ORQ	32(AX)(DI*8), DX
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	CMPQ	BX, SI
+	0x0058 00088 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	JLS	104
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	XORQ	40(AX)(DI*8), DX
+	0x005f 00095 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:230)	MOVQ	DX, AX
+	0x0062 00098 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:230)	ADDQ	$16, SP
+	0x0066 00102 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:230)	POPQ	BP
+	0x0067 00103 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:230)	RET
+	0x0068 00104 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	MOVQ	SI, AX
+	0x006b 00107 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	MOVQ	BX, CX
+	0x006e 00110 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	PCDATA	$1, $1
+	0x006e 00110 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:229)	CALL	runtime.panicIndex(SB)
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	MOVQ	SI, AX
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	MOVQ	BX, CX
+	0x0079 00121 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:227)	CALL	runtime.panicIndex(SB)
+	0x007e 00126 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	MOVQ	SI, AX
+	0x0081 00129 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	MOVQ	BX, CX
+	0x0084 00132 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:225)	CALL	runtime.panicIndex(SB)
+	0x0089 00137 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	MOVQ	SI, AX
+	0x008c 00140 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	MOVQ	BX, CX
+	0x008f 00143 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:223)	CALL	runtime.panicIndex(SB)
+	0x0094 00148 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	MOVQ	DX, AX
+	0x0097 00151 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	MOVQ	BX, CX
+	0x009a 00154 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:221)	CALL	runtime.panicIndex(SB)
+	0x009f 00159 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	XORL	AX, AX
+	0x00a1 00161 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	MOVQ	AX, CX
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	CALL	runtime.panicIndex(SB)
+	0x00a9 00169 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:219)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 85 db  UH..H...H.D$ H..
+	0x0010 0f 86 89 00 00 00 48 8d 57 01 48 39 d3 76 75 48  ......H.W.H9.vuH
+	0x0020 8b 10 48 8d 77 02 48 03 54 f8 08 48 39 f3 76 59  ..H.w.H.T..H9.vY
+	0x0030 48 8d 77 03 48 2b 54 f8 10 48 39 f3 76 40 48 8d  H.w.H+T..H9.v@H.
+	0x0040 77 04 48 23 54 f8 18 48 39 f3 76 27 48 8d 77 05  w.H#T..H9.v'H.w.
+	0x0050 48 0b 54 f8 20 48 39 f3 76 0e 48 33 54 f8 28 48  H.T. H9.v.H3T.(H
+	0x0060 89 d0 48 83 c4 10 5d c3 48 89 f0 48 89 d9 e8 00  ..H...].H..H....
+	0x0070 00 00 00 48 89 f0 48 89 d9 e8 00 00 00 00 48 89  ...H..H.......H.
+	0x0080 f0 48 89 d9 e8 00 00 00 00 48 89 f0 48 89 d9 e8  .H.......H..H...
+	0x0090 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00 31  ....H..H.......1
+	0x00a0 c0 48 89 c1 e8 00 00 00 00 90                    .H........
+	rel 111+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 122+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 133+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 144+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 155+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 165+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxStorePlusOp32<1> STEXT nosplit size=263 args=0x28 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	TEXT	command-line-arguments.idxStorePlusOp32(SB), NOSPLIT|ABIInternal, $24-40
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	FUNCDATA	$5, command-line-arguments.idxStorePlusOp32.arginfo1(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	FUNCDATA	$6, command-line-arguments.idxStorePlusOp32.argliveinfo(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:233)	PCDATA	$3, $1
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	LEAQ	1(DI), DX
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	CMPQ	BX, DX
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	JLS	251
+	0x001a 00026 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	ADDL	SI, 4(AX)(DI*4)
+	0x001e 00030 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	LEAQ	2(DI), DX
+	0x0022 00034 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	CMPQ	BX, DX
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	JLS	240
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	SUBL	SI, 8(AX)(DI*4)
+	0x002f 00047 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	LEAQ	3(DI), DX
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	CMPQ	BX, DX
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	JLS	229
+	0x003c 00060 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	ANDL	SI, 12(AX)(DI*4)
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	LEAQ	4(DI), DX
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	CMPQ	BX, DX
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	JLS	213
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	ORL	SI, 16(AX)(DI*4)
+	0x0051 00081 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	LEAQ	5(DI), DX
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	CMPQ	BX, DX
+	0x0058 00088 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	JLS	202
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	XORL	SI, 20(AX)(DI*4)
+	0x005e 00094 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	LEAQ	6(DI), DX
+	0x0062 00098 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	CMPQ	BX, DX
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	JLS	191
+	0x0067 00103 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	ADDL	$77, 24(AX)(DI*4)
+	0x006c 00108 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	LEAQ	7(DI), DX
+	0x0070 00112 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	CMPQ	BX, DX
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	JLS	180
+	0x0075 00117 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	ANDL	$77, 28(AX)(DI*4)
+	0x007a 00122 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	LEAQ	8(DI), DX
+	0x007e 00126 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	CMPQ	BX, DX
+	0x0083 00131 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	JLS	169
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	ORL	$77, 32(AX)(DI*4)
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	LEAQ	9(DI), DX
+	0x008e 00142 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	CMPQ	BX, DX
+	0x0091 00145 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	JLS	158
+	0x0093 00147 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	XORL	$77, 36(AX)(DI*4)
+	0x0098 00152 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:262)	ADDQ	$16, SP
+	0x009c 00156 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:262)	POPQ	BP
+	0x009d 00157 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:262)	RET
+	0x009e 00158 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	MOVQ	DX, AX
+	0x00a1 00161 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	MOVQ	BX, CX
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	PCDATA	$1, $1
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:261)	CALL	runtime.panicIndex(SB)
+	0x00a9 00169 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	MOVQ	DX, AX
+	0x00ac 00172 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	MOVQ	BX, CX
+	0x00af 00175 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:258)	CALL	runtime.panicIndex(SB)
+	0x00b4 00180 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	MOVQ	DX, AX
+	0x00b7 00183 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	MOVQ	BX, CX
+	0x00ba 00186 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:255)	CALL	runtime.panicIndex(SB)
+	0x00bf 00191 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	MOVQ	DX, AX
+	0x00c2 00194 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	MOVQ	BX, CX
+	0x00c5 00197 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:252)	CALL	runtime.panicIndex(SB)
+	0x00ca 00202 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	MOVQ	DX, AX
+	0x00cd 00205 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	MOVQ	BX, CX
+	0x00d0 00208 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:248)	CALL	runtime.panicIndex(SB)
+	0x00d5 00213 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	MOVQ	DX, AX
+	0x00d8 00216 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	MOVQ	BX, CX
+	0x00db 00219 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	NOP
+	0x00e0 00224 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:245)	CALL	runtime.panicIndex(SB)
+	0x00e5 00229 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	MOVQ	DX, AX
+	0x00e8 00232 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	MOVQ	BX, CX
+	0x00eb 00235 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:242)	CALL	runtime.panicIndex(SB)
+	0x00f0 00240 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	MOVQ	DX, AX
+	0x00f3 00243 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	MOVQ	BX, CX
+	0x00f6 00246 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:239)	CALL	runtime.panicIndex(SB)
+	0x00fb 00251 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	MOVQ	DX, AX
+	0x00fe 00254 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	MOVQ	BX, CX
+	0x0101 00257 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	CALL	runtime.panicIndex(SB)
+	0x0106 00262 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:236)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 8d 57  UH..H...H.D$ H.W
+	0x0010 01 48 39 d3 0f 86 e1 00 00 00 01 74 b8 04 48 8d  .H9........t..H.
+	0x0020 57 02 48 39 d3 0f 86 c5 00 00 00 29 74 b8 08 48  W.H9.......)t..H
+	0x0030 8d 57 03 48 39 d3 0f 86 a9 00 00 00 21 74 b8 0c  .W.H9.......!t..
+	0x0040 48 8d 57 04 48 39 d3 0f 86 88 00 00 00 09 74 b8  H.W.H9........t.
+	0x0050 10 48 8d 57 05 48 39 d3 76 70 31 74 b8 14 48 8d  .H.W.H9.vp1t..H.
+	0x0060 57 06 48 39 d3 76 58 83 44 b8 18 4d 48 8d 57 07  W.H9.vX.D..MH.W.
+	0x0070 48 39 d3 76 3f 83 64 b8 1c 4d 48 8d 57 08 66 90  H9.v?.d..MH.W.f.
+	0x0080 48 39 d3 76 24 83 4c b8 20 4d 48 8d 57 09 48 39  H9.v$.L. MH.W.H9
+	0x0090 d3 76 0b 83 74 b8 24 4d 48 83 c4 10 5d c3 48 89  .v..t.$MH...].H.
+	0x00a0 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 d9 e8  .H.......H..H...
+	0x00b0 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00 48  ....H..H.......H
+	0x00c0 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89 d9  ..H.......H..H..
+	0x00d0 e8 00 00 00 00 48 89 d0 48 89 d9 0f 1f 44 00 00  .....H..H....D..
+	0x00e0 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00 00  .....H..H.......
+	0x00f0 48 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89  H..H.......H..H.
+	0x0100 d9 e8 00 00 00 00 90                             .......
+	rel 165+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 176+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 187+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 198+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 209+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 225+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 236+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 247+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 258+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxStorePlusOp64<1> STEXT nosplit size=265 args=0x28 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	TEXT	command-line-arguments.idxStorePlusOp64(SB), NOSPLIT|ABIInternal, $24-40
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	MOVQ	AX, command-line-arguments.x+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	FUNCDATA	$5, command-line-arguments.idxStorePlusOp64.arginfo1(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	FUNCDATA	$6, command-line-arguments.idxStorePlusOp64.argliveinfo(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:264)	PCDATA	$3, $1
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	LEAQ	1(DI), DX
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	CMPQ	BX, DX
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	JLS	253
+	0x001a 00026 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	ADDQ	SI, 8(AX)(DI*8)
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	LEAQ	2(DI), DX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	CMPQ	BX, DX
+	0x0026 00038 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	JLS	242
+	0x002c 00044 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	SUBQ	SI, 16(AX)(DI*8)
+	0x0031 00049 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	LEAQ	3(DI), DX
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	CMPQ	BX, DX
+	0x0038 00056 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	JLS	231
+	0x003e 00062 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	ANDQ	SI, 24(AX)(DI*8)
+	0x0043 00067 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	LEAQ	4(DI), DX
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	CMPQ	BX, DX
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	JLS	220
+	0x0050 00080 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	ORQ	SI, 32(AX)(DI*8)
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	LEAQ	5(DI), DX
+	0x0059 00089 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	CMPQ	BX, DX
+	0x005c 00092 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	JLS	209
+	0x005e 00094 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	XORQ	SI, 40(AX)(DI*8)
+	0x0063 00099 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	LEAQ	6(DI), DX
+	0x0067 00103 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	CMPQ	BX, DX
+	0x006a 00106 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	JLS	198
+	0x006c 00108 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	ADDQ	$77, 48(AX)(DI*8)
+	0x0072 00114 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	LEAQ	7(DI), DX
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	CMPQ	BX, DX
+	0x0079 00121 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	JLS	187
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	ANDQ	$77, 56(AX)(DI*8)
+	0x0081 00129 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	LEAQ	8(DI), DX
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	CMPQ	BX, DX
+	0x0088 00136 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	JLS	176
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	ORQ	$77, 64(AX)(DI*8)
+	0x0090 00144 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	LEAQ	9(DI), DX
+	0x0094 00148 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	CMPQ	BX, DX
+	0x0097 00151 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	JLS	165
+	0x0099 00153 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	XORQ	$77, 72(AX)(DI*8)
+	0x009f 00159 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:284)	ADDQ	$16, SP
+	0x00a3 00163 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:284)	POPQ	BP
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:284)	RET
+	0x00a5 00165 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	MOVQ	DX, AX
+	0x00a8 00168 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	MOVQ	BX, CX
+	0x00ab 00171 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	PCDATA	$1, $1
+	0x00ab 00171 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:283)	CALL	runtime.panicIndex(SB)
+	0x00b0 00176 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	MOVQ	DX, AX
+	0x00b3 00179 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	MOVQ	BX, CX
+	0x00b6 00182 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:281)	CALL	runtime.panicIndex(SB)
+	0x00bb 00187 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	MOVQ	DX, AX
+	0x00be 00190 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	MOVQ	BX, CX
+	0x00c1 00193 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:279)	CALL	runtime.panicIndex(SB)
+	0x00c6 00198 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	MOVQ	DX, AX
+	0x00c9 00201 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	MOVQ	BX, CX
+	0x00cc 00204 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:277)	CALL	runtime.panicIndex(SB)
+	0x00d1 00209 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	MOVQ	DX, AX
+	0x00d4 00212 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	MOVQ	BX, CX
+	0x00d7 00215 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:274)	CALL	runtime.panicIndex(SB)
+	0x00dc 00220 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	MOVQ	DX, AX
+	0x00df 00223 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	MOVQ	BX, CX
+	0x00e2 00226 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:272)	CALL	runtime.panicIndex(SB)
+	0x00e7 00231 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	MOVQ	DX, AX
+	0x00ea 00234 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	MOVQ	BX, CX
+	0x00ed 00237 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:270)	CALL	runtime.panicIndex(SB)
+	0x00f2 00242 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	MOVQ	DX, AX
+	0x00f5 00245 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	MOVQ	BX, CX
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:268)	CALL	runtime.panicIndex(SB)
+	0x00fd 00253 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	MOVQ	DX, AX
+	0x0100 00256 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	MOVQ	BX, CX
+	0x0103 00259 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	CALL	runtime.panicIndex(SB)
+	0x0108 00264 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:266)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 8d 57  UH..H...H.D$ H.W
+	0x0010 01 48 39 d3 0f 86 e3 00 00 00 48 01 74 f8 08 48  .H9.......H.t..H
+	0x0020 8d 57 02 48 39 d3 0f 86 c6 00 00 00 48 29 74 f8  .W.H9.......H)t.
+	0x0030 10 48 8d 57 03 48 39 d3 0f 86 a9 00 00 00 48 21  .H.W.H9.......H!
+	0x0040 74 f8 18 48 8d 57 04 48 39 d3 0f 86 8c 00 00 00  t..H.W.H9.......
+	0x0050 48 09 74 f8 20 48 8d 57 05 48 39 d3 76 73 48 31  H.t. H.W.H9.vsH1
+	0x0060 74 f8 28 48 8d 57 06 48 39 d3 76 5a 48 83 44 f8  t.(H.W.H9.vZH.D.
+	0x0070 30 4d 48 8d 57 07 48 39 d3 76 40 48 83 64 f8 38  0MH.W.H9.v@H.d.8
+	0x0080 4d 48 8d 57 08 48 39 d3 76 26 48 83 4c f8 40 4d  MH.W.H9.v&H.L.@M
+	0x0090 48 8d 57 09 48 39 d3 76 0c 48 83 74 f8 48 4d 48  H.W.H9.v.H.t.HMH
+	0x00a0 83 c4 10 5d c3 48 89 d0 48 89 d9 e8 00 00 00 00  ...].H..H.......
+	0x00b0 48 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48 89  H..H.......H..H.
+	0x00c0 d9 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00 00  ......H..H......
+	0x00d0 00 48 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0 48  .H..H.......H..H
+	0x00e0 89 d9 e8 00 00 00 00 48 89 d0 48 89 d9 e8 00 00  .......H..H.....
+	0x00f0 00 00 48 89 d0 48 89 d9 e8 00 00 00 00 48 89 d0  ..H..H.......H..
+	0x0100 48 89 d9 e8 00 00 00 00 90                       H........
+	rel 172+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 183+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 194+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 205+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 216+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 227+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 238+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 249+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 260+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxCompare<1> STEXT nosplit size=499 args=0x8 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	TEXT	command-line-arguments.idxCompare(SB), NOSPLIT|ABIInternal, $24-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	FUNCDATA	$5, command-line-arguments.idxCompare.arginfo1(SB)
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	FUNCDATA	$6, command-line-arguments.idxCompare.argliveinfo(SB)
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:286)	PCDATA	$3, $1
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	LEAQ	1(AX), DX
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	CMPQ	DX, $2
+	0x0010 00016 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	JCC	485
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	LEAQ	command-line-arguments.x8(SB), DX
+	0x001d 00029 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	MOVBLZX	1(AX)(DX*1), BX
+	0x0022 00034 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	CMPB	command-line-arguments.x8(SB), BL
+	0x0028 00040 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	JHI	433
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:292)	LEAQ	command-line-arguments.x16(SB), BX
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:292)	MOVWLZX	2(BX)(AX*2), SI
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:292)	MOVWLZX	command-line-arguments.x16(SB), DI
+	0x0041 00065 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:292)	CMPW	SI, DI
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:292)	JCS	425
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	MOVQ	AX, SI
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	SHLQ	$4, SI
+	0x0051 00081 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	LEAQ	1(SI), R8
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	CMPQ	R8, $2
+	0x0059 00089 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	JCC	467
+	0x005f 00095 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	MOVWLZX	2(BX)(SI*2), R8
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	CMPW	R8, DI
+	0x0069 00105 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	JCS	417
+	0x006f 00111 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:300)	LEAQ	command-line-arguments.x32(SB), DI
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:300)	MOVL	4(DI)(AX*4), R8
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:300)	MOVL	command-line-arguments.x32(SB), R9
+	0x0082 00130 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:300)	CMPL	R8, R9
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:300)	JCS	409
+	0x008b 00139 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:304)	MOVL	4(DI)(SI*4), R8
+	0x0090 00144 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:304)	CMPL	R8, R9
+	0x0093 00147 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:304)	JCS	401
+	0x0099 00153 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:308)	LEAQ	command-line-arguments.x64(SB), R8
+	0x00a0 00160 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:308)	MOVQ	8(R8)(AX*8), R9
+	0x00a5 00165 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:308)	MOVQ	command-line-arguments.x64(SB), R10
+	0x00ac 00172 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:308)	CMPQ	R9, R10
+	0x00af 00175 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:308)	JCS	393
+	0x00b5 00181 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:312)	MOVQ	8(R8)(SI*8), R9
+	0x00ba 00186 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:312)	NOP
+	0x00c0 00192 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:312)	CMPQ	R9, R10
+	0x00c3 00195 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:312)	JCS	385
+	0x00c9 00201 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	LEAQ	2(AX), R9
+	0x00cd 00205 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	CMPQ	R9, $2
+	0x00d1 00209 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	JCC	454
+	0x00d7 00215 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	MOVBLZX	2(AX)(DX*1), DX
+	0x00dc 00220 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	NOP
+	0x00e0 00224 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	CMPB	DL, $77
+	0x00e3 00227 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	JCS	377
+	0x00e9 00233 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:320)	MOVWLZX	4(BX)(AX*2), DX
+	0x00ee 00238 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:320)	CMPW	DX, $77
+	0x00f2 00242 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:320)	JCS	369
+	0x00f4 00244 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	LEAQ	2(SI), DX
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	NOP
+	0x0100 00256 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	CMPQ	DX, $2
+	0x0104 00260 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	JCC	441
+	0x010a 00266 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	MOVWLZX	4(BX)(SI*2), CX
+	0x010f 00271 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	CMPW	CX, $77
+	0x0113 00275 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	JCS	361
+	0x0115 00277 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:328)	MOVL	8(DI)(AX*4), CX
+	0x0119 00281 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:328)	CMPL	CX, $77
+	0x011c 00284 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:328)	JCS	353
+	0x011e 00286 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:332)	MOVL	8(DI)(SI*4), CX
+	0x0122 00290 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:332)	CMPL	CX, $77
+	0x0125 00293 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:332)	JCS	344
+	0x0127 00295 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:336)	MOVQ	16(R8)(AX*8), CX
+	0x012c 00300 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:336)	CMPQ	CX, $77
+	0x0130 00304 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:336)	JCS	336
+	0x0132 00306 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:340)	MOVQ	16(R8)(SI*8), CX
+	0x0137 00311 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:340)	CMPQ	CX, $77
+	0x013b 00315 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:340)	JCC	325
+	0x013d 00317 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:341)	XORL	AX, AX
+	0x013f 00319 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:341)	ADDQ	$16, SP
+	0x0143 00323 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:341)	POPQ	BP
+	0x0144 00324 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:341)	RET
+	0x0145 00325 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:343)	MOVL	$1, AX
+	0x014a 00330 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:343)	ADDQ	$16, SP
+	0x014e 00334 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:343)	POPQ	BP
+	0x014f 00335 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:343)	RET
+	0x0150 00336 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:337)	XORL	AX, AX
+	0x0152 00338 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:337)	ADDQ	$16, SP
+	0x0156 00342 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:337)	POPQ	BP
+	0x0157 00343 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:337)	RET
+	0x0158 00344 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:333)	XORL	AX, AX
+	0x015a 00346 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:333)	ADDQ	$16, SP
+	0x015e 00350 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:333)	POPQ	BP
+	0x015f 00351 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:333)	NOP
+	0x0160 00352 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:333)	RET
+	0x0161 00353 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:329)	XORL	AX, AX
+	0x0163 00355 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:329)	ADDQ	$16, SP
+	0x0167 00359 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:329)	POPQ	BP
+	0x0168 00360 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:329)	RET
+	0x0169 00361 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:325)	XORL	AX, AX
+	0x016b 00363 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:325)	ADDQ	$16, SP
+	0x016f 00367 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:325)	POPQ	BP
+	0x0170 00368 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:325)	RET
+	0x0171 00369 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:321)	XORL	AX, AX
+	0x0173 00371 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:321)	ADDQ	$16, SP
+	0x0177 00375 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:321)	POPQ	BP
+	0x0178 00376 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:321)	RET
+	0x0179 00377 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:317)	XORL	AX, AX
+	0x017b 00379 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:317)	ADDQ	$16, SP
+	0x017f 00383 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:317)	POPQ	BP
+	0x0180 00384 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:317)	RET
+	0x0181 00385 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:313)	XORL	AX, AX
+	0x0183 00387 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:313)	ADDQ	$16, SP
+	0x0187 00391 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:313)	POPQ	BP
+	0x0188 00392 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:313)	RET
+	0x0189 00393 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:309)	XORL	AX, AX
+	0x018b 00395 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:309)	ADDQ	$16, SP
+	0x018f 00399 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:309)	POPQ	BP
+	0x0190 00400 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:309)	RET
+	0x0191 00401 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:305)	XORL	AX, AX
+	0x0193 00403 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:305)	ADDQ	$16, SP
+	0x0197 00407 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:305)	POPQ	BP
+	0x0198 00408 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:305)	RET
+	0x0199 00409 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:301)	XORL	AX, AX
+	0x019b 00411 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:301)	ADDQ	$16, SP
+	0x019f 00415 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:301)	POPQ	BP
+	0x01a0 00416 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:301)	RET
+	0x01a1 00417 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:297)	XORL	AX, AX
+	0x01a3 00419 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:297)	ADDQ	$16, SP
+	0x01a7 00423 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:297)	POPQ	BP
+	0x01a8 00424 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:297)	RET
+	0x01a9 00425 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:293)	XORL	AX, AX
+	0x01ab 00427 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:293)	ADDQ	$16, SP
+	0x01af 00431 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:293)	POPQ	BP
+	0x01b0 00432 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:293)	RET
+	0x01b1 00433 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:289)	XORL	AX, AX
+	0x01b3 00435 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:289)	ADDQ	$16, SP
+	0x01b7 00439 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:289)	POPQ	BP
+	0x01b8 00440 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:289)	RET
+	0x01b9 00441 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	MOVQ	DX, AX
+	0x01bc 00444 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	MOVL	$2, CX
+	0x01c1 00449 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	PCDATA	$1, $0
+	0x01c1 00449 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:324)	CALL	runtime.panicIndex(SB)
+	0x01c6 00454 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	MOVQ	R9, AX
+	0x01c9 00457 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	MOVL	$2, CX
+	0x01ce 00462 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:316)	CALL	runtime.panicIndex(SB)
+	0x01d3 00467 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	MOVQ	R8, AX
+	0x01d6 00470 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	MOVL	$2, CX
+	0x01db 00475 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	NOP
+	0x01e0 00480 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:296)	CALL	runtime.panicIndex(SB)
+	0x01e5 00485 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	MOVQ	DX, AX
+	0x01e8 00488 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	MOVL	$2, CX
+	0x01ed 00493 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	CALL	runtime.panicIndex(SB)
+	0x01f2 00498 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:288)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 8d 50 01 48 83 fa 02  UH..H...H.P.H...
+	0x0010 0f 83 cf 01 00 00 48 8d 15 00 00 00 00 0f b6 5c  ......H........\
+	0x0020 10 01 38 1d 00 00 00 00 0f 87 83 01 00 00 48 8d  ..8...........H.
+	0x0030 1d 00 00 00 00 0f b7 74 43 02 0f b7 3d 00 00 00  .......tC...=...
+	0x0040 00 66 39 fe 0f 82 5f 01 00 00 48 89 c6 48 c1 e6  .f9..._...H..H..
+	0x0050 04 4c 8d 46 01 49 83 f8 02 0f 83 74 01 00 00 44  .L.F.I.....t...D
+	0x0060 0f b7 44 73 02 66 41 39 f8 0f 82 32 01 00 00 48  ..Ds.fA9...2...H
+	0x0070 8d 3d 00 00 00 00 44 8b 44 87 04 44 8b 0d 00 00  .=....D.D..D....
+	0x0080 00 00 45 39 c8 0f 82 0e 01 00 00 44 8b 44 b7 04  ..E9.......D.D..
+	0x0090 45 39 c8 0f 82 f8 00 00 00 4c 8d 05 00 00 00 00  E9.......L......
+	0x00a0 4d 8b 4c c0 08 4c 8b 15 00 00 00 00 4d 39 d1 0f  M.L..L......M9..
+	0x00b0 82 d4 00 00 00 4d 8b 4c f0 08 66 0f 1f 44 00 00  .....M.L..f..D..
+	0x00c0 4d 39 d1 0f 82 b8 00 00 00 4c 8d 48 02 49 83 f9  M9.......L.H.I..
+	0x00d0 02 0f 83 ef 00 00 00 0f b6 54 10 02 0f 1f 40 00  .........T....@.
+	0x00e0 80 fa 4d 0f 82 90 00 00 00 0f b7 54 43 04 66 83  ..M........TC.f.
+	0x00f0 fa 4d 72 7d 48 8d 56 02 0f 1f 84 00 00 00 00 00  .Mr}H.V.........
+	0x0100 48 83 fa 02 0f 83 af 00 00 00 0f b7 4c 73 04 66  H...........Ls.f
+	0x0110 83 f9 4d 72 54 8b 4c 87 08 83 f9 4d 72 43 8b 4c  ..MrT.L....MrC.L
+	0x0120 b7 08 83 f9 4d 72 31 49 8b 4c c0 10 48 83 f9 4d  ....Mr1I.L..H..M
+	0x0130 72 1e 49 8b 4c f0 10 48 83 f9 4d 73 08 31 c0 48  r.I.L..H..Ms.1.H
+	0x0140 83 c4 10 5d c3 b8 01 00 00 00 48 83 c4 10 5d c3  ...]......H...].
+	0x0150 31 c0 48 83 c4 10 5d c3 31 c0 48 83 c4 10 5d 90  1.H...].1.H...].
+	0x0160 c3 31 c0 48 83 c4 10 5d c3 31 c0 48 83 c4 10 5d  .1.H...].1.H...]
+	0x0170 c3 31 c0 48 83 c4 10 5d c3 31 c0 48 83 c4 10 5d  .1.H...].1.H...]
+	0x0180 c3 31 c0 48 83 c4 10 5d c3 31 c0 48 83 c4 10 5d  .1.H...].1.H...]
+	0x0190 c3 31 c0 48 83 c4 10 5d c3 31 c0 48 83 c4 10 5d  .1.H...].1.H...]
+	0x01a0 c3 31 c0 48 83 c4 10 5d c3 31 c0 48 83 c4 10 5d  .1.H...].1.H...]
+	0x01b0 c3 31 c0 48 83 c4 10 5d c3 48 89 d0 b9 02 00 00  .1.H...].H......
+	0x01c0 00 e8 00 00 00 00 4c 89 c8 b9 02 00 00 00 e8 00  ......L.........
+	0x01d0 00 00 00 4c 89 c0 b9 02 00 00 00 0f 1f 44 00 00  ...L.........D..
+	0x01e0 e8 00 00 00 00 48 89 d0 b9 02 00 00 00 e8 00 00  .....H..........
+	0x01f0 00 00 90                                         ...
+	rel 25+4 t=R_PCREL command-line-arguments.x8<0>+0
+	rel 36+4 t=R_PCREL command-line-arguments.x8<0>+0
+	rel 49+4 t=R_PCREL command-line-arguments.x16<0>+0
+	rel 61+4 t=R_PCREL command-line-arguments.x16<0>+0
+	rel 114+4 t=R_PCREL command-line-arguments.x32<0>+0
+	rel 126+4 t=R_PCREL command-line-arguments.x32<0>+0
+	rel 156+4 t=R_PCREL command-line-arguments.x64<0>+0
+	rel 168+4 t=R_PCREL command-line-arguments.x64<0>+0
+	rel 450+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 463+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 481+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 494+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.idxFloatOps<1> STEXT nosplit size=253 args=0x38 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	TEXT	command-line-arguments.idxFloatOps(SB), NOSPLIT|ABIInternal, $24-56
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	MOVQ	AX, command-line-arguments.a+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	MOVQ	DI, command-line-arguments.b+56(FP)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	FUNCDATA	$5, command-line-arguments.idxFloatOps.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	FUNCDATA	$6, command-line-arguments.idxFloatOps.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:346)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	LEAQ	1(R9), DX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	CMPQ	BX, DX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	JLS	241
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	LEAQ	2(R9), R8
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	MOVSD	$f64.401c000000000000(SB), X0
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	ADDSD	8(AX)(R9*8), X0
+	0x0032 00050 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	CMPQ	BX, R8
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	JLS	230
+	0x003b 00059 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	LEAQ	3(R9), R10
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	SUBSD	16(AX)(R9*8), X0
+	0x0046 00070 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	CMPQ	BX, R10
+	0x0049 00073 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	JLS	219
+	0x004f 00079 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	LEAQ	4(R9), R11
+	0x0053 00083 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	MULSD	24(AX)(R9*8), X0
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	CMPQ	BX, R11
+	0x005d 00093 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	JLS	208
+	0x005f 00095 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	DIVSD	32(AX)(R9*8), X0
+	0x0066 00102 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	CMPQ	SI, DX
+	0x0069 00105 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	JLS	197
+	0x006b 00107 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	MOVSS	$f32.41000000(SB), X1
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	ADDSS	4(DI)(R9*4), X1
+	0x007a 00122 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:361)	CMPQ	SI, R8
+	0x007d 00125 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:361)	JLS	186
+	0x007f 00127 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:361)	SUBSS	8(DI)(R9*4), X1
+	0x0086 00134 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:363)	CMPQ	SI, R10
+	0x0089 00137 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:363)	JLS	175
+	0x008b 00139 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:363)	MULSS	12(DI)(R9*4), X1
+	0x0092 00146 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	CMPQ	SI, R11
+	0x0095 00149 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	JLS	164
+	0x0097 00151 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	DIVSS	16(DI)(R9*4), X1
+	0x009e 00158 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:366)	ADDQ	$16, SP
+	0x00a2 00162 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:366)	POPQ	BP
+	0x00a3 00163 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:366)	RET
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	MOVQ	R11, AX
+	0x00a7 00167 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	MOVQ	SI, CX
+	0x00aa 00170 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	PCDATA	$1, $1
+	0x00aa 00170 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:365)	CALL	runtime.panicIndex(SB)
+	0x00af 00175 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:363)	MOVQ	R10, AX
+	0x00b2 00178 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:363)	MOVQ	SI, CX
+	0x00b5 00181 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:363)	CALL	runtime.panicIndex(SB)
+	0x00ba 00186 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:361)	MOVQ	R8, AX
+	0x00bd 00189 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:361)	MOVQ	SI, CX
+	0x00c0 00192 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:361)	CALL	runtime.panicIndex(SB)
+	0x00c5 00197 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	MOVQ	DX, AX
+	0x00c8 00200 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	MOVQ	SI, CX
+	0x00cb 00203 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:359)	CALL	runtime.panicIndex(SB)
+	0x00d0 00208 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	MOVQ	R11, AX
+	0x00d3 00211 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	MOVQ	BX, CX
+	0x00d6 00214 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:355)	CALL	runtime.panicIndex(SB)
+	0x00db 00219 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	MOVQ	R10, AX
+	0x00de 00222 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	MOVQ	BX, CX
+	0x00e1 00225 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:353)	CALL	runtime.panicIndex(SB)
+	0x00e6 00230 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	MOVQ	R8, AX
+	0x00e9 00233 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	MOVQ	BX, CX
+	0x00ec 00236 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:351)	CALL	runtime.panicIndex(SB)
+	0x00f1 00241 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	MOVQ	DX, AX
+	0x00f4 00244 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	MOVQ	BX, CX
+	0x00f7 00247 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	CALL	runtime.panicIndex(SB)
+	0x00fc 00252 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:349)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 89 7c  UH..H...H.D$ H.|
+	0x0010 24 38 49 8d 51 01 48 39 d3 0f 86 d2 00 00 00 4d  $8I.Q.H9.......M
+	0x0020 8d 41 02 f2 0f 10 05 00 00 00 00 f2 42 0f 58 44  .A..........B.XD
+	0x0030 c8 08 4c 39 c3 0f 86 ab 00 00 00 4d 8d 51 03 f2  ..L9.......M.Q..
+	0x0040 42 0f 5c 44 c8 10 4c 39 d3 0f 86 8c 00 00 00 4d  B.\D..L9.......M
+	0x0050 8d 59 04 f2 42 0f 59 44 c8 18 4c 39 db 76 71 f2  .Y..B.YD..L9.vq.
+	0x0060 42 0f 5e 44 c8 20 48 39 d6 76 5a f3 0f 10 0d 00  B.^D. H9.vZ.....
+	0x0070 00 00 00 f3 42 0f 58 4c 8f 04 4c 39 c6 76 3b f3  ....B.XL..L9.v;.
+	0x0080 42 0f 5c 4c 8f 08 4c 39 d6 76 24 f3 42 0f 59 4c  B.\L..L9.v$.B.YL
+	0x0090 8f 0c 4c 39 de 76 0d f3 42 0f 5e 4c 8f 10 48 83  ..L9.v..B.^L..H.
+	0x00a0 c4 10 5d c3 4c 89 d8 48 89 f1 e8 00 00 00 00 4c  ..].L..H.......L
+	0x00b0 89 d0 48 89 f1 e8 00 00 00 00 4c 89 c0 48 89 f1  ..H.......L..H..
+	0x00c0 e8 00 00 00 00 48 89 d0 48 89 f1 e8 00 00 00 00  .....H..H.......
+	0x00d0 4c 89 d8 48 89 d9 e8 00 00 00 00 4c 89 d0 48 89  L..H.......L..H.
+	0x00e0 d9 e8 00 00 00 00 4c 89 c0 48 89 d9 e8 00 00 00  ......L..H......
+	0x00f0 00 48 89 d0 48 89 d9 e8 00 00 00 00 90           .H..H........
+	rel 39+4 t=R_PCREL $f64.401c000000000000<0>+0
+	rel 111+4 t=R_PCREL $f32.41000000<0>+0
+	rel 171+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 182+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 193+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 204+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 215+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 226+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 237+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 248+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.storeTest<1> STEXT nosplit size=77 args=0x28 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	TEXT	command-line-arguments.storeTest(SB), NOSPLIT|ABIInternal, $24-40
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	MOVQ	AX, command-line-arguments.a+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	FUNCDATA	$5, command-line-arguments.storeTest.arginfo1(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	FUNCDATA	$6, command-line-arguments.storeTest.argliveinfo(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:369)	PCDATA	$3, $1
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	CMPQ	BX, $4
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	JLS	63
+	0x0013 00019 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	LEAQ	3(SI), DX
+	0x0017 00023 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	BTL	$0, DI
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	SETCS	4(AX)
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	NOP
+	0x0020 00032 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	CMPQ	BX, DX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	JLS	52
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	BTL	$1, DI
+	0x0029 00041 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	SETCS	3(SI)(AX*1)
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:374)	ADDQ	$16, SP
+	0x0032 00050 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:374)	POPQ	BP
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:374)	RET
+	0x0034 00052 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	MOVQ	DX, AX
+	0x0037 00055 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	MOVQ	BX, CX
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	PCDATA	$1, $1
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:373)	CALL	runtime.panicIndex(SB)
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	MOVL	$4, AX
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	MOVQ	BX, CX
+	0x0047 00071 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	CALL	runtime.panicIndex(SB)
+	0x004c 00076 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:371)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 83 fb  UH..H...H.D$ H..
+	0x0010 04 76 2c 48 8d 56 03 0f ba e7 00 0f 92 40 04 90  .v,H.V.......@..
+	0x0020 48 39 d3 76 0f 0f ba e7 01 0f 92 44 06 03 48 83  H9.v.......D..H.
+	0x0030 c4 10 5d c3 48 89 d0 48 89 d9 e8 00 00 00 00 b8  ..].H..H........
+	0x0040 04 00 00 00 48 89 d9 e8 00 00 00 00 90           ....H........
+	rel 59+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 72+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.bitOps<1> STEXT nosplit size=75 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:376)	TEXT	command-line-arguments.bitOps(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:376)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:376)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:376)	FUNCDATA	$5, command-line-arguments.bitOps.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:376)	FUNCDATA	$6, command-line-arguments.bitOps.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:376)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:378)	ORQ	$8, (AX)
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:380)	ORQ	$1073741824, 8(AX)
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:382)	BTSQ	$31, 16(AX)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:384)	BTSQ	$63, 24(AX)
+	0x0018 00024 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:387)	ANDQ	$-9, 32(AX)
+	0x001d 00029 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:389)	ANDQ	$-1073741825, 40(AX)
+	0x0025 00037 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:391)	BTRQ	$31, 48(AX)
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:393)	BTRQ	$63, 56(AX)
+	0x0031 00049 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:396)	XORQ	$8, 64(AX)
+	0x0036 00054 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:398)	XORQ	$1073741824, 72(AX)
+	0x003e 00062 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:400)	BTCQ	$31, 80(AX)
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:402)	BTCQ	$63, 88(AX)
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/memops.go:403)	RET
+	0x0000 48 83 08 08 48 81 48 08 00 00 00 40 48 0f ba 68  H...H.H....@H..h
+	0x0010 10 1f 48 0f ba 68 18 3f 48 83 60 20 f7 48 81 60  ..H..h.?H.` .H.`
+	0x0020 28 ff ff ff bf 48 0f ba 70 30 1f 48 0f ba 70 38  (....H..p0.H..p8
+	0x0030 3f 48 83 70 40 08 48 81 70 48 00 00 00 40 48 0f  ?H.p@.H.pH...@H.
+	0x0040 ba 78 50 1f 48 0f ba 78 58 3f c3                 .xP.H..xX?.
+go:cuinfo.producer.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 63 6f 64 65 67 65 6e                             codegen
+command-line-arguments.x<0> SNOPTRBSS size=2
+<0> SDWARFVAR size=41
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 00 09 03 00 00 00 00  guments.x.......
+	0x0020 00 00 00 00 00 00 00 00 01                       .........
+	rel 28+8 t=R_ADDR command-line-arguments.x<0>+0
+	rel 36+4 t=R_DWARFSECREF go:info.[2]bool<0>+0
+runtime.memequal16·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal16<1>+0
+runtime.memequal64·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal64<1>+0
+runtime.gcbits.0100000000000000<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*[2]bool-<0> SRODATA dupok size=10
+	0x0000 00 08 2a 5b 32 5d 62 6f 6f 6c                    ..*[2]bool
+type:*[2]bool<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 b6 ce 1b 2e 08 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]bool-<0>+0
+	rel 48+8 t=R_ADDR type:[2]bool<0>+0
+runtime.gcbits.<0> SRODATA dupok size=0
+type:[2]bool<0> SRODATA dupok size=72
+	0x0000 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 36 db 15 aa 0a 01 01 11 00 00 00 00 00 00 00 00  6...............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal16·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]bool-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]bool<0>+0
+	rel 48+8 t=R_ADDR type:bool<0>+0
+	rel 56+8 t=R_ADDR type:[]bool<0>+0
+command-line-arguments.x8<0> SNOPTRBSS size=2
+<0> SDWARFVAR size=42
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 38 00 09 03 00 00 00  guments.x8......
+	0x0020 00 00 00 00 00 00 00 00 00 01                    ..........
+	rel 29+8 t=R_ADDR command-line-arguments.x8<0>+0
+	rel 37+4 t=R_DWARFSECREF go:info.[2]uint8<0>+0
+type:.namedata.*[2]uint8-<0> SRODATA dupok size=11
+	0x0000 00 09 2a 5b 32 5d 75 69 6e 74 38                 ..*[2]uint8
+type:*[2]uint8<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 8c f4 3b dc 08 08 08 36 00 00 00 00 00 00 00 00  ..;....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint8-<0>+0
+	rel 48+8 t=R_ADDR type:[2]uint8<0>+0
+type:[2]uint8<0> SRODATA dupok size=72
+	0x0000 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 8a 84 23 0e 0a 01 01 11 00 00 00 00 00 00 00 00  ..#.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal16·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint8-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]uint8<0>+0
+	rel 48+8 t=R_ADDR type:uint8<0>+0
+	rel 56+8 t=R_ADDR type:[]uint8<0>+0
+command-line-arguments.x16<0> SNOPTRBSS size=4
+<0> SDWARFVAR size=43
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 31 36 00 09 03 00 00  guments.x16.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 01                 ...........
+	rel 30+8 t=R_ADDR command-line-arguments.x16<0>+0
+	rel 38+4 t=R_DWARFSECREF go:info.[2]uint16<0>+0
+runtime.memequal32·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal32<1>+0
+type:.namedata.*[2]uint16-<0> SRODATA dupok size=12
+	0x0000 00 0a 2a 5b 32 5d 75 69 6e 74 31 36              ..*[2]uint16
+type:*[2]uint16<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 97 ea e5 1c 08 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint16-<0>+0
+	rel 48+8 t=R_ADDR type:[2]uint16<0>+0
+type:[2]uint16<0> SRODATA dupok size=72
+	0x0000 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 16 45 38 2c 0a 02 02 11 00 00 00 00 00 00 00 00  .E8,............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal32·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint16-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]uint16<0>+0
+	rel 48+8 t=R_ADDR type:uint16<0>+0
+	rel 56+8 t=R_ADDR type:[]uint16<0>+0
+command-line-arguments.x32<0> SNOPTRBSS size=8
+<0> SDWARFVAR size=43
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 33 32 00 09 03 00 00  guments.x32.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 01                 ...........
+	rel 30+8 t=R_ADDR command-line-arguments.x32<0>+0
+	rel 38+4 t=R_DWARFSECREF go:info.[2]uint32<0>+0
+type:.namedata.*[2]uint32-<0> SRODATA dupok size=12
+	0x0000 00 0a 2a 5b 32 5d 75 69 6e 74 33 32              ..*[2]uint32
+type:*[2]uint32<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 99 51 d8 0c 08 08 08 36 00 00 00 00 00 00 00 00  .Q.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint32-<0>+0
+	rel 48+8 t=R_ADDR type:[2]uint32<0>+0
+type:[2]uint32<0> SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 d2 a2 51 f8 0a 04 04 11 00 00 00 00 00 00 00 00  ..Q.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint32-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]uint32<0>+0
+	rel 48+8 t=R_ADDR type:uint32<0>+0
+	rel 56+8 t=R_ADDR type:[]uint32<0>+0
+command-line-arguments.x64<0> SNOPTRBSS size=16
+<0> SDWARFVAR size=43
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 36 34 00 09 03 00 00  guments.x64.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 01                 ...........
+	rel 30+8 t=R_ADDR command-line-arguments.x64<0>+0
+	rel 38+4 t=R_DWARFSECREF go:info.[2]uint64<0>+0
+runtime.memequal128·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal128<1>+0
+type:.namedata.*[2]uint64-<0> SRODATA dupok size=12
+	0x0000 00 0a 2a 5b 32 5d 75 69 6e 74 36 34              ..*[2]uint64
+type:*[2]uint64<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 56 c3 b8 ad 08 08 08 36 00 00 00 00 00 00 00 00  V......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint64-<0>+0
+	rel 48+8 t=R_ADDR type:[2]uint64<0>+0
+type:[2]uint64<0> SRODATA dupok size=72
+	0x0000 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 5d c2 28 f1 0a 08 08 11 00 00 00 00 00 00 00 00  ].(.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal128·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]uint64-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]uint64<0>+0
+	rel 48+8 t=R_ADDR type:uint64<0>+0
+	rel 56+8 t=R_ADDR type:[]uint64<0>+0
+type:.eqfunc32<0> SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	rel 0+8 t=R_ADDR runtime.memequal_varlen<1>+0
+type:.namedata.*codegen.T.<0> SRODATA dupok size=12
+	0x0000 01 0a 2a 63 6f 64 65 67 65 6e 2e 54              ..*codegen.T
+type:*command-line-arguments.T<0> SRODATA size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 59 41 78 e0 08 08 08 36 00 00 00 00 00 00 00 00  YAx....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*codegen.T.<0>+0
+	rel 48+8 t=R_ADDR type:command-line-arguments.T<0>+0
+type:.namedata.*[2]int-<0> SRODATA dupok size=9
+	0x0000 00 07 2a 5b 32 5d 69 6e 74                       ..*[2]int
+type:*[2]int<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 4b 15 5d 5b 08 08 08 36 00 00 00 00 00 00 00 00  K.][...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]int-<0>+0
+	rel 48+8 t=R_ADDR type:[2]int<0>+0
+type:[2]int<0> SRODATA dupok size=72
+	0x0000 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 e3 a9 a8 82 0a 08 08 11 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal128·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]int-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]int<0>+0
+	rel 48+8 t=R_ADDR type:int<0>+0
+	rel 56+8 t=R_ADDR type:[]int<0>+0
+type:.importpath.command-line-arguments.<0> SRODATA dupok size=24
+	0x0000 00 16 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61  ..command-line-a
+	0x0010 72 67 75 6d 65 6e 74 73                          rguments
+type:.namedata.x-<0> SRODATA dupok size=3
+	0x0000 00 01 78                                         ..x
+type:.namedata.x8-<0> SRODATA dupok size=4
+	0x0000 00 02 78 38                                      ..x8
+type:.namedata.x16-<0> SRODATA dupok size=5
+	0x0000 00 03 78 31 36                                   ..x16
+type:.namedata.x32-<0> SRODATA dupok size=5
+	0x0000 00 03 78 33 32                                   ..x32
+type:.namedata.x64-<0> SRODATA dupok size=5
+	0x0000 00 03 78 36 34                                   ..x64
+type:.namedata.a-<0> SRODATA dupok size=3
+	0x0000 00 01 61                                         ..a
+type:command-line-arguments.T<0> SRODATA size=240
+	0x0000 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ...............
+	0x0010 fa 01 63 9b 0f 08 08 19 00 00 00 00 00 00 00 00  ..c.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 06 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 a0 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+	0x0090 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00b0 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00  ................
+	0x00c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00d0 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00e0 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	rel 24+8 t=R_ADDR type:.eqfunc32<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*codegen.T.<0>+0
+	rel 44+4 t=R_ADDROFF type:*command-line-arguments.T<0>+0
+	rel 48+8 t=R_ADDR type:.importpath.command-line-arguments.<0>+0
+	rel 56+8 t=R_ADDR type:command-line-arguments.T<0>+96
+	rel 80+4 t=R_ADDROFF type:.importpath.command-line-arguments.<0>+0
+	rel 96+8 t=R_ADDR type:.namedata.x-<0>+0
+	rel 104+8 t=R_ADDR type:bool<0>+0
+	rel 120+8 t=R_ADDR type:.namedata.x8-<0>+0
+	rel 128+8 t=R_ADDR type:uint8<0>+0
+	rel 144+8 t=R_ADDR type:.namedata.x16-<0>+0
+	rel 152+8 t=R_ADDR type:uint16<0>+0
+	rel 168+8 t=R_ADDR type:.namedata.x32-<0>+0
+	rel 176+8 t=R_ADDR type:uint32<0>+0
+	rel 192+8 t=R_ADDR type:.namedata.x64-<0>+0
+	rel 200+8 t=R_ADDR type:uint64<0>+0
+	rel 216+8 t=R_ADDR type:.namedata.a-<0>+0
+	rel 224+8 t=R_ADDR type:[2]int<0>+0
+type:.namedata.*[12]uint64-<0> SRODATA dupok size=13
+	0x0000 00 0b 2a 5b 31 32 5d 75 69 6e 74 36 34           ..*[12]uint64
+type:.eqfunc96<0> SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 60 00 00 00 00 00 00 00  ........`.......
+	rel 0+8 t=R_ADDR runtime.memequal_varlen<1>+0
+type:[12]uint64<0> SRODATA dupok size=72
+	0x0000 60 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  `...............
+	0x0010 fe 10 f4 5f 0a 08 08 11 00 00 00 00 00 00 00 00  ..._............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 0c 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc96<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[12]uint64-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[12]uint64<0>+0
+	rel 48+8 t=R_ADDR type:uint64<0>+0
+	rel 56+8 t=R_ADDR type:[]uint64<0>+0
+type:*[12]uint64<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 65 e5 40 60 08 08 08 36 00 00 00 00 00 00 00 00  e.@`...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[12]uint64-<0>+0
+	rel 48+8 t=R_ADDR type:[12]uint64<0>+0
+gclocals·g2BeySu+wFnoycgXfElmcg==<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+command-line-arguments.compMem2.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 01 01 01 02 02 04 04 08 08 fe 10 08 18 08  ................
+	0x0010 fd fd ff                                         ...
+gclocals·TjPuuCwdlCpTaRQGRKTrYw==<0> SRODATA dupok size=10
+	0x0000 02 00 00 00 02 00 00 00 03 00                    ..........
+gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==<0> SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+command-line-arguments.compMem3.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+command-line-arguments.compMem3.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+gclocals·cNGUyZq94N9QFR70tEjj5A==<0> SRODATA dupok size=10
+	0x0000 02 00 00 00 04 00 00 00 09 00                    ..........
+command-line-arguments.idxInt8.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxInt8.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxInt16.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxInt16.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxInt32.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxInt32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxInt64.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxInt64.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxFloat32.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxFloat32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxFloat64.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxFloat64.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+gclocals·wgcWObbY2HYnK2SU/U22lA==<0> SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+command-line-arguments.idxLoadPlusOp32.arginfo1<0> SRODATA static dupok size=11
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 ff                 ...........
+command-line-arguments.idxLoadPlusOp32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxLoadPlusOp64.arginfo1<0> SRODATA static dupok size=11
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 ff                 ...........
+command-line-arguments.idxLoadPlusOp64.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxStorePlusOp32.arginfo1<0> SRODATA static dupok size=13
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 20 04 ff           .......... ..
+command-line-arguments.idxStorePlusOp32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxStorePlusOp64.arginfo1<0> SRODATA static dupok size=13
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 20 08 ff           .......... ..
+command-line-arguments.idxStorePlusOp64.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxCompare.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+command-line-arguments.idxCompare.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.idxFloatOps.arginfo1<0> SRODATA static dupok size=19
+	0x0000 fe 00 08 08 08 10 08 fd fe 18 08 20 08 28 08 fd  ........... .(..
+	0x0010 30 08 ff                                         0..
+command-line-arguments.idxFloatOps.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.storeTest.arginfo1<0> SRODATA static dupok size=13
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 20 08 ff           .......... ..
+command-line-arguments.storeTest.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.bitOps.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+command-line-arguments.bitOps.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+$f32.41000000<0> SRODATA size=4
+	0x0000 00 00 00 41                                      ...A
+$f64.401c000000000000<0> SRODATA size=8
+	0x0000 00 00 00 00 00 00 1c 40                          .......@
+aux for command-line-arguments.compMem1<0> SDWARFLINES size=65
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 0b 14  ................
+	0x0010 06 55 06 27 06 55 06 27 06 5f 06 27 06 55 06 27  .U.'.U.'._.'.U.'
+	0x0020 06 5f 06 24 06 41 06 1b 06 23 06 03 7e 15 06 41  ._.$.A...#..~..A
+	0x0030 06 15 06 41 06 15 06 41 06 15 06 41 02 01 00 01  ...A...A...A....
+	0x0040 01                                               .
+	rel 3+8 t=R_ADDR command-line-arguments.compMem1<1>+0
+aux for command-line-arguments.compMem1<0> SDWARFFCN size=70
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 63 6f 6d 70 4d 65 6d 31  guments.compMem1
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 01 9c 02 00 00 00 0f 01 11 7e 72 30 00 01 0f  ..........~r0...
+	0x0040 00 00 00 00 00 00                                ......
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 33+8 t=R_ADDR command-line-arguments.compMem1<1>+0
+	rel 41+8 t=R_ADDR command-line-arguments.compMem1<1>+80
+	rel 64+4 t=R_DWARFSECREF go:info.int<0>+0
+aux for command-line-arguments.compMem2<0> SDWARFLINES size=65
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 2c 14  ..............,.
+	0x0010 06 41 06 27 06 41 06 27 06 4b 06 27 06 41 06 27  .A.'.A.'.K.'.A.'
+	0x0020 06 4b 06 24 06 41 06 1b 06 23 06 03 7e 15 06 41  .K.$.A...#..~..A
+	0x0030 06 15 06 41 06 15 06 41 06 1f 06 41 02 01 00 01  ...A...A...A....
+	0x0040 01                                               .
+	rel 3+8 t=R_ADDR command-line-arguments.compMem2<1>+0
+aux for command-line-arguments.compMem2<0> SDWARFFCN size=81
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 63 6f 6d 70 4d 65 6d 32  guments.compMem2
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 01 9c 02 00 00 00 30 01 11 74 00 00 30 00 00  .......0..t..0..
+	0x0040 00 00 01 9c 11 7e 72 30 00 01 30 00 00 00 00 00  .....~r0..0.....
+	0x0050 00                                               .
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 33+8 t=R_ADDR command-line-arguments.compMem2<1>+0
+	rel 41+8 t=R_ADDR command-line-arguments.compMem2<1>+71
+	rel 62+4 t=R_DWARFSECREF go:info.command-line-arguments.T<0>+0
+	rel 75+4 t=R_DWARFSECREF go:info.int<0>+0
+aux for command-line-arguments.compMem3<0> SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 09 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 03 00 00 00 00 00 00 00 0a 00  ................
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=R_ADDR command-line-arguments.compMem3<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.compMem3<1>+0
+	rel 110+8 t=R_ADDR command-line-arguments.compMem3<1>+0
+aux for command-line-arguments.compMem3<0> SDWARFLINES size=25
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 c5 00  ................
+	0x0010 14 30 06 2d 02 04 00 01 01                       .0.-.....
+	rel 3+8 t=R_ADDR command-line-arguments.compMem3<1>+0
+aux for command-line-arguments.compMem3<0> SDWARFFCN size=120
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 63 6f 6d 70 4d 65 6d 33  guments.compMem3
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 01 9c 02 00 00 00 48 01 12 78 00 00 48 00 00  .......H..x..H..
+	0x0040 00 00 00 00 00 00 12 79 00 00 48 00 00 00 00 00  .......y..H.....
+	0x0050 00 00 00 11 7e 72 30 00 01 48 00 00 00 00 00 11  ....~r0..H......
+	0x0060 7e 72 31 00 01 48 00 00 00 00 00 0d 72 00 4b 00  ~r1..H......r.K.
+	0x0070 00 00 00 00 00 00 00 00                          ........
+	rel 0+0 t=R_USETYPE type:bool<0>+0
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 33+8 t=R_ADDR command-line-arguments.compMem3<1>+0
+	rel 41+8 t=R_ADDR command-line-arguments.compMem3<1>+10
+	rel 62+4 t=R_DWARFSECREF go:info.*int<0>+0
+	rel 66+4 t=R_DWARFSECREF <0>+0
+	rel 75+4 t=R_DWARFSECREF go:info.*int<0>+0
+	rel 79+4 t=R_DWARFSECREF <0>+51
+	rel 90+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 102+4 t=R_DWARFSECREF go:info.bool<0>+0
+	rel 111+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 115+4 t=R_DWARFSECREF <0>+102
+aux for command-line-arguments.idxInt8<0> SDWARFLOC size=322
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 21 00 00 00 00 00 00 00  ........!.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 21 00 00 00 00  ..P..S..R..!....
+	0x0030 00 00 00 3a 00 00 00 00 00 00 00 08 00 50 93 08  ...:.........P..
+	0x0040 93 08 52 93 08 3a 00 00 00 00 00 00 00 3d 00 00  ..R..:.......=..
+	0x0050 00 00 00 00 00 07 00 93 08 93 08 52 93 08 48 00  ...........R..H.
+	0x0060 00 00 00 00 00 00 4b 00 00 00 00 00 00 00 08 00  ......K.........
+	0x0070 93 08 53 93 08 52 93 08 4b 00 00 00 00 00 00 00  ..S..R..K.......
+	0x0080 51 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  Q...........S...
+	0x0090 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 00 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00  ................
+	0x00b0 00 00 00 00 00 00 00 00 00 51 00 00 00 00 00 00  .........Q......
+	0x00c0 00 09 00 55 93 08 54 93 08 58 93 08 00 00 00 00  ...U..T..X......
+	0x00d0 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x00e0 ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00f0 00 00 00 00 51 00 00 00 00 00 00 00 01 00 59 00  ....Q.........Y.
+	0x0100 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff  ................
+	0x0110 ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00 21  ...............!
+	0x0120 00 00 00 00 00 00 00 45 00 00 00 00 00 00 00 01  .......E........
+	0x0130 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00  .S..............
+	0x0140 00 00                                            ..
+	rel 8+8 t=R_ADDR command-line-arguments.idxInt8<1>+0
+	rel 169+8 t=R_ADDR command-line-arguments.idxInt8<1>+0
+	rel 228+8 t=R_ADDR command-line-arguments.idxInt8<1>+0
+	rel 279+8 t=R_ADDR command-line-arguments.idxInt8<1>+0
+aux for command-line-arguments.idxInt8<0> SDWARFLINES size=42
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 cd 00  ................
+	0x0010 14 0a 37 06 37 06 77 06 37 06 80 06 2d 06 58 4c  ..7.7.w.7...-.XL
+	0x0020 06 47 98 06 7d 02 01 00 01 01                    .G..}.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxInt8<1>+0
+aux for command-line-arguments.idxInt8<0> SDWARFFCN size=108
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 49 6e 74 38 00  guments.idxInt8.
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 9c 02 00 00 00 53 01 12 78 00 00 53 00 00 00  ......S..x..S...
+	0x0040 00 00 00 00 00 12 79 00 00 53 00 00 00 00 00 00  ......y..S......
+	0x0050 00 00 12 69 00 00 53 00 00 00 00 00 00 00 00 0d  ...i..S.........
+	0x0060 74 00 54 00 00 00 00 00 00 00 00 00              t.T.........
+	rel 32+8 t=R_ADDR command-line-arguments.idxInt8<1>+0
+	rel 40+8 t=R_ADDR command-line-arguments.idxInt8<1>+81
+	rel 61+4 t=R_DWARFSECREF go:info.[]int8<0>+0
+	rel 65+4 t=R_DWARFSECREF <0>+0
+	rel 74+4 t=R_DWARFSECREF go:info.[]int8<0>+0
+	rel 78+4 t=R_DWARFSECREF <0>+161
+	rel 87+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 91+4 t=R_DWARFSECREF <0>+220
+	rel 99+4 t=R_DWARFSECREF go:info.int8<0>+0
+	rel 103+4 t=R_DWARFSECREF <0>+271
+aux for command-line-arguments.idxInt16<0> SDWARFLOC size=469
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 42 00 00 00 00 00 00 00  ........B.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 42 00 00 00 00  ..P..S..R..B....
+	0x0030 00 00 00 65 00 00 00 00 00 00 00 08 00 50 93 08  ...e.........P..
+	0x0040 93 08 52 93 08 65 00 00 00 00 00 00 00 68 00 00  ..R..e.......h..
+	0x0050 00 00 00 00 00 07 00 93 08 93 08 52 93 08 70 00  ...........R..p.
+	0x0060 00 00 00 00 00 00 73 00 00 00 00 00 00 00 08 00  ......s.........
+	0x0070 93 08 53 93 08 52 93 08 73 00 00 00 00 00 00 00  ..S..R..s.......
+	0x0080 7b 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  {...........S...
+	0x0090 08 7b 00 00 00 00 00 00 00 80 00 00 00 00 00 00  .{..............
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 80 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 88 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 88 00 00 00 00 00 00 00 8b 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 8b 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 91 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0100 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00  ................
+	0x0110 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21  ...............!
+	0x0120 00 00 00 00 00 00 00 09 00 55 93 08 54 93 08 58  .........U..T..X
+	0x0130 93 08 21 00 00 00 00 00 00 00 91 00 00 00 00 00  ..!.............
+	0x0140 00 00 08 00 55 93 08 54 93 08 93 08 00 00 00 00  ....U..T........
+	0x0150 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0160 ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0170 00 00 00 00 33 00 00 00 00 00 00 00 01 00 59 00  ....3.........Y.
+	0x0180 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff  ................
+	0x0190 ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00 21  ...............!
+	0x01a0 00 00 00 00 00 00 00 37 00 00 00 00 00 00 00 01  .......7........
+	0x01b0 00 58 42 00 00 00 00 00 00 00 6d 00 00 00 00 00  .XB.......m.....
+	0x01c0 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00 00  ....S...........
+	0x01d0 00 00 00 00 00                                   .....
+	rel 8+8 t=R_ADDR command-line-arguments.idxInt16<1>+0
+	rel 271+8 t=R_ADDR command-line-arguments.idxInt16<1>+0
+	rel 356+8 t=R_ADDR command-line-arguments.idxInt16<1>+0
+	rel 407+8 t=R_ADDR command-line-arguments.idxInt16<1>+0
+aux for command-line-arguments.idxInt16<0> SDWARFLINES size=55
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 da 00  ................
+	0x0010 14 0a 37 06 37 06 77 06 37 06 80 06 2d 06 62 06  ..7.7.w.7...-.b.
+	0x0020 2d 06 d0 06 2d 06 62 58 60 06 03 7d 47 7a 7a 8e  -...-.bX`..}Gzz.
+	0x0030 06 7d 02 01 00 01 01                             .}.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxInt16<1>+0
+aux for command-line-arguments.idxInt16<0> SDWARFFCN size=109
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 49 6e 74 31 36  guments.idxInt16
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 01 9c 02 00 00 00 60 01 12 78 00 00 60 00 00  .......`..x..`..
+	0x0040 00 00 00 00 00 00 12 79 00 00 60 00 00 00 00 00  .......y..`.....
+	0x0050 00 00 00 12 69 00 00 60 00 00 00 00 00 00 00 00  ....i..`........
+	0x0060 0d 74 00 61 00 00 00 00 00 00 00 00 00           .t.a.........
+	rel 33+8 t=R_ADDR command-line-arguments.idxInt16<1>+0
+	rel 41+8 t=R_ADDR command-line-arguments.idxInt16<1>+145
+	rel 62+4 t=R_DWARFSECREF go:info.[]int16<0>+0
+	rel 66+4 t=R_DWARFSECREF <0>+0
+	rel 75+4 t=R_DWARFSECREF go:info.[]int16<0>+0
+	rel 79+4 t=R_DWARFSECREF <0>+263
+	rel 88+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 92+4 t=R_DWARFSECREF <0>+348
+	rel 100+4 t=R_DWARFSECREF go:info.int16<0>+0
+	rel 104+4 t=R_DWARFSECREF <0>+399
+aux for command-line-arguments.idxInt32<0> SDWARFLOC size=571
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 63 00 00 00 00 00 00 00  ........c.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 63 00 00 00 00  ..P..S..R..c....
+	0x0030 00 00 00 87 00 00 00 00 00 00 00 08 00 50 93 08  .............P..
+	0x0040 93 08 52 93 08 87 00 00 00 00 00 00 00 8a 00 00  ..R.............
+	0x0050 00 00 00 00 00 07 00 93 08 93 08 52 93 08 92 00  ...........R....
+	0x0060 00 00 00 00 00 00 95 00 00 00 00 00 00 00 08 00  ................
+	0x0070 93 08 53 93 08 52 93 08 95 00 00 00 00 00 00 00  ..S..R..........
+	0x0080 9d 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 9d 00 00 00 00 00 00 00 a0 00 00 00 00 00 00  ................
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 a0 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 a8 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 a8 00 00 00 00 00 00 00 ab 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 ab 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 b3 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 b3 00 00 00 00 00 00 00 b6  ..S.............
+	0x0100 00 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 b6 00 00 00 00 00 00 00 be 00 00 00 00 00 00  ................
+	0x0120 00 07 00 93 08 53 93 08 93 08 be 00 00 00 00 00  .....S..........
+	0x0130 00 00 c1 00 00 00 00 00 00 00 08 00 93 08 53 93  ..............S.
+	0x0140 08 52 93 08 c1 00 00 00 00 00 00 00 c7 00 00 00  .R..............
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 00 00 00  ........S.......
+	0x0160 00 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff  ................
+	0x0170 ff ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0180 00 00 00 00 00 24 00 00 00 00 00 00 00 09 00 55  .....$.........U
+	0x0190 93 08 54 93 08 58 93 08 24 00 00 00 00 00 00 00  ..T..X..$.......
+	0x01a0 c7 00 00 00 00 00 00 00 08 00 55 93 08 54 93 08  ..........U..T..
+	0x01b0 93 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x01c0 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00 00  ................
+	0x01d0 00 00 00 00 00 00 00 00 00 00 55 00 00 00 00 00  ..........U.....
+	0x01e0 00 00 01 00 59 00 00 00 00 00 00 00 00 00 00 00  ....Y...........
+	0x01f0 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00  ................
+	0x0200 00 00 00 00 00 24 00 00 00 00 00 00 00 59 00 00  .....$.......Y..
+	0x0210 00 00 00 00 00 01 00 58 63 00 00 00 00 00 00 00  .......Xc.......
+	0x0220 8f 00 00 00 00 00 00 00 01 00 53 00 00 00 00 00  ..........S.....
+	0x0230 00 00 00 00 00 00 00 00 00 00 00                 ...........
+	rel 8+8 t=R_ADDR command-line-arguments.idxInt32<1>+0
+	rel 373+8 t=R_ADDR command-line-arguments.idxInt32<1>+0
+	rel 458+8 t=R_ADDR command-line-arguments.idxInt32<1>+0
+	rel 509+8 t=R_ADDR command-line-arguments.idxInt32<1>+0
+aux for command-line-arguments.idxInt32<0> SDWARFLINES size=65
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 f0 00  ................
+	0x0010 14 0a 37 06 37 06 77 06 37 06 9e 06 2d 06 7f 06  ..7.7.w.7...-...
+	0x0020 37 06 9d 06 2d 06 58 06 2d 06 c6 06 2d 06 58 62  7...-.X.-...-.Xb
+	0x0030 6a 06 03 7d 47 7a 7a 7b 7b 7a 06 7d 02 01 00 01  j..}Gzz{{z.}....
+	0x0040 01                                               .
+	rel 3+8 t=R_ADDR command-line-arguments.idxInt32<1>+0
+aux for command-line-arguments.idxInt32<0> SDWARFFCN size=109
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 49 6e 74 33 32  guments.idxInt32
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 01 9c 02 00 00 00 76 01 12 78 00 00 76 00 00  .......v..x..v..
+	0x0040 00 00 00 00 00 00 12 79 00 00 76 00 00 00 00 00  .......y..v.....
+	0x0050 00 00 00 12 69 00 00 76 00 00 00 00 00 00 00 00  ....i..v........
+	0x0060 0d 74 00 77 00 00 00 00 00 00 00 00 00           .t.w.........
+	rel 33+8 t=R_ADDR command-line-arguments.idxInt32<1>+0
+	rel 41+8 t=R_ADDR command-line-arguments.idxInt32<1>+199
+	rel 62+4 t=R_DWARFSECREF go:info.[]int32<0>+0
+	rel 66+4 t=R_DWARFSECREF <0>+0
+	rel 75+4 t=R_DWARFSECREF go:info.[]int32<0>+0
+	rel 79+4 t=R_DWARFSECREF <0>+365
+	rel 88+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 92+4 t=R_DWARFSECREF <0>+450
+	rel 100+4 t=R_DWARFSECREF go:info.int32<0>+0
+	rel 104+4 t=R_DWARFSECREF <0>+501
+aux for command-line-arguments.idxInt64<0> SDWARFLOC size=469
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  ........@.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 40 00 00 00 00  ..P..S..R..@....
+	0x0030 00 00 00 65 00 00 00 00 00 00 00 08 00 50 93 08  ...e.........P..
+	0x0040 93 08 52 93 08 65 00 00 00 00 00 00 00 68 00 00  ..R..e.......h..
+	0x0050 00 00 00 00 00 07 00 93 08 93 08 52 93 08 70 00  ...........R..p.
+	0x0060 00 00 00 00 00 00 73 00 00 00 00 00 00 00 08 00  ......s.........
+	0x0070 93 08 53 93 08 52 93 08 73 00 00 00 00 00 00 00  ..S..R..s.......
+	0x0080 7b 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  {...........S...
+	0x0090 08 7b 00 00 00 00 00 00 00 80 00 00 00 00 00 00  .{..............
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 80 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 88 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 88 00 00 00 00 00 00 00 8b 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 8b 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 91 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0100 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00  ................
+	0x0110 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 20  ............... 
+	0x0120 00 00 00 00 00 00 00 09 00 55 93 08 54 93 08 58  .........U..T..X
+	0x0130 93 08 20 00 00 00 00 00 00 00 91 00 00 00 00 00  .. .............
+	0x0140 00 00 08 00 55 93 08 54 93 08 93 08 00 00 00 00  ....U..T........
+	0x0150 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0160 ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0170 00 00 00 00 31 00 00 00 00 00 00 00 01 00 59 00  ....1.........Y.
+	0x0180 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff  ................
+	0x0190 ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00 20  ............... 
+	0x01a0 00 00 00 00 00 00 00 35 00 00 00 00 00 00 00 01  .......5........
+	0x01b0 00 58 40 00 00 00 00 00 00 00 6d 00 00 00 00 00  .X@.......m.....
+	0x01c0 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00 00  ....S...........
+	0x01d0 00 00 00 00 00                                   .....
+	rel 8+8 t=R_ADDR command-line-arguments.idxInt64<1>+0
+	rel 271+8 t=R_ADDR command-line-arguments.idxInt64<1>+0
+	rel 356+8 t=R_ADDR command-line-arguments.idxInt64<1>+0
+	rel 407+8 t=R_ADDR command-line-arguments.idxInt64<1>+0
+aux for command-line-arguments.idxInt64<0> SDWARFLINES size=55
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 8a 01  ................
+	0x0010 14 0a 37 06 37 06 76 06 37 06 75 06 2d 06 57 06  ..7.7.v.7.u.-.W.
+	0x0020 2d 06 cf 06 2d 06 57 6b 6a 06 03 7f 47 7b 7b 8f  -...-.Wkj...G{{.
+	0x0030 06 7d 02 01 00 01 01                             .}.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxInt64<1>+0
+aux for command-line-arguments.idxInt64<0> SDWARFFCN size=114
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 49 6e 74 36 34  guments.idxInt64
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 01 9c 02 00 00 00 90 01 01 12 78 00 00 90 01  ...........x....
+	0x0040 00 00 00 00 00 00 00 00 12 79 00 00 90 01 00 00  .........y......
+	0x0050 00 00 00 00 00 00 12 69 00 00 90 01 00 00 00 00  .......i........
+	0x0060 00 00 00 00 0d 74 00 91 01 00 00 00 00 00 00 00  .....t..........
+	0x0070 00 00                                            ..
+	rel 33+8 t=R_ADDR command-line-arguments.idxInt64<1>+0
+	rel 41+8 t=R_ADDR command-line-arguments.idxInt64<1>+145
+	rel 64+4 t=R_DWARFSECREF go:info.[]int64<0>+0
+	rel 68+4 t=R_DWARFSECREF <0>+0
+	rel 78+4 t=R_DWARFSECREF go:info.[]int64<0>+0
+	rel 82+4 t=R_DWARFSECREF <0>+263
+	rel 92+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 96+4 t=R_DWARFSECREF <0>+348
+	rel 105+4 t=R_DWARFSECREF go:info.int64<0>+0
+	rel 109+4 t=R_DWARFSECREF <0>+399
+aux for command-line-arguments.idxFloat32<0> SDWARFLOC size=424
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 57 00 00 00 00 00 00 00  ........W.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 57 00 00 00 00  ..P..S..R..W....
+	0x0030 00 00 00 5a 00 00 00 00 00 00 00 08 00 93 08 53  ...Z...........S
+	0x0040 93 08 52 93 08 5a 00 00 00 00 00 00 00 62 00 00  ..R..Z.......b..
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 62 00  .........S....b.
+	0x0060 00 00 00 00 00 00 65 00 00 00 00 00 00 00 08 00  ......e.........
+	0x0070 93 08 53 93 08 52 93 08 65 00 00 00 00 00 00 00  ..S..R..e.......
+	0x0080 6d 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  m...........S...
+	0x0090 08 6d 00 00 00 00 00 00 00 70 00 00 00 00 00 00  .m.......p......
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 70 00 00 00 00  .....S..R..p....
+	0x00b0 00 00 00 78 00 00 00 00 00 00 00 07 00 93 08 53  ...x...........S
+	0x00c0 93 08 93 08 78 00 00 00 00 00 00 00 80 00 00 00  ....x...........
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 80 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 86 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0100 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00  ................
+	0x0110 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 86  ................
+	0x0120 00 00 00 00 00 00 00 09 00 55 93 08 54 93 08 58  .........U..T..X
+	0x0130 93 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0140 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00 00  ................
+	0x0150 00 00 00 00 00 00 00 00 00 00 32 00 00 00 00 00  ..........2.....
+	0x0160 00 00 01 00 59 00 00 00 00 00 00 00 00 00 00 00  ....Y...........
+	0x0170 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00  ................
+	0x0180 00 00 00 00 00 22 00 00 00 00 00 00 00 75 00 00  .....".......u..
+	0x0190 00 00 00 00 00 01 00 61 00 00 00 00 00 00 00 00  .......a........
+	0x01a0 00 00 00 00 00 00 00 00                          ........
+	rel 8+8 t=R_ADDR command-line-arguments.idxFloat32<1>+0
+	rel 271+8 t=R_ADDR command-line-arguments.idxFloat32<1>+0
+	rel 330+8 t=R_ADDR command-line-arguments.idxFloat32<1>+0
+	rel 381+8 t=R_ADDR command-line-arguments.idxFloat32<1>+0
+aux for command-line-arguments.idxFloat32<0> SDWARFLINES size=51
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 9a 01  ................
+	0x0010 14 0a 37 06 37 06 78 06 37 06 8b 06 2d 06 6c 06  ..7.7.x.7...-.l.
+	0x0020 37 06 b2 06 2d 06 6a 06 4a 7a 7a 79 06 af 02 01  7...-.j.Jzzy....
+	0x0030 00 01 01                                         ...
+	rel 3+8 t=R_ADDR command-line-arguments.idxFloat32<1>+0
+aux for command-line-arguments.idxFloat32<0> SDWARFFCN size=116
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 46 6c 6f 61 74  guments.idxFloat
+	0x0020 33 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00  32..............
+	0x0030 00 00 00 01 9c 02 00 00 00 a0 01 01 12 78 00 00  .............x..
+	0x0040 a0 01 00 00 00 00 00 00 00 00 12 79 00 00 a0 01  ...........y....
+	0x0050 00 00 00 00 00 00 00 00 12 69 00 00 a0 01 00 00  .........i......
+	0x0060 00 00 00 00 00 00 0d 74 00 a1 01 00 00 00 00 00  .......t........
+	0x0070 00 00 00 00                                      ....
+	rel 35+8 t=R_ADDR command-line-arguments.idxFloat32<1>+0
+	rel 43+8 t=R_ADDR command-line-arguments.idxFloat32<1>+134
+	rel 66+4 t=R_DWARFSECREF go:info.[]float32<0>+0
+	rel 70+4 t=R_DWARFSECREF <0>+0
+	rel 80+4 t=R_DWARFSECREF go:info.[]float32<0>+0
+	rel 84+4 t=R_DWARFSECREF <0>+263
+	rel 94+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 98+4 t=R_DWARFSECREF <0>+322
+	rel 107+4 t=R_DWARFSECREF go:info.float32<0>+0
+	rel 111+4 t=R_DWARFSECREF <0>+373
+aux for command-line-arguments.idxFloat64<0> SDWARFLOC size=424
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 57 00 00 00 00 00 00 00  ........W.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 57 00 00 00 00  ..P..S..R..W....
+	0x0030 00 00 00 5a 00 00 00 00 00 00 00 08 00 93 08 53  ...Z...........S
+	0x0040 93 08 52 93 08 5a 00 00 00 00 00 00 00 62 00 00  ..R..Z.......b..
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 62 00  .........S....b.
+	0x0060 00 00 00 00 00 00 65 00 00 00 00 00 00 00 08 00  ......e.........
+	0x0070 93 08 53 93 08 52 93 08 65 00 00 00 00 00 00 00  ..S..R..e.......
+	0x0080 6d 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  m...........S...
+	0x0090 08 6d 00 00 00 00 00 00 00 70 00 00 00 00 00 00  .m.......p......
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 70 00 00 00 00  .....S..R..p....
+	0x00b0 00 00 00 78 00 00 00 00 00 00 00 07 00 93 08 53  ...x...........S
+	0x00c0 93 08 93 08 78 00 00 00 00 00 00 00 80 00 00 00  ....x...........
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 80 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 86 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0100 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00  ................
+	0x0110 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 86  ................
+	0x0120 00 00 00 00 00 00 00 09 00 55 93 08 54 93 08 58  .........U..T..X
+	0x0130 93 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0140 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00 00  ................
+	0x0150 00 00 00 00 00 00 00 00 00 00 32 00 00 00 00 00  ..........2.....
+	0x0160 00 00 01 00 59 00 00 00 00 00 00 00 00 00 00 00  ....Y...........
+	0x0170 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00  ................
+	0x0180 00 00 00 00 00 22 00 00 00 00 00 00 00 75 00 00  .....".......u..
+	0x0190 00 00 00 00 00 01 00 61 00 00 00 00 00 00 00 00  .......a........
+	0x01a0 00 00 00 00 00 00 00 00                          ........
+	rel 8+8 t=R_ADDR command-line-arguments.idxFloat64<1>+0
+	rel 271+8 t=R_ADDR command-line-arguments.idxFloat64<1>+0
+	rel 330+8 t=R_ADDR command-line-arguments.idxFloat64<1>+0
+	rel 381+8 t=R_ADDR command-line-arguments.idxFloat64<1>+0
+aux for command-line-arguments.idxFloat64<0> SDWARFLINES size=51
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 ac 01  ................
+	0x0010 14 0a 37 06 37 06 78 06 37 06 8b 06 2d 06 6c 06  ..7.7.x.7...-.l.
+	0x0020 37 06 b2 06 2d 06 6a 06 4a 7a 7a 79 06 af 02 01  7...-.j.Jzzy....
+	0x0030 00 01 01                                         ...
+	rel 3+8 t=R_ADDR command-line-arguments.idxFloat64<1>+0
+aux for command-line-arguments.idxFloat64<0> SDWARFFCN size=116
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 46 6c 6f 61 74  guments.idxFloat
+	0x0020 36 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00  64..............
+	0x0030 00 00 00 01 9c 02 00 00 00 b2 01 01 12 78 00 00  .............x..
+	0x0040 b2 01 00 00 00 00 00 00 00 00 12 79 00 00 b2 01  ...........y....
+	0x0050 00 00 00 00 00 00 00 00 12 69 00 00 b2 01 00 00  .........i......
+	0x0060 00 00 00 00 00 00 0d 74 00 b3 01 00 00 00 00 00  .......t........
+	0x0070 00 00 00 00                                      ....
+	rel 35+8 t=R_ADDR command-line-arguments.idxFloat64<1>+0
+	rel 43+8 t=R_ADDR command-line-arguments.idxFloat64<1>+134
+	rel 66+4 t=R_DWARFSECREF go:info.[]float64<0>+0
+	rel 70+4 t=R_DWARFSECREF <0>+0
+	rel 80+4 t=R_DWARFSECREF go:info.[]float64<0>+0
+	rel 84+4 t=R_DWARFSECREF <0>+263
+	rel 94+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 98+4 t=R_DWARFSECREF <0>+322
+	rel 107+4 t=R_DWARFSECREF go:info.float64<0>+0
+	rel 111+4 t=R_DWARFSECREF <0>+373
+aux for command-line-arguments.idxLoadPlusOp32<0> SDWARFLOC size=518
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 78 00 00 00 00 00 00 00  ........x.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 78 00 00 00 00  ..P..S..R..x....
+	0x0030 00 00 00 84 00 00 00 00 00 00 00 08 00 93 08 53  ...............S
+	0x0040 93 08 52 93 08 84 00 00 00 00 00 00 00 8c 00 00  ..R.............
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 8c 00  .........S......
+	0x0060 00 00 00 00 00 00 8f 00 00 00 00 00 00 00 08 00  ................
+	0x0070 93 08 53 93 08 52 93 08 8f 00 00 00 00 00 00 00  ..S..R..........
+	0x0080 97 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 97 00 00 00 00 00 00 00 9a 00 00 00 00 00 00  ................
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 9a 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 a2 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 a2 00 00 00 00 00 00 00 a5 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 a5 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 ad 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 ad 00 00 00 00 00 00 00 b0  ..S.............
+	0x0100 00 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 b0 00 00 00 00 00 00 00 b8 00 00 00 00 00 00  ................
+	0x0120 00 07 00 93 08 53 93 08 93 08 b8 00 00 00 00 00  .....S..........
+	0x0130 00 00 c0 00 00 00 00 00 00 00 08 00 93 08 53 93  ..............S.
+	0x0140 08 52 93 08 c0 00 00 00 00 00 00 00 c7 00 00 00  .R..............
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 c7 00 00  ........S.......
+	0x0160 00 00 00 00 00 ca 00 00 00 00 00 00 00 08 00 93  ................
+	0x0170 08 53 93 08 52 93 08 ca 00 00 00 00 00 00 00 d0  .S..R...........
+	0x0180 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93 08  ...........S....
+	0x0190 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x01a0 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x01b0 00 00 00 00 00 00 00 00 d0 00 00 00 00 00 00 00  ................
+	0x01c0 01 00 55 00 00 00 00 00 00 00 00 00 00 00 00 00  ..U.............
+	0x01d0 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x01e0 00 00 00 2b 00 00 00 00 00 00 00 b5 00 00 00 00  ...+............
+	0x01f0 00 00 00 01 00 51 00 00 00 00 00 00 00 00 00 00  .....Q..........
+	0x0200 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.idxLoadPlusOp32<1>+0
+	rel 424+8 t=R_ADDR command-line-arguments.idxLoadPlusOp32<1>+0
+	rel 475+8 t=R_ADDR command-line-arguments.idxLoadPlusOp32<1>+0
+aux for command-line-arguments.idxLoadPlusOp32<0> SDWARFLINES size=75
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 be 01  ................
+	0x0010 14 0a 37 06 37 06 42 06 2d 06 4e 06 37 a2 06 03  ..7.7.B.-.N.7...
+	0x0020 01 28 06 34 3a 06 43 06 35 39 06 6c 06 34 30 06  .(.4:.C.59.l.40.
+	0x0030 44 06 34 58 06 44 06 34 3a 06 6a 06 23 4a 7a 7a  D.4X.D.4:.j.#Jzz
+	0x0040 7a 7b 7a ac 06 73 02 01 00 01 01                 z{z..s.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxLoadPlusOp32<1>+0
+aux for command-line-arguments.idxLoadPlusOp32<0> SDWARFFCN size=120
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 4c 6f 61 64 50  guments.idxLoadP
+	0x0020 6c 75 73 4f 70 33 32 00 00 00 00 00 00 00 00 00  lusOp32.........
+	0x0030 00 00 00 00 00 00 00 00 01 9c 02 00 00 00 c4 01  ................
+	0x0040 01 12 78 00 00 c4 01 00 00 00 00 00 00 00 00 12  ..x.............
+	0x0050 69 00 00 c4 01 00 00 00 00 00 00 00 00 11 7e 72  i.............~r
+	0x0060 30 00 01 c4 01 00 00 00 00 00 0d 73 00 c5 01 00  0..........s....
+	0x0070 00 00 00 00 00 00 00 00                          ........
+	rel 0+0 t=R_USETYPE type:int32<0>+0
+	rel 40+8 t=R_ADDR command-line-arguments.idxLoadPlusOp32<1>+0
+	rel 48+8 t=R_ADDR command-line-arguments.idxLoadPlusOp32<1>+208
+	rel 71+4 t=R_DWARFSECREF go:info.[]int32<0>+0
+	rel 75+4 t=R_DWARFSECREF <0>+0
+	rel 85+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 89+4 t=R_DWARFSECREF <0>+416
+	rel 101+4 t=R_DWARFSECREF go:info.int32<0>+0
+	rel 111+4 t=R_DWARFSECREF go:info.int32<0>+0
+	rel 115+4 t=R_DWARFSECREF <0>+467
+aux for command-line-arguments.idxLoadPlusOp64<0> SDWARFLOC size=467
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 62 00 00 00 00 00 00 00  ........b.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 62 00 00 00 00  ..P..S..R..b....
+	0x0030 00 00 00 6e 00 00 00 00 00 00 00 08 00 93 08 53  ...n...........S
+	0x0040 93 08 52 93 08 6e 00 00 00 00 00 00 00 76 00 00  ..R..n.......v..
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 76 00  .........S....v.
+	0x0060 00 00 00 00 00 00 79 00 00 00 00 00 00 00 08 00  ......y.........
+	0x0070 93 08 53 93 08 52 93 08 79 00 00 00 00 00 00 00  ..S..R..y.......
+	0x0080 81 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 81 00 00 00 00 00 00 00 84 00 00 00 00 00 00  ................
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 84 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 8c 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 8c 00 00 00 00 00 00 00 8f 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 8f 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 97 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 97 00 00 00 00 00 00 00 9a  ..S.............
+	0x0100 00 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 9a 00 00 00 00 00 00 00 a1 00 00 00 00 00 00  ................
+	0x0120 00 07 00 93 08 53 93 08 93 08 a1 00 00 00 00 00  .....S..........
+	0x0130 00 00 a4 00 00 00 00 00 00 00 08 00 93 08 53 93  ..............S.
+	0x0140 08 52 93 08 a4 00 00 00 00 00 00 00 aa 00 00 00  .R..............
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 00 00 00  ........S.......
+	0x0160 00 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff  ................
+	0x0170 ff ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0180 00 00 00 00 00 aa 00 00 00 00 00 00 00 01 00 55  ...............U
+	0x0190 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x01a0 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x01b0 22 00 00 00 00 00 00 00 94 00 00 00 00 00 00 00  "...............
+	0x01c0 01 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00  ..Q.............
+	0x01d0 00 00 00                                         ...
+	rel 8+8 t=R_ADDR command-line-arguments.idxLoadPlusOp64<1>+0
+	rel 373+8 t=R_ADDR command-line-arguments.idxLoadPlusOp64<1>+0
+	rel 424+8 t=R_ADDR command-line-arguments.idxLoadPlusOp64<1>+0
+aux for command-line-arguments.idxLoadPlusOp64<0> SDWARFLINES size=67
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 d4 01  ................
+	0x0010 14 0a 37 06 37 06 42 06 2d 06 4d 06 37 3f 06 31  ..7.7.B.-.M.7?.1
+	0x0020 06 35 43 06 43 06 35 43 06 43 06 35 43 06 43 06  .5C.C.5C.C.5C.C.
+	0x0030 35 43 06 74 06 2d 4a 7b 7b 7b 7b 7b 06 73 02 01  5C.t.-J{{{{{.s..
+	0x0040 00 01 01                                         ...
+	rel 3+8 t=R_ADDR command-line-arguments.idxLoadPlusOp64<1>+0
+aux for command-line-arguments.idxLoadPlusOp64<0> SDWARFFCN size=120
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 4c 6f 61 64 50  guments.idxLoadP
+	0x0020 6c 75 73 4f 70 36 34 00 00 00 00 00 00 00 00 00  lusOp64.........
+	0x0030 00 00 00 00 00 00 00 00 01 9c 02 00 00 00 da 01  ................
+	0x0040 01 12 78 00 00 da 01 00 00 00 00 00 00 00 00 12  ..x.............
+	0x0050 69 00 00 da 01 00 00 00 00 00 00 00 00 11 7e 72  i.............~r
+	0x0060 30 00 01 da 01 00 00 00 00 00 0d 73 00 db 01 00  0..........s....
+	0x0070 00 00 00 00 00 00 00 00                          ........
+	rel 0+0 t=R_USETYPE type:int64<0>+0
+	rel 40+8 t=R_ADDR command-line-arguments.idxLoadPlusOp64<1>+0
+	rel 48+8 t=R_ADDR command-line-arguments.idxLoadPlusOp64<1>+170
+	rel 71+4 t=R_DWARFSECREF go:info.[]int64<0>+0
+	rel 75+4 t=R_DWARFSECREF <0>+0
+	rel 85+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 89+4 t=R_DWARFSECREF <0>+365
+	rel 101+4 t=R_DWARFSECREF go:info.int64<0>+0
+	rel 111+4 t=R_DWARFSECREF go:info.int64<0>+0
+	rel 115+4 t=R_DWARFSECREF <0>+416
+aux for command-line-arguments.idxStorePlusOp32<0> SDWARFLOC size=620
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 a1 00 00 00 00 00 00 00  ................
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 a1 00 00 00 00  ..P..S..R.......
+	0x0030 00 00 00 a4 00 00 00 00 00 00 00 08 00 93 08 53  ...............S
+	0x0040 93 08 52 93 08 a4 00 00 00 00 00 00 00 ac 00 00  ..R.............
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 ac 00  .........S......
+	0x0060 00 00 00 00 00 00 af 00 00 00 00 00 00 00 08 00  ................
+	0x0070 93 08 53 93 08 52 93 08 af 00 00 00 00 00 00 00  ..S..R..........
+	0x0080 b7 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 b7 00 00 00 00 00 00 00 ba 00 00 00 00 00 00  ................
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 ba 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 c2 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 c2 00 00 00 00 00 00 00 c5 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 c5 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 cd 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 cd 00 00 00 00 00 00 00 d0  ..S.............
+	0x0100 00 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 d0 00 00 00 00 00 00 00 d8 00 00 00 00 00 00  ................
+	0x0120 00 07 00 93 08 53 93 08 93 08 d8 00 00 00 00 00  .....S..........
+	0x0130 00 00 e0 00 00 00 00 00 00 00 08 00 93 08 53 93  ..............S.
+	0x0140 08 52 93 08 e0 00 00 00 00 00 00 00 e8 00 00 00  .R..............
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 e8 00 00  ........S.......
+	0x0160 00 00 00 00 00 eb 00 00 00 00 00 00 00 08 00 93  ................
+	0x0170 08 53 93 08 52 93 08 eb 00 00 00 00 00 00 00 f3  .S..R...........
+	0x0180 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93 08  ...........S....
+	0x0190 f3 00 00 00 00 00 00 00 f6 00 00 00 00 00 00 00  ................
+	0x01a0 08 00 93 08 53 93 08 52 93 08 f6 00 00 00 00 00  ....S..R........
+	0x01b0 00 00 fe 00 00 00 00 00 00 00 07 00 93 08 53 93  ..............S.
+	0x01c0 08 93 08 fe 00 00 00 00 00 00 00 01 01 00 00 00  ................
+	0x01d0 00 00 00 08 00 93 08 53 93 08 52 93 08 01 01 00  .......S..R.....
+	0x01e0 00 00 00 00 00 07 01 00 00 00 00 00 00 07 00 93  ................
+	0x01f0 08 53 93 08 93 08 00 00 00 00 00 00 00 00 00 00  .S..............
+	0x0200 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0210 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 01  ................
+	0x0220 00 00 00 00 00 00 01 00 55 00 00 00 00 00 00 00  ........U.......
+	0x0230 00 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff  ................
+	0x0240 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0250 00 07 01 00 00 00 00 00 00 01 00 54 00 00 00 00  ...........T....
+	0x0260 00 00 00 00 00 00 00 00 00 00 00 00              ............
+	rel 8+8 t=R_ADDR command-line-arguments.idxStorePlusOp32<1>+0
+	rel 526+8 t=R_ADDR command-line-arguments.idxStorePlusOp32<1>+0
+	rel 577+8 t=R_ADDR command-line-arguments.idxStorePlusOp32<1>+0
+aux for command-line-arguments.idxStorePlusOp32<0> SDWARFLINES size=76
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 e3 01  ................
+	0x0010 14 0a 37 06 37 06 44 06 37 06 94 06 37 06 94 06  ..7.7.D.7...7...
+	0x0020 37 06 94 06 37 06 94 06 37 06 6d 06 37 06 76 06  7...7...7.m.7.v.
+	0x0030 37 06 76 06 37 06 8a 06 37 06 74 06 4a 7a 7a 7a  7.v.7...7.t.Jzzz
+	0x0040 79 7a ac 7a 7a 06 7d 02 01 00 01 01              yz.zz.}.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxStorePlusOp32<1>+0
+aux for command-line-arguments.idxStorePlusOp32<0> SDWARFFCN size=109
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 53 74 6f 72 65  guments.idxStore
+	0x0020 50 6c 75 73 4f 70 33 32 00 00 00 00 00 00 00 00  PlusOp32........
+	0x0030 00 00 00 00 00 00 00 00 00 01 9c 02 00 00 00 e9  ................
+	0x0040 01 01 12 78 00 00 e9 01 00 00 00 00 00 00 00 00  ...x............
+	0x0050 12 69 00 00 e9 01 00 00 00 00 00 00 00 00 12 76  .i.............v
+	0x0060 00 00 e9 01 00 00 00 00 00 00 00 00 00           .............
+	rel 41+8 t=R_ADDR command-line-arguments.idxStorePlusOp32<1>+0
+	rel 49+8 t=R_ADDR command-line-arguments.idxStorePlusOp32<1>+263
+	rel 72+4 t=R_DWARFSECREF go:info.[]int32<0>+0
+	rel 76+4 t=R_DWARFSECREF <0>+0
+	rel 86+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 90+4 t=R_DWARFSECREF <0>+518
+	rel 100+4 t=R_DWARFSECREF go:info.int32<0>+0
+	rel 104+4 t=R_DWARFSECREF <0>+569
+aux for command-line-arguments.idxStorePlusOp64<0> SDWARFLOC size=620
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 a8 00 00 00 00 00 00 00  ................
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 a8 00 00 00 00  ..P..S..R.......
+	0x0030 00 00 00 ab 00 00 00 00 00 00 00 08 00 93 08 53  ...............S
+	0x0040 93 08 52 93 08 ab 00 00 00 00 00 00 00 b3 00 00  ..R.............
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 b3 00  .........S......
+	0x0060 00 00 00 00 00 00 b6 00 00 00 00 00 00 00 08 00  ................
+	0x0070 93 08 53 93 08 52 93 08 b6 00 00 00 00 00 00 00  ..S..R..........
+	0x0080 be 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 be 00 00 00 00 00 00 00 c1 00 00 00 00 00 00  ................
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 c1 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 c9 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 c9 00 00 00 00 00 00 00 cc 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 cc 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 d4 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 d4 00 00 00 00 00 00 00 d7  ..S.............
+	0x0100 00 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 d7 00 00 00 00 00 00 00 df 00 00 00 00 00 00  ................
+	0x0120 00 07 00 93 08 53 93 08 93 08 df 00 00 00 00 00  .....S..........
+	0x0130 00 00 e2 00 00 00 00 00 00 00 08 00 93 08 53 93  ..............S.
+	0x0140 08 52 93 08 e2 00 00 00 00 00 00 00 ea 00 00 00  .R..............
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 ea 00 00  ........S.......
+	0x0160 00 00 00 00 00 ed 00 00 00 00 00 00 00 08 00 93  ................
+	0x0170 08 53 93 08 52 93 08 ed 00 00 00 00 00 00 00 f5  .S..R...........
+	0x0180 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93 08  ...........S....
+	0x0190 f5 00 00 00 00 00 00 00 f8 00 00 00 00 00 00 00  ................
+	0x01a0 08 00 93 08 53 93 08 52 93 08 f8 00 00 00 00 00  ....S..R........
+	0x01b0 00 00 00 01 00 00 00 00 00 00 07 00 93 08 53 93  ..............S.
+	0x01c0 08 93 08 00 01 00 00 00 00 00 00 03 01 00 00 00  ................
+	0x01d0 00 00 00 08 00 93 08 53 93 08 52 93 08 03 01 00  .......S..R.....
+	0x01e0 00 00 00 00 00 09 01 00 00 00 00 00 00 07 00 93  ................
+	0x01f0 08 53 93 08 93 08 00 00 00 00 00 00 00 00 00 00  .S..............
+	0x0200 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0210 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 01  ................
+	0x0220 00 00 00 00 00 00 01 00 55 00 00 00 00 00 00 00  ........U.......
+	0x0230 00 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff  ................
+	0x0240 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0250 00 09 01 00 00 00 00 00 00 01 00 54 00 00 00 00  ...........T....
+	0x0260 00 00 00 00 00 00 00 00 00 00 00 00              ............
+	rel 8+8 t=R_ADDR command-line-arguments.idxStorePlusOp64<1>+0
+	rel 526+8 t=R_ADDR command-line-arguments.idxStorePlusOp64<1>+0
+	rel 577+8 t=R_ADDR command-line-arguments.idxStorePlusOp64<1>+0
+aux for command-line-arguments.idxStorePlusOp64<0> SDWARFLINES size=76
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 82 02  ................
+	0x0010 14 0a 37 06 37 06 43 06 37 06 9d 06 37 06 9d 06  ..7.7.C.7...7...
+	0x0020 37 06 9d 06 37 06 9d 06 37 06 76 06 37 06 7f 06  7...7...7.v.7...
+	0x0030 37 06 7f 06 37 06 7f 06 37 06 7e 06 4a 7b 7b 7b  7...7...7.~.J{{{
+	0x0040 7a 7b 7b 7b 7b 06 7d 02 01 00 01 01              z{{{{.}.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxStorePlusOp64<1>+0
+aux for command-line-arguments.idxStorePlusOp64<0> SDWARFFCN size=109
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 53 74 6f 72 65  guments.idxStore
+	0x0020 50 6c 75 73 4f 70 36 34 00 00 00 00 00 00 00 00  PlusOp64........
+	0x0030 00 00 00 00 00 00 00 00 00 01 9c 02 00 00 00 88  ................
+	0x0040 02 01 12 78 00 00 88 02 00 00 00 00 00 00 00 00  ...x............
+	0x0050 12 69 00 00 88 02 00 00 00 00 00 00 00 00 12 76  .i.............v
+	0x0060 00 00 88 02 00 00 00 00 00 00 00 00 00           .............
+	rel 41+8 t=R_ADDR command-line-arguments.idxStorePlusOp64<1>+0
+	rel 49+8 t=R_ADDR command-line-arguments.idxStorePlusOp64<1>+265
+	rel 72+4 t=R_DWARFSECREF go:info.[]int64<0>+0
+	rel 76+4 t=R_DWARFSECREF <0>+0
+	rel 86+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 90+4 t=R_DWARFSECREF <0>+518
+	rel 100+4 t=R_DWARFSECREF go:info.int64<0>+0
+	rel 104+4 t=R_DWARFSECREF <0>+569
+aux for command-line-arguments.idxCompare<0> SDWARFLOC size=51
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 3f 01 00 00 00 00 00 00  ........?.......
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00                                         ...
+	rel 8+8 t=R_ADDR command-line-arguments.idxCompare<1>+0
+aux for command-line-arguments.idxCompare<0> SDWARFLINES size=159
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 98 02  ................
+	0x0010 14 0a 37 39 06 37 06 08 77 06 55 06 e5 06 2d 06  ..79.7..w.U...-.
+	0x0020 08 77 06 55 06 e5 06 41 06 6d 06 55 06 e5 06 41  .w.U...A.m.U...A
+	0x0030 06 a9 06 37 06 08 3b 06 41 06 4f 06 37 06 08 45  ...7..;.A.O.7..E
+	0x0040 06 37 06 45 06 37 06 45 06 41 06 4f 06 41 06 4c  .7.E.7.E.A.O.A.L
+	0x0050 06 23 06 4d 06 41 06 03 7e 47 06 23 06 47 06 23  .#.M.A..~G.#.G.#
+	0x0060 06 51 06 23 06 47 06 23 06 47 06 23 06 47 06 23  .Q.#.G.#.G.#.G.#
+	0x0070 06 47 06 23 06 47 06 23 06 47 06 23 06 47 06 23  .G.#.G.#.G.#.G.#
+	0x0080 06 47 06 23 06 47 06 23 06 47 06 23 03 1e 50 03  .G.#.G.#.G.#..P.
+	0x0090 7c 8d 03 70 8d 03 7c bf 06 91 02 01 00 01 01     |..p..|........
+	rel 3+8 t=R_ADDR command-line-arguments.idxCompare<1>+0
+aux for command-line-arguments.idxCompare<0> SDWARFFCN size=88
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 43 6f 6d 70 61  guments.idxCompa
+	0x0020 72 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00  re..............
+	0x0030 00 00 00 01 9c 02 00 00 00 9e 02 01 12 69 00 00  .............i..
+	0x0040 9e 02 00 00 00 00 00 00 00 00 11 7e 72 30 00 01  ...........~r0..
+	0x0050 9e 02 00 00 00 00 00 00                          ........
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 35+8 t=R_ADDR command-line-arguments.idxCompare<1>+0
+	rel 43+8 t=R_ADDR command-line-arguments.idxCompare<1>+499
+	rel 66+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 70+4 t=R_DWARFSECREF <0>+0
+	rel 82+4 t=R_DWARFSECREF go:info.int<0>+0
+aux for command-line-arguments.idxFloatOps<0> SDWARFLOC size=705
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 a7 00 00 00 00 00 00 00  ................
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 a7 00 00 00 00  ..P..S..R.......
+	0x0030 00 00 00 aa 00 00 00 00 00 00 00 08 00 93 08 53  ...............S
+	0x0040 93 08 52 93 08 aa 00 00 00 00 00 00 00 b2 00 00  ..R.............
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 b2 00  .........S......
+	0x0060 00 00 00 00 00 00 b5 00 00 00 00 00 00 00 08 00  ................
+	0x0070 93 08 53 93 08 52 93 08 b5 00 00 00 00 00 00 00  ..S..R..........
+	0x0080 bd 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 bd 00 00 00 00 00 00 00 c0 00 00 00 00 00 00  ................
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 c0 00 00 00 00  .....S..R.......
+	0x00b0 00 00 00 c8 00 00 00 00 00 00 00 07 00 93 08 53  ...............S
+	0x00c0 93 08 93 08 c8 00 00 00 00 00 00 00 cb 00 00 00  ................
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 cb 00  ........S..R....
+	0x00e0 00 00 00 00 00 00 d3 00 00 00 00 00 00 00 07 00  ................
+	0x00f0 93 08 53 93 08 93 08 d3 00 00 00 00 00 00 00 d6  ..S.............
+	0x0100 00 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 d6 00 00 00 00 00 00 00 de 00 00 00 00 00 00  ................
+	0x0120 00 07 00 93 08 53 93 08 93 08 de 00 00 00 00 00  .....S..........
+	0x0130 00 00 e1 00 00 00 00 00 00 00 08 00 93 08 53 93  ..............S.
+	0x0140 08 52 93 08 e1 00 00 00 00 00 00 00 e9 00 00 00  .R..............
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 e9 00 00  ........S.......
+	0x0160 00 00 00 00 00 ec 00 00 00 00 00 00 00 08 00 93  ................
+	0x0170 08 53 93 08 52 93 08 ec 00 00 00 00 00 00 00 f4  .S..R...........
+	0x0180 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93 08  ...........S....
+	0x0190 f4 00 00 00 00 00 00 00 f7 00 00 00 00 00 00 00  ................
+	0x01a0 08 00 93 08 53 93 08 52 93 08 f7 00 00 00 00 00  ....S..R........
+	0x01b0 00 00 fd 00 00 00 00 00 00 00 07 00 93 08 53 93  ..............S.
+	0x01c0 08 93 08 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x01d0 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x01e0 00 00 00 00 00 00 00 00 00 00 00 23 00 00 00 00  ...........#....
+	0x01f0 00 00 00 09 00 55 93 08 54 93 08 58 93 08 23 00  .....U..T..X..#.
+	0x0200 00 00 00 00 00 00 fd 00 00 00 00 00 00 00 08 00  ................
+	0x0210 55 93 08 54 93 08 93 08 00 00 00 00 00 00 00 00  U..T............
+	0x0220 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff  ................
+	0x0230 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0240 fd 00 00 00 00 00 00 00 01 00 59 00 00 00 00 00  ..........Y.....
+	0x0250 00 00 00 00 00 00 00 00 00 00 00 ff ff ff ff ff  ................
+	0x0260 ff ff ff 00 00 00 00 00 00 00 00 32 00 00 00 00  ...........2....
+	0x0270 00 00 00 f1 00 00 00 00 00 00 00 01 00 61 00 00  .............a..
+	0x0280 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff ff  ................
+	0x0290 ff ff ff ff ff ff 00 00 00 00 00 00 00 00 7a 00  ..............z.
+	0x02a0 00 00 00 00 00 00 c5 00 00 00 00 00 00 00 01 00  ................
+	0x02b0 62 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  b...............
+	0x02c0 00                                               .
+	rel 8+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+	rel 475+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+	rel 560+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+	rel 611+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+	rel 662+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+aux for command-line-arguments.idxFloatOps<0> SDWARFLINES size=74
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 d4 02  ................
+	0x0010 14 0a 37 06 37 06 76 06 37 06 6b 06 35 a7 06 6b  ..7.7.v.7.k.5..k
+	0x0020 06 35 57 06 6b 06 35 57 06 8b 06 2d 06 bb 06 2d  .5W.k.5W...-...-
+	0x0030 06 6b 06 2d 06 6b 06 2d 06 6a 06 4a 7b 7b 7b 79  .k.-.k.-.j.J{{{y
+	0x0040 7b 7b 7b 06 7d 02 01 00 01 01                    {{{.}.....
+	rel 3+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+aux for command-line-arguments.idxFloatOps<0> SDWARFFCN size=156
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 69 64 78 46 6c 6f 61 74  guments.idxFloat
+	0x0020 4f 70 73 00 00 00 00 00 00 00 00 00 00 00 00 00  Ops.............
+	0x0030 00 00 00 00 01 9c 02 00 00 00 da 02 01 12 61 00  ..............a.
+	0x0040 00 da 02 00 00 00 00 00 00 00 00 12 62 00 00 da  ............b...
+	0x0050 02 00 00 00 00 00 00 00 00 12 69 00 00 da 02 00  ..........i.....
+	0x0060 00 00 00 00 00 00 00 11 7e 72 30 00 01 da 02 00  ........~r0.....
+	0x0070 00 00 00 00 11 7e 72 31 00 01 da 02 00 00 00 00  .....~r1........
+	0x0080 00 0d 63 00 db 02 00 00 00 00 00 00 00 00 0d 64  ..c............d
+	0x0090 00 e5 02 00 00 00 00 00 00 00 00 00              ............
+	rel 0+0 t=R_USETYPE type:float32<0>+0
+	rel 0+0 t=R_USETYPE type:float64<0>+0
+	rel 36+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+0
+	rel 44+8 t=R_ADDR command-line-arguments.idxFloatOps<1>+253
+	rel 67+4 t=R_DWARFSECREF go:info.[]float64<0>+0
+	rel 71+4 t=R_DWARFSECREF <0>+0
+	rel 81+4 t=R_DWARFSECREF go:info.[]float32<0>+0
+	rel 85+4 t=R_DWARFSECREF <0>+467
+	rel 95+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 99+4 t=R_DWARFSECREF <0>+552
+	rel 111+4 t=R_DWARFSECREF go:info.float64<0>+0
+	rel 124+4 t=R_DWARFSECREF go:info.float32<0>+0
+	rel 134+4 t=R_DWARFSECREF go:info.float64<0>+0
+	rel 138+4 t=R_DWARFSECREF <0>+603
+	rel 147+4 t=R_DWARFSECREF go:info.float32<0>+0
+	rel 151+4 t=R_DWARFSECREF <0>+654
+aux for command-line-arguments.storeTest<0> SDWARFLOC size=263
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 37 00 00 00 00 00 00 00  ........7.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 37 00 00 00 00  ..P..S..R..7....
+	0x0030 00 00 00 3a 00 00 00 00 00 00 00 08 00 93 08 53  ...:...........S
+	0x0040 93 08 52 93 08 3a 00 00 00 00 00 00 00 44 00 00  ..R..:.......D..
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 44 00  .........S....D.
+	0x0060 00 00 00 00 00 00 47 00 00 00 00 00 00 00 08 00  ......G.........
+	0x0070 93 08 53 93 08 52 93 08 47 00 00 00 00 00 00 00  ..S..R..G.......
+	0x0080 4d 00 00 00 00 00 00 00 07 00 93 08 53 93 08 93  M...........S...
+	0x0090 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 00 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00  ................
+	0x00b0 00 00 00 00 00 00 00 00 00 4d 00 00 00 00 00 00  .........M......
+	0x00c0 00 01 00 55 00 00 00 00 00 00 00 00 00 00 00 00  ...U............
+	0x00d0 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00  ................
+	0x00e0 00 00 00 00 00 00 00 00 00 00 00 00 4d 00 00 00  ............M...
+	0x00f0 00 00 00 00 01 00 54 00 00 00 00 00 00 00 00 00  ......T.........
+	0x0100 00 00 00 00 00 00 00                             .......
+	rel 8+8 t=R_ADDR command-line-arguments.storeTest<1>+0
+	rel 169+8 t=R_ADDR command-line-arguments.storeTest<1>+0
+	rel 220+8 t=R_ADDR command-line-arguments.storeTest<1>+0
+aux for command-line-arguments.storeTest<0> SDWARFLINES size=42
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 eb 02  ................
+	0x0010 14 0a 37 06 37 06 43 06 37 06 25 06 35 6b 06 9c  ..7.7.C.7.%.5k..
+	0x0020 06 4a 7b 06 91 02 01 00 01 01                    .J{.......
+	rel 3+8 t=R_ADDR command-line-arguments.storeTest<1>+0
+aux for command-line-arguments.storeTest<0> SDWARFFCN size=102
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 73 74 6f 72 65 54 65 73  guments.storeTes
+	0x0020 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  t...............
+	0x0030 00 00 01 9c 02 00 00 00 f1 02 01 12 61 00 00 f1  ............a...
+	0x0040 02 00 00 00 00 00 00 00 00 12 76 00 00 f1 02 00  ..........v.....
+	0x0050 00 00 00 00 00 00 00 12 69 00 00 f1 02 00 00 00  ........i.......
+	0x0060 00 00 00 00 00 00                                ......
+	rel 34+8 t=R_ADDR command-line-arguments.storeTest<1>+0
+	rel 42+8 t=R_ADDR command-line-arguments.storeTest<1>+77
+	rel 65+4 t=R_DWARFSECREF go:info.[]bool<0>+0
+	rel 69+4 t=R_DWARFSECREF <0>+0
+	rel 79+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 83+4 t=R_DWARFSECREF <0>+161
+	rel 93+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 97+4 t=R_DWARFSECREF <0>+212
+aux for command-line-arguments.bitOps<0> SDWARFLOC size=51
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 4b 00 00 00 00 00 00 00  ........K.......
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00                                         ...
+	rel 8+8 t=R_ADDR command-line-arguments.bitOps<1>+0
+aux for command-line-arguments.bitOps<0> SDWARFLINES size=34
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 f4 02  ................
+	0x0010 14 39 61 4d 4e 43 61 4d 4e 43 61 4d 4c 02 01 00  .9aMNCaMNCaML...
+	0x0020 01 01                                            ..
+	rel 3+8 t=R_ADDR command-line-arguments.bitOps<1>+0
+aux for command-line-arguments.bitOps<0> SDWARFFCN size=71
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 62 69 74 4f 70 73 00 00  guments.bitOps..
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01  ................
+	0x0030 9c 02 00 00 00 f8 02 01 12 70 00 00 f8 02 00 00  .........p......
+	0x0040 00 00 00 00 00 00 00                             .......
+	rel 31+8 t=R_ADDR command-line-arguments.bitOps<1>+0
+	rel 39+8 t=R_ADDR command-line-arguments.bitOps<1>+75
+	rel 62+4 t=R_DWARFSECREF go:info.*[12]uint64<0>+0
+	rel 66+4 t=R_DWARFSECREF <0>+0
+aux for command-line-arguments.x<0> SDWARFVAR size=41
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 00 09 03 00 00 00 00  guments.x.......
+	0x0020 00 00 00 00 00 00 00 00 01                       .........
+	rel 28+8 t=R_ADDR command-line-arguments.x<0>+0
+	rel 36+4 t=R_DWARFSECREF go:info.[2]bool<0>+0
+aux for command-line-arguments.x8<0> SDWARFVAR size=42
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 38 00 09 03 00 00 00  guments.x8......
+	0x0020 00 00 00 00 00 00 00 00 00 01                    ..........
+	rel 29+8 t=R_ADDR command-line-arguments.x8<0>+0
+	rel 37+4 t=R_DWARFSECREF go:info.[2]uint8<0>+0
+aux for command-line-arguments.x16<0> SDWARFVAR size=43
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 31 36 00 09 03 00 00  guments.x16.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 01                 ...........
+	rel 30+8 t=R_ADDR command-line-arguments.x16<0>+0
+	rel 38+4 t=R_DWARFSECREF go:info.[2]uint16<0>+0
+aux for command-line-arguments.x32<0> SDWARFVAR size=43
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 33 32 00 09 03 00 00  guments.x32.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 01                 ...........
+	rel 30+8 t=R_ADDR command-line-arguments.x32<0>+0
+	rel 38+4 t=R_DWARFSECREF go:info.[2]uint32<0>+0
+aux for command-line-arguments.x64<0> SDWARFVAR size=43
+	0x0000 0a 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 78 36 34 00 09 03 00 00  guments.x64.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 01                 ...........
+	rel 30+8 t=R_ADDR command-line-arguments.x64<0>+0
+	rel 38+4 t=R_DWARFSECREF go:info.[2]uint64<0>+0

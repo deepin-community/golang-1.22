@@ -1,0 +1,833 @@
+# command-line-arguments
+command-line-arguments.rot64<1> STEXT nosplit size=36 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:15)	TEXT	command-line-arguments.rot64(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:15)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:15)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:15)	FUNCDATA	$5, command-line-arguments.rot64.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:15)	FUNCDATA	$6, command-line-arguments.rot64.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:15)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:21)	MOVQ	AX, CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:21)	ROLQ	$7, AX
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:28)	MOVQ	CX, DX
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:28)	ROLQ	$8, CX
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:28)	ADDQ	AX, CX
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:35)	MOVQ	DX, BX
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:35)	ROLQ	$9, DX
+	0x0018 00024 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:35)	ADDQ	DX, CX
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:44)	ROLQ	$10, BX
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:44)	LEAQ	(BX)(CX*1), AX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:46)	RET
+	0x0000 48 89 c1 48 c1 c0 07 48 89 ca 48 c1 c1 08 48 01  H..H...H..H...H.
+	0x0010 c1 48 89 d3 48 c1 c2 09 48 01 d1 48 c1 c3 0a 48  .H..H...H..H...H
+	0x0020 8d 04 0b c3                                      ....
+command-line-arguments.rot32<1> STEXT nosplit size=26 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:49)	TEXT	command-line-arguments.rot32(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:49)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:49)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:49)	FUNCDATA	$5, command-line-arguments.rot32.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:49)	FUNCDATA	$6, command-line-arguments.rot32.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:49)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:56)	MOVL	AX, CX
+	0x0002 00002 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:56)	ROLL	$7, AX
+	0x0005 00005 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:64)	MOVL	CX, DX
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:64)	ROLL	$8, CX
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:64)	ADDL	AX, CX
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:72)	MOVL	DX, BX
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:72)	ROLL	$9, DX
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:72)	ADDL	DX, CX
+	0x0013 00019 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:82)	ROLL	$10, BX
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:82)	LEAL	(BX)(CX*1), AX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:84)	RET
+	0x0000 89 c1 c1 c0 07 89 ca c1 c1 08 01 c1 89 d3 c1 c2  ................
+	0x0010 09 01 d1 c1 c3 0a 8d 04 0b c3                    ..........
+command-line-arguments.rot16<1> STEXT nosplit size=22 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:87)	TEXT	command-line-arguments.rot16(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:87)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:87)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:87)	FUNCDATA	$5, command-line-arguments.rot16.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:87)	FUNCDATA	$6, command-line-arguments.rot16.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:87)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:91)	MOVL	AX, CX
+	0x0002 00002 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:91)	ROLW	$7, AX
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:94)	MOVL	CX, DX
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:94)	ROLW	$8, CX
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:94)	ADDL	AX, CX
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:97)	ROLW	$9, DX
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:97)	LEAL	(DX)(CX*1), AX
+	0x0015 00021 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:99)	RET
+	0x0000 89 c1 66 c1 c0 07 89 ca 66 c1 c1 08 01 c1 66 c1  ..f.....f.....f.
+	0x0010 c2 09 8d 04 0a c3                                ......
+command-line-arguments.rot8<1> STEXT nosplit size=19 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:102)	TEXT	command-line-arguments.rot8(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:102)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:102)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:102)	FUNCDATA	$5, command-line-arguments.rot8.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:102)	FUNCDATA	$6, command-line-arguments.rot8.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:102)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:106)	MOVL	AX, CX
+	0x0002 00002 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:106)	ROLB	$5, AL
+	0x0005 00005 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:109)	MOVL	CX, DX
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:109)	ROLB	$6, CL
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:109)	ADDL	AX, CX
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:112)	ROLB	$7, DL
+	0x000f 00015 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:112)	LEAL	(DX)(CX*1), AX
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:114)	RET
+	0x0000 89 c1 c0 c0 05 89 ca c0 c1 06 01 c1 c0 c2 07 8d  ................
+	0x0010 04 0a c3                                         ...
+command-line-arguments.rot64nc<1> STEXT nosplit size=16 args=0x10 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:121)	TEXT	command-line-arguments.rot64nc(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:121)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:121)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:121)	FUNCDATA	$5, command-line-arguments.rot64nc.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:121)	FUNCDATA	$6, command-line-arguments.rot64nc.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:121)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:130)	MOVQ	BX, CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:130)	MOVQ	AX, DX
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:130)	ROLQ	CX, AX
+	0x0009 00009 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:136)	RORQ	CX, DX
+	0x000c 00012 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:136)	ADDQ	DX, AX
+	0x000f 00015 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:138)	RET
+	0x0000 48 89 d9 48 89 c2 48 d3 c0 48 d3 ca 48 01 d0 c3  H..H..H..H..H...
+command-line-arguments.rot32nc<1> STEXT nosplit size=12 args=0x10 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:141)	TEXT	command-line-arguments.rot32nc(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:141)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:141)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:141)	FUNCDATA	$5, command-line-arguments.rot32nc.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:141)	FUNCDATA	$6, command-line-arguments.rot32nc.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:141)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:150)	MOVQ	BX, CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:150)	MOVL	AX, DX
+	0x0005 00005 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:150)	ROLL	CX, AX
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:156)	RORL	CX, DX
+	0x0009 00009 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:156)	ADDL	DX, AX
+	0x000b 00011 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:158)	RET
+	0x0000 48 89 d9 89 c2 d3 c0 d3 ca 01 d0 c3              H...........
+command-line-arguments.rot16nc<1> STEXT nosplit size=14 args=0x10 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:161)	TEXT	command-line-arguments.rot16nc(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:161)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:161)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:161)	FUNCDATA	$5, command-line-arguments.rot16nc.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:161)	FUNCDATA	$6, command-line-arguments.rot16nc.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:161)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:167)	MOVQ	BX, CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:167)	MOVL	AX, DX
+	0x0005 00005 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:167)	ROLW	CX, AX
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:170)	RORW	CX, DX
+	0x000b 00011 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:170)	ADDL	DX, AX
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:172)	RET
+	0x0000 48 89 d9 89 c2 66 d3 c0 66 d3 ca 01 d0 c3        H....f..f.....
+command-line-arguments.rot8nc<1> STEXT nosplit size=12 args=0x10 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:175)	TEXT	command-line-arguments.rot8nc(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:175)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:175)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:175)	FUNCDATA	$5, command-line-arguments.rot8nc.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:175)	FUNCDATA	$6, command-line-arguments.rot8nc.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:175)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:181)	MOVQ	BX, CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:181)	MOVL	AX, DX
+	0x0005 00005 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:181)	ROLB	CL, AL
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:184)	RORB	CL, DL
+	0x0009 00009 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:184)	ADDL	DX, AX
+	0x000b 00011 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:186)	RET
+	0x0000 48 89 d9 89 c2 d2 c0 d2 ca 01 d0 c3              H...........
+command-line-arguments.f32<1> STEXT nosplit size=12 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	TEXT	command-line-arguments.f32(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	FUNCDATA	$5, command-line-arguments.f32.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	FUNCDATA	$6, command-line-arguments.f32.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:190)	XCHGL	AX, AX
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:192)	MOVL	AX, CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:192)	ROLL	$7, AX
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:192)	ROLL	$25, CX
+	0x0009 00009 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:192)	ADDL	CX, AX
+	0x000b 00011 (<unknown line number>)	NOP
+	0x000b 00011 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:192)	RET
+	0x0000 90 89 c1 c1 c0 07 c1 c1 19 01 c8 c3              ............
+command-line-arguments.doubleRotate<1> STEXT nosplit size=5 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:195)	TEXT	command-line-arguments.doubleRotate(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:195)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:195)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:195)	FUNCDATA	$5, command-line-arguments.doubleRotate.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:195)	FUNCDATA	$6, command-line-arguments.doubleRotate.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:195)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:199)	ROLQ	$15, AX
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:200)	RET
+	0x0000 48 c1 c0 0f c3                                   H....
+command-line-arguments.checkMaskedRotate32<1> STEXT nosplit size=330 args=0x20 locals=0x18 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	TEXT	command-line-arguments.checkMaskedRotate32(SB), NOSPLIT|ABIInternal, $24-32
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	PUSHQ	BP
+	0x0001 00001 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	MOVQ	SP, BP
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	SUBQ	$16, SP
+	0x0008 00008 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	MOVQ	AX, command-line-arguments.a+32(FP)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	FUNCDATA	$5, command-line-arguments.checkMaskedRotate32.arginfo1(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	FUNCDATA	$6, command-line-arguments.checkMaskedRotate32.argliveinfo(SB)
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:207)	PCDATA	$3, $1
+	0x000d 00013 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	TESTQ	BX, BX
+	0x0010 00016 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	JLS	319
+	0x0016 00022 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	MOVL	(AX), DX
+	0x0018 00024 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	ROLL	$16, DX
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	ANDL	$16711680, DX
+	0x0021 00033 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	MOVL	DX, (AX)
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	CMPQ	BX, $1
+	0x0027 00039 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	JLS	306
+	0x002d 00045 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	MOVBLZX	4(AX), DX
+	0x0031 00049 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	ROLL	$16, DX
+	0x0034 00052 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	MOVL	DX, 4(AX)
+	0x0037 00055 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	NOP
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	CMPQ	BX, $2
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	JLS	293
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	MOVL	8(AX), DX
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	ROLL	$4, DX
+	0x0050 00080 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	ANDL	$4080, DX
+	0x0056 00086 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	MOVL	DX, 8(AX)
+	0x0059 00089 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	NOP
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	CMPQ	BX, $3
+	0x0064 00100 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	JLS	279
+	0x006a 00106 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	MOVL	12(AX), DX
+	0x006d 00109 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	ANDL	$16711680, DX
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	ROLL	$16, DX
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	MOVL	DX, 12(AX)
+	0x0079 00121 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	CMPQ	BX, $4
+	0x0084 00132 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	JLS	266
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	MOVL	16(AX), DX
+	0x008d 00141 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	MOVQ	DI, CX
+	0x0090 00144 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	ROLL	CX, DX
+	0x0092 00146 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	ANDL	$16711680, DX
+	0x0098 00152 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	MOVL	DX, 16(AX)
+	0x009b 00155 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	NOP
+	0x00a0 00160 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	CMPQ	BX, $5
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	JLS	253
+	0x00a6 00166 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	MOVL	20(AX), DX
+	0x00a9 00169 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	ROLL	CX, DX
+	0x00ab 00171 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	ANDL	$65280, DX
+	0x00b1 00177 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	MOVL	DX, 20(AX)
+	0x00b4 00180 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	CMPQ	BX, $6
+	0x00b8 00184 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	JLS	240
+	0x00ba 00186 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	MOVL	24(AX), DX
+	0x00bd 00189 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	ROLL	CX, DX
+	0x00bf 00191 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	ANDL	$-1044481, DX
+	0x00c5 00197 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	MOVL	DX, 24(AX)
+	0x00c8 00200 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	CMPQ	BX, $7
+	0x00cc 00204 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	JLS	227
+	0x00ce 00206 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	MOVL	28(AX), CX
+	0x00d1 00209 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	ROLL	$4, CX
+	0x00d4 00212 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	ANDL	$-1044481, CX
+	0x00da 00218 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	MOVL	CX, 28(AX)
+	0x00dd 00221 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:236)	ADDQ	$16, SP
+	0x00e1 00225 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:236)	POPQ	BP
+	0x00e2 00226 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:236)	RET
+	0x00e3 00227 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	MOVL	$7, AX
+	0x00e8 00232 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	MOVQ	AX, CX
+	0x00eb 00235 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	PCDATA	$1, $1
+	0x00eb 00235 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:234)	CALL	runtime.panicIndex(SB)
+	0x00f0 00240 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	MOVL	$6, AX
+	0x00f5 00245 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	MOVQ	AX, CX
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:231)	CALL	runtime.panicIndex(SB)
+	0x00fd 00253 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	MOVL	$5, AX
+	0x0102 00258 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	MOVQ	AX, CX
+	0x0105 00261 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:227)	CALL	runtime.panicIndex(SB)
+	0x010a 00266 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	MOVL	$4, AX
+	0x010f 00271 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	MOVQ	AX, CX
+	0x0112 00274 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:224)	CALL	runtime.panicIndex(SB)
+	0x0117 00279 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	MOVL	$3, AX
+	0x011c 00284 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	MOVQ	AX, CX
+	0x011f 00287 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	NOP
+	0x0120 00288 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:220)	CALL	runtime.panicIndex(SB)
+	0x0125 00293 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	MOVL	$2, AX
+	0x012a 00298 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	MOVQ	AX, CX
+	0x012d 00301 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:217)	CALL	runtime.panicIndex(SB)
+	0x0132 00306 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	MOVL	$1, AX
+	0x0137 00311 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	MOVQ	AX, CX
+	0x013a 00314 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:214)	CALL	runtime.panicIndex(SB)
+	0x013f 00319 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	XORL	AX, AX
+	0x0141 00321 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	MOVQ	AX, CX
+	0x0144 00324 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	CALL	runtime.panicIndex(SB)
+	0x0149 00329 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:211)	XCHGL	AX, AX
+	0x0000 55 48 89 e5 48 83 ec 10 48 89 44 24 20 48 85 db  UH..H...H.D$ H..
+	0x0010 0f 86 29 01 00 00 8b 10 c1 c2 10 81 e2 00 00 ff  ..).............
+	0x0020 00 89 10 48 83 fb 01 0f 86 05 01 00 00 0f b6 50  ...H...........P
+	0x0030 04 c1 c2 10 89 50 04 66 0f 1f 84 00 00 00 00 00  .....P.f........
+	0x0040 48 83 fb 02 0f 86 db 00 00 00 8b 50 08 c1 c2 04  H..........P....
+	0x0050 81 e2 f0 0f 00 00 89 50 08 0f 1f 80 00 00 00 00  .......P........
+	0x0060 48 83 fb 03 0f 86 ad 00 00 00 8b 50 0c 81 e2 00  H..........P....
+	0x0070 00 ff 00 c1 c2 10 89 50 0c 0f 1f 80 00 00 00 00  .......P........
+	0x0080 48 83 fb 04 0f 86 80 00 00 00 8b 50 10 48 89 f9  H..........P.H..
+	0x0090 d3 c2 81 e2 00 00 ff 00 89 50 10 0f 1f 44 00 00  .........P...D..
+	0x00a0 48 83 fb 05 76 57 8b 50 14 d3 c2 81 e2 00 ff 00  H...vW.P........
+	0x00b0 00 89 50 14 48 83 fb 06 76 36 8b 50 18 d3 c2 81  ..P.H...v6.P....
+	0x00c0 e2 ff 0f f0 ff 89 50 18 48 83 fb 07 76 15 8b 48  ......P.H...v..H
+	0x00d0 1c c1 c1 04 81 e1 ff 0f f0 ff 89 48 1c 48 83 c4  ...........H.H..
+	0x00e0 10 5d c3 b8 07 00 00 00 48 89 c1 e8 00 00 00 00  .]......H.......
+	0x00f0 b8 06 00 00 00 48 89 c1 e8 00 00 00 00 b8 05 00  .....H..........
+	0x0100 00 00 48 89 c1 e8 00 00 00 00 b8 04 00 00 00 48  ..H............H
+	0x0110 89 c1 e8 00 00 00 00 b8 03 00 00 00 48 89 c1 90  ............H...
+	0x0120 e8 00 00 00 00 b8 02 00 00 00 48 89 c1 e8 00 00  ..........H.....
+	0x0130 00 00 b8 01 00 00 00 48 89 c1 e8 00 00 00 00 31  .......H.......1
+	0x0140 c0 48 89 c1 e8 00 00 00 00 90                    .H........
+	rel 236+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 249+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 262+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 275+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 289+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 302+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 315+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 325+4 t=R_CALL runtime.panicIndex<1>+0
+command-line-arguments.checkArithmeticWithRotate<1> STEXT nosplit size=159 args=0x8 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:239)	TEXT	command-line-arguments.checkArithmeticWithRotate(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:239)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:239)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:239)	FUNCDATA	$5, command-line-arguments.checkArithmeticWithRotate.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:239)	FUNCDATA	$6, command-line-arguments.checkArithmeticWithRotate.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:239)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:241)	MOVQ	(AX), CX
+	0x0003 00003 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:241)	ROLQ	$13, CX
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:241)	ANDQ	8(AX), CX
+	0x000b 00011 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:241)	MOVQ	CX, 16(AX)
+	0x000f 00015 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:243)	MOVQ	24(AX), CX
+	0x0013 00019 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:243)	ROLQ	$13, CX
+	0x0017 00023 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:243)	ORQ	32(AX), CX
+	0x001b 00027 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:243)	MOVQ	CX, 40(AX)
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:245)	MOVQ	48(AX), CX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:245)	ROLQ	$13, CX
+	0x0027 00039 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:245)	XORQ	56(AX), CX
+	0x002b 00043 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:245)	MOVQ	CX, 64(AX)
+	0x002f 00047 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:247)	MOVQ	72(AX), CX
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:247)	ROLQ	$13, CX
+	0x0037 00055 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:247)	NOTQ	CX
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:247)	MOVQ	CX, 80(AX)
+	0x003e 00062 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:249)	MOVQ	88(AX), CX
+	0x0042 00066 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:249)	ROLQ	$13, CX
+	0x0046 00070 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:249)	NOTQ	CX
+	0x0049 00073 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:249)	ANDQ	96(AX), CX
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:249)	MOVQ	CX, 104(AX)
+	0x0051 00081 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:251)	MOVQ	112(AX), CX
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:251)	ROLQ	$13, CX
+	0x0059 00089 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:251)	NOTQ	CX
+	0x005c 00092 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:251)	XORQ	120(AX), CX
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:251)	MOVQ	CX, 128(AX)
+	0x0067 00103 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:253)	MOVQ	136(AX), CX
+	0x006e 00110 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:253)	ROLQ	$13, CX
+	0x0072 00114 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:253)	NOTQ	CX
+	0x0075 00117 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:253)	ORQ	144(AX), CX
+	0x007c 00124 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:253)	MOVQ	CX, 152(AX)
+	0x0083 00131 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:255)	MOVQ	144(AX), DX
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:255)	ROLQ	$13, CX
+	0x008e 00142 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:255)	TESTQ	DX, CX
+	0x0091 00145 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:255)	JNE	158
+	0x0093 00147 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:256)	MOVQ	$1, 160(AX)
+	0x009e 00158 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/rotate.go:259)	RET
+	0x0000 48 8b 08 48 c1 c1 0d 48 23 48 08 48 89 48 10 48  H..H...H#H.H.H.H
+	0x0010 8b 48 18 48 c1 c1 0d 48 0b 48 20 48 89 48 28 48  .H.H...H.H H.H(H
+	0x0020 8b 48 30 48 c1 c1 0d 48 33 48 38 48 89 48 40 48  .H0H...H3H8H.H@H
+	0x0030 8b 48 48 48 c1 c1 0d 48 f7 d1 48 89 48 50 48 8b  .HHH...H..H.HPH.
+	0x0040 48 58 48 c1 c1 0d 48 f7 d1 48 23 48 60 48 89 48  HXH...H..H#H`H.H
+	0x0050 68 48 8b 48 70 48 c1 c1 0d 48 f7 d1 48 33 48 78  hH.HpH...H..H3Hx
+	0x0060 48 89 88 80 00 00 00 48 8b 88 88 00 00 00 48 c1  H......H......H.
+	0x0070 c1 0d 48 f7 d1 48 0b 88 90 00 00 00 48 89 88 98  ..H..H......H...
+	0x0080 00 00 00 48 8b 90 90 00 00 00 48 c1 c1 0d 48 85  ...H......H...H.
+	0x0090 d1 75 0b 48 c7 80 a0 00 00 00 01 00 00 00 c3     .u.H...........
+go:cuinfo.producer.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 63 6f 64 65 67 65 6e                             codegen
+go:info.command-line-arguments.rot32nc$abstract<0> SDWARFABSFCN dupok size=62
+	0x0000 05 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 33 32 6e 63 00  guments.rot32nc.
+	0x0020 01 8d 01 01 13 78 00 00 00 00 00 00 13 7a 00 00  .....x.......z..
+	0x0030 00 00 00 00 0e 61 00 8e 01 00 00 00 00 00        .....a........
+	rel 40+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 48+4 t=R_DWARFSECREF go:info.uint<0>+0
+	rel 57+4 t=R_DWARFSECREF go:info.uint32<0>+0
+runtime.memequal64·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal64<1>+0
+runtime.gcbits.0100000000000000<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*[1000]uint64-<0> SRODATA dupok size=15
+	0x0000 00 0d 2a 5b 31 30 30 30 5d 75 69 6e 74 36 34     ..*[1000]uint64
+type:.eqfunc8000<0> SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 40 1f 00 00 00 00 00 00  ........@.......
+	rel 0+8 t=R_ADDR runtime.memequal_varlen<1>+0
+runtime.gcbits.<0> SRODATA dupok size=0
+type:[1000]uint64<0> SRODATA dupok size=72
+	0x0000 40 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00  @...............
+	0x0010 5c fb a1 4c 0a 08 08 11 00 00 00 00 00 00 00 00  \..L............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 e8 03 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc8000<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[1000]uint64-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[1000]uint64<0>+0
+	rel 48+8 t=R_ADDR type:uint64<0>+0
+	rel 56+8 t=R_ADDR type:[]uint64<0>+0
+type:*[1000]uint64<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 5d 60 8f f1 08 08 08 36 00 00 00 00 00 00 00 00  ]`.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[1000]uint64-<0>+0
+	rel 48+8 t=R_ADDR type:[1000]uint64<0>+0
+gclocals·g2BeySu+wFnoycgXfElmcg==<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+command-line-arguments.rot64.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+command-line-arguments.rot64.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot32.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 04 ff                                         ...
+command-line-arguments.rot32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot16.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 02 ff                                         ...
+command-line-arguments.rot16.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot8.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 01 ff                                         ...
+command-line-arguments.rot8.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot64nc.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+command-line-arguments.rot64nc.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot32nc.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 04 08 08 ff                                   .....
+command-line-arguments.rot32nc.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot16nc.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 02 08 08 ff                                   .....
+command-line-arguments.rot16nc.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.rot8nc.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 01 08 08 ff                                   .....
+command-line-arguments.rot8nc.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.f32.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 04 ff                                         ...
+command-line-arguments.f32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.doubleRotate.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+command-line-arguments.doubleRotate.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+gclocals·wgcWObbY2HYnK2SU/U22lA==<0> SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==<0> SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+command-line-arguments.checkMaskedRotate32.arginfo1<0> SRODATA static dupok size=11
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 ff                 ...........
+command-line-arguments.checkMaskedRotate32.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.checkArithmeticWithRotate.arginfo1<0> SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+command-line-arguments.checkArithmeticWithRotate.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+aux for command-line-arguments.rot64<0> SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 11 00 00 00 00 00 00 00 24 00 00 00 00  ...........$....
+	0x0050 00 00 00 01 00 52 00 00 00 00 00 00 00 00 00 00  .....R..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.rot64<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot64<1>+0
+aux for command-line-arguments.rot64<0> SDWARFLINES size=43
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 0f 14  ................
+	0x0010 06 2d 06 03 02 3c 06 2d 06 03 02 5a 06 2d 06 03  .-...<.-...Z.-..
+	0x0020 04 5a 06 37 06 39 02 01 00 01 01                 .Z.7.9.....
+	rel 3+8 t=R_ADDR command-line-arguments.rot64<1>+0
+aux for command-line-arguments.rot64<0> SDWARFFCN size=92
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 36 34 00 00 00  guments.rot64...
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0030 02 00 00 00 0f 01 12 78 00 00 0f 00 00 00 00 00  .......x........
+	0x0040 00 00 00 11 7e 72 30 00 01 0f 00 00 00 00 00 0d  ....~r0.........
+	0x0050 61 00 10 00 00 00 00 00 00 00 00 00              a...........
+	rel 0+0 t=R_USETYPE type:uint64<0>+0
+	rel 30+8 t=R_ADDR command-line-arguments.rot64<1>+0
+	rel 38+8 t=R_ADDR command-line-arguments.rot64<1>+36
+	rel 59+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 63+4 t=R_DWARFSECREF <0>+0
+	rel 74+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 83+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 87+4 t=R_DWARFSECREF <0>+51
+aux for command-line-arguments.rot32<0> SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 0c 00 00 00 00 00 00 00 1a 00 00 00 00  ................
+	0x0050 00 00 00 01 00 52 00 00 00 00 00 00 00 00 00 00  .....R..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.rot32<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot32<1>+0
+aux for command-line-arguments.rot32<0> SDWARFLINES size=43
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 32 14  ..............2.
+	0x0010 06 23 06 03 03 32 06 23 06 03 03 46 06 23 06 03  .#...2.#...F.#..
+	0x0020 05 46 06 2d 06 2f 02 01 00 01 01                 .F.-./.....
+	rel 3+8 t=R_ADDR command-line-arguments.rot32<1>+0
+aux for command-line-arguments.rot32<0> SDWARFFCN size=92
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 33 32 00 00 00  guments.rot32...
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0030 02 00 00 00 31 01 12 78 00 00 31 00 00 00 00 00  ....1..x..1.....
+	0x0040 00 00 00 11 7e 72 30 00 01 31 00 00 00 00 00 0d  ....~r0..1......
+	0x0050 61 00 32 00 00 00 00 00 00 00 00 00              a.2.........
+	rel 0+0 t=R_USETYPE type:uint32<0>+0
+	rel 30+8 t=R_ADDR command-line-arguments.rot32<1>+0
+	rel 38+8 t=R_ADDR command-line-arguments.rot32<1>+26
+	rel 59+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 63+4 t=R_DWARFSECREF <0>+0
+	rel 74+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 83+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 87+4 t=R_DWARFSECREF <0>+51
+aux for command-line-arguments.rot16<0> SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 0e 00 00 00 00 00 00 00 16 00 00 00 00  ................
+	0x0050 00 00 00 01 00 52 00 00 00 00 00 00 00 00 00 00  .....R..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.rot16<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot16<1>+0
+aux for command-line-arguments.rot16<0> SDWARFLINES size=34
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 d5 00  ................
+	0x0010 14 06 23 06 3a 06 23 06 4e 06 37 06 2f 02 01 00  ..#.:.#.N.7./...
+	0x0020 01 01                                            ..
+	rel 3+8 t=R_ADDR command-line-arguments.rot16<1>+0
+aux for command-line-arguments.rot16<0> SDWARFFCN size=92
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 31 36 00 00 00  guments.rot16...
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0030 02 00 00 00 57 01 12 78 00 00 57 00 00 00 00 00  ....W..x..W.....
+	0x0040 00 00 00 11 7e 72 30 00 01 57 00 00 00 00 00 0d  ....~r0..W......
+	0x0050 61 00 58 00 00 00 00 00 00 00 00 00              a.X.........
+	rel 0+0 t=R_USETYPE type:uint16<0>+0
+	rel 30+8 t=R_ADDR command-line-arguments.rot16<1>+0
+	rel 38+8 t=R_ADDR command-line-arguments.rot16<1>+22
+	rel 59+4 t=R_DWARFSECREF go:info.uint16<0>+0
+	rel 63+4 t=R_DWARFSECREF <0>+0
+	rel 74+4 t=R_DWARFSECREF go:info.uint16<0>+0
+	rel 83+4 t=R_DWARFSECREF go:info.uint16<0>+0
+	rel 87+4 t=R_DWARFSECREF <0>+51
+aux for command-line-arguments.rot8<0> SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 0c 00 00 00 00 00 00 00 13 00 00 00 00  ................
+	0x0050 00 00 00 01 00 52 00 00 00 00 00 00 00 00 00 00  .....R..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.rot8<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot8<1>+0
+aux for command-line-arguments.rot8<0> SDWARFLINES size=34
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 e4 00  ................
+	0x0010 14 06 23 06 30 06 23 06 44 06 2d 06 2f 02 01 00  ..#.0.#.D.-./...
+	0x0020 01 01                                            ..
+	rel 3+8 t=R_ADDR command-line-arguments.rot8<1>+0
+aux for command-line-arguments.rot8<0> SDWARFFCN size=91
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 38 00 00 00 00  guments.rot8....
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 02  ................
+	0x0030 00 00 00 66 01 12 78 00 00 66 00 00 00 00 00 00  ...f..x..f......
+	0x0040 00 00 11 7e 72 30 00 01 66 00 00 00 00 00 0d 61  ...~r0..f......a
+	0x0050 00 67 00 00 00 00 00 00 00 00 00                 .g.........
+	rel 0+0 t=R_USETYPE type:uint8<0>+0
+	rel 29+8 t=R_ADDR command-line-arguments.rot8<1>+0
+	rel 37+8 t=R_ADDR command-line-arguments.rot8<1>+19
+	rel 58+4 t=R_DWARFSECREF go:info.uint8<0>+0
+	rel 62+4 t=R_DWARFSECREF <0>+0
+	rel 73+4 t=R_DWARFSECREF go:info.uint8<0>+0
+	rel 82+4 t=R_DWARFSECREF go:info.uint8<0>+0
+	rel 86+4 t=R_DWARFSECREF <0>+51
+aux for command-line-arguments.rot64nc<0> SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 09 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 0f 00 00 00 00 00 00 00 10 00  ................
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=R_ADDR command-line-arguments.rot64nc<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot64nc<1>+0
+	rel 110+8 t=R_ADDR command-line-arguments.rot64nc<1>+0
+aux for command-line-arguments.rot64nc<0> SDWARFLINES size=32
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 fc 00  ................
+	0x0010 14 06 2d 06 03 01 50 06 2d 06 2f 02 01 00 01 01  ..-...P.-./.....
+	rel 3+8 t=R_ADDR command-line-arguments.rot64nc<1>+0
+aux for command-line-arguments.rot64nc<0> SDWARFFCN size=107
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 36 34 6e 63 00  guments.rot64nc.
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 9c 02 00 00 00 79 01 12 78 00 00 79 00 00 00  ......y..x..y...
+	0x0040 00 00 00 00 00 12 7a 00 00 79 00 00 00 00 00 00  ......z..y......
+	0x0050 00 00 11 7e 72 30 00 01 79 00 00 00 00 00 0d 61  ...~r0..y......a
+	0x0060 00 7a 00 00 00 00 00 00 00 00 00                 .z.........
+	rel 0+0 t=R_USETYPE type:uint64<0>+0
+	rel 32+8 t=R_ADDR command-line-arguments.rot64nc<1>+0
+	rel 40+8 t=R_ADDR command-line-arguments.rot64nc<1>+16
+	rel 61+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 65+4 t=R_DWARFSECREF <0>+0
+	rel 74+4 t=R_DWARFSECREF go:info.uint<0>+0
+	rel 78+4 t=R_DWARFSECREF <0>+51
+	rel 89+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 98+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 102+4 t=R_DWARFSECREF <0>+102
+aux for command-line-arguments.rot32nc<0> SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 0c 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 0b 00 00 00 00 00 00 00 0c 00  ................
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=R_ADDR command-line-arguments.rot32nc<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot32nc<1>+0
+	rel 110+8 t=R_ADDR command-line-arguments.rot32nc<1>+0
+aux for command-line-arguments.rot32nc<0> SDWARFLINES size=32
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 90 01  ................
+	0x0010 14 06 2d 06 03 01 3c 06 23 06 25 02 01 00 01 01  ..-...<.#.%.....
+	rel 3+8 t=R_ADDR command-line-arguments.rot32nc<1>+0
+aux for command-line-arguments.rot32nc<0> SDWARFFCN size=64
+	0x0000 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 01 9c 15 00 00 00 00 00 00 00 00  ................
+	0x0020 15 00 00 00 00 00 00 00 00 11 7e 72 30 00 01 8d  ..........~r0...
+	0x0030 01 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00  ................
+	rel 0+0 t=R_USETYPE type:uint32<0>+0
+	rel 1+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+0
+	rel 5+8 t=R_ADDR command-line-arguments.rot32nc<1>+0
+	rel 13+8 t=R_ADDR command-line-arguments.rot32nc<1>+12
+	rel 24+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+36
+	rel 28+4 t=R_DWARFSECREF <0>+0
+	rel 33+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+44
+	rel 37+4 t=R_DWARFSECREF <0>+51
+	rel 49+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 55+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+52
+	rel 59+4 t=R_DWARFSECREF <0>+102
+aux for command-line-arguments.rot16nc<0> SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 0e 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 0d 00 00 00 00 00 00 00 0e 00  ................
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=R_ADDR command-line-arguments.rot16nc<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot16nc<1>+0
+	rel 110+8 t=R_ADDR command-line-arguments.rot16nc<1>+0
+aux for command-line-arguments.rot16nc<0> SDWARFLINES size=30
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 a1 01  ................
+	0x0010 14 06 2d 06 44 06 2d 06 25 02 01 00 01 01        ..-.D.-.%.....
+	rel 3+8 t=R_ADDR command-line-arguments.rot16nc<1>+0
+aux for command-line-arguments.rot16nc<0> SDWARFFCN size=112
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 31 36 6e 63 00  guments.rot16nc.
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 9c 02 00 00 00 a1 01 01 12 78 00 00 a1 01 00  ..........x.....
+	0x0040 00 00 00 00 00 00 00 12 7a 00 00 a1 01 00 00 00  ........z.......
+	0x0050 00 00 00 00 00 11 7e 72 30 00 01 a1 01 00 00 00  ......~r0.......
+	0x0060 00 00 0d 61 00 a2 01 00 00 00 00 00 00 00 00 00  ...a............
+	rel 0+0 t=R_USETYPE type:uint16<0>+0
+	rel 32+8 t=R_ADDR command-line-arguments.rot16nc<1>+0
+	rel 40+8 t=R_ADDR command-line-arguments.rot16nc<1>+14
+	rel 63+4 t=R_DWARFSECREF go:info.uint16<0>+0
+	rel 67+4 t=R_DWARFSECREF <0>+0
+	rel 77+4 t=R_DWARFSECREF go:info.uint<0>+0
+	rel 81+4 t=R_DWARFSECREF <0>+51
+	rel 93+4 t=R_DWARFSECREF go:info.uint16<0>+0
+	rel 103+4 t=R_DWARFSECREF go:info.uint16<0>+0
+	rel 107+4 t=R_DWARFSECREF <0>+102
+aux for command-line-arguments.rot8nc<0> SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 0c 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 0b 00 00 00 00 00 00 00 0c 00  ................
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=R_ADDR command-line-arguments.rot8nc<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.rot8nc<1>+0
+	rel 110+8 t=R_ADDR command-line-arguments.rot8nc<1>+0
+aux for command-line-arguments.rot8nc<0> SDWARFLINES size=30
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 af 01  ................
+	0x0010 14 06 2d 06 3a 06 23 06 25 02 01 00 01 01        ..-.:.#.%.....
+	rel 3+8 t=R_ADDR command-line-arguments.rot8nc<1>+0
+aux for command-line-arguments.rot8nc<0> SDWARFFCN size=111
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 38 6e 63 00 00  guments.rot8nc..
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01  ................
+	0x0030 9c 02 00 00 00 af 01 01 12 78 00 00 af 01 00 00  .........x......
+	0x0040 00 00 00 00 00 00 12 7a 00 00 af 01 00 00 00 00  .......z........
+	0x0050 00 00 00 00 11 7e 72 30 00 01 af 01 00 00 00 00  .....~r0........
+	0x0060 00 0d 61 00 b0 01 00 00 00 00 00 00 00 00 00     ..a............
+	rel 0+0 t=R_USETYPE type:uint8<0>+0
+	rel 31+8 t=R_ADDR command-line-arguments.rot8nc<1>+0
+	rel 39+8 t=R_ADDR command-line-arguments.rot8nc<1>+12
+	rel 62+4 t=R_DWARFSECREF go:info.uint8<0>+0
+	rel 66+4 t=R_DWARFSECREF <0>+0
+	rel 76+4 t=R_DWARFSECREF go:info.uint<0>+0
+	rel 80+4 t=R_DWARFSECREF <0>+51
+	rel 92+4 t=R_DWARFSECREF go:info.uint8<0>+0
+	rel 102+4 t=R_DWARFSECREF go:info.uint8<0>+0
+	rel 106+4 t=R_DWARFSECREF <0>+102
+aux for command-line-arguments.f32<0> SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 06 00 00 00 00  ................
+	0x0050 00 00 00 01 00 50 00 00 00 00 00 00 00 00 00 00  .....P..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 0b 00 00 00 00 00 00 00 0c 00  ................
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=R_ADDR command-line-arguments.f32<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.f32<1>+0
+	rel 110+8 t=R_ADDR command-line-arguments.f32<1>+0
+aux for command-line-arguments.f32<0> SDWARFLINES size=37
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 b8 01  ................
+	0x0010 14 03 5c 15 06 23 06 03 01 32 06 2d 06 03 1f 28  ..\..#...2.-...(
+	0x0020 02 01 00 01 01                                   .....
+	rel 3+8 t=R_ADDR command-line-arguments.f32<1>+0
+aux for command-line-arguments.f32<0> SDWARFFCN size=127
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 66 33 32 00 00 00 00 00  guments.f32.....
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 02 00  ................
+	0x0030 00 00 be 01 01 12 78 00 00 be 01 00 00 00 00 00  ......x.........
+	0x0040 00 00 00 11 7e 72 30 00 01 be 01 00 00 00 00 00  ....~r0.........
+	0x0050 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 02 00 00 00 c0 01 15 00 00 00 00  ................
+	0x0070 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00     ...............
+	rel 0+0 t=R_USETYPE type:uint32<0>+0
+	rel 28+8 t=R_ADDR command-line-arguments.f32<1>+0
+	rel 36+8 t=R_ADDR command-line-arguments.f32<1>+12
+	rel 59+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 63+4 t=R_DWARFSECREF <0>+0
+	rel 75+4 t=R_DWARFSECREF go:info.uint32<0>+0
+	rel 81+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+0
+	rel 85+8 t=R_ADDR command-line-arguments.f32<1>+1
+	rel 93+8 t=R_ADDR command-line-arguments.f32<1>+11
+	rel 108+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+36
+	rel 112+4 t=R_DWARFSECREF <0>+51
+	rel 117+4 t=R_DWARFSECREF go:info.command-line-arguments.rot32nc$abstract<0>+52
+	rel 121+4 t=R_DWARFSECREF <0>+102
+aux for command-line-arguments.doubleRotate<0> SDWARFLOC size=51
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00                                         ...
+	rel 8+8 t=R_ADDR command-line-arguments.doubleRotate<1>+0
+aux for command-line-arguments.doubleRotate<0> SDWARFLINES size=23
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 c1 01  ................
+	0x0010 14 38 02 01 00 01 01                             .8.....
+	rel 3+8 t=R_ADDR command-line-arguments.doubleRotate<1>+0
+aux for command-line-arguments.doubleRotate<0> SDWARFFCN size=90
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 64 6f 75 62 6c 65 52 6f  guments.doubleRo
+	0x0020 74 61 74 65 00 00 00 00 00 00 00 00 00 00 00 00  tate............
+	0x0030 00 00 00 00 00 01 9c 02 00 00 00 c3 01 01 12 78  ...............x
+	0x0040 00 00 c3 01 00 00 00 00 00 00 00 00 11 7e 72 30  .............~r0
+	0x0050 00 01 c3 01 00 00 00 00 00 00                    ..........
+	rel 0+0 t=R_USETYPE type:uint64<0>+0
+	rel 37+8 t=R_ADDR command-line-arguments.doubleRotate<1>+0
+	rel 45+8 t=R_ADDR command-line-arguments.doubleRotate<1>+5
+	rel 68+4 t=R_DWARFSECREF go:info.uint64<0>+0
+	rel 72+4 t=R_DWARFSECREF <0>+0
+	rel 84+4 t=R_DWARFSECREF go:info.uint64<0>+0
+aux for command-line-arguments.checkMaskedRotate32<0> SDWARFLOC size=416
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 90 00 00 00 00 00 00 00  ................
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 90 00 00 00 00  ..P..S..R.......
+	0x0030 00 00 00 e8 00 00 00 00 00 00 00 08 00 50 93 08  .............P..
+	0x0040 53 93 08 93 08 e8 00 00 00 00 00 00 00 0f 01 00  S...............
+	0x0050 00 00 00 00 00 07 00 93 08 53 93 08 93 08 0f 01  .........S......
+	0x0060 00 00 00 00 00 00 12 01 00 00 00 00 00 00 08 00  ................
+	0x0070 93 08 53 93 08 52 93 08 12 01 00 00 00 00 00 00  ..S..R..........
+	0x0080 1c 01 00 00 00 00 00 00 07 00 93 08 53 93 08 93  ............S...
+	0x0090 08 1c 01 00 00 00 00 00 00 20 01 00 00 00 00 00  ......... ......
+	0x00a0 00 08 00 93 08 53 93 08 52 93 08 20 01 00 00 00  .....S..R.. ....
+	0x00b0 00 00 00 2a 01 00 00 00 00 00 00 07 00 93 08 53  ...*...........S
+	0x00c0 93 08 93 08 2a 01 00 00 00 00 00 00 2d 01 00 00  ....*.......-...
+	0x00d0 00 00 00 00 08 00 93 08 53 93 08 52 93 08 2d 01  ........S..R..-.
+	0x00e0 00 00 00 00 00 00 37 01 00 00 00 00 00 00 07 00  ......7.........
+	0x00f0 93 08 53 93 08 93 08 37 01 00 00 00 00 00 00 3a  ..S....7.......:
+	0x0100 01 00 00 00 00 00 00 08 00 93 08 53 93 08 52 93  ...........S..R.
+	0x0110 08 3a 01 00 00 00 00 00 00 41 01 00 00 00 00 00  .:.......A......
+	0x0120 00 07 00 93 08 53 93 08 93 08 41 01 00 00 00 00  .....S....A.....
+	0x0130 00 00 44 01 00 00 00 00 00 00 08 00 93 08 53 93  ..D...........S.
+	0x0140 08 52 93 08 44 01 00 00 00 00 00 00 4a 01 00 00  .R..D.......J...
+	0x0150 00 00 00 00 07 00 93 08 53 93 08 93 08 00 00 00  ........S.......
+	0x0160 00 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff  ................
+	0x0170 ff ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0180 00 00 00 00 00 4a 01 00 00 00 00 00 00 01 00 55  .....J.........U
+	0x0190 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 8+8 t=R_ADDR command-line-arguments.checkMaskedRotate32<1>+0
+	rel 373+8 t=R_ADDR command-line-arguments.checkMaskedRotate32<1>+0
+aux for command-line-arguments.checkMaskedRotate32<0> SDWARFLINES size=99
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 c9 01  ................
+	0x0010 14 0a 37 06 37 06 45 06 2d 06 d0 06 37 06 4b 06  ..7.7.E.-...7.K.
+	0x0020 37 06 a8 06 37 06 4b 06 2d 06 d0 06 37 06 4b 06  7...7.K.-...7.K.
+	0x0030 2d 06 d1 06 37 06 4b 06 2d 06 d0 06 37 06 23 06  -...7.K.-...7.#.
+	0x0040 2d 06 81 06 37 06 23 06 2d 06 80 06 37 06 23 06  -...7.#.-...7.#.
+	0x0050 2d 06 89 06 49 8e 8d 8e 8d 98 8e 8e 06 73 02 01  -...I........s..
+	0x0060 00 01 01                                         ...
+	rel 3+8 t=R_ADDR command-line-arguments.checkMaskedRotate32<1>+0
+aux for command-line-arguments.checkMaskedRotate32<0> SDWARFFCN size=108
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 63 68 65 63 6b 4d 61 73  guments.checkMas
+	0x0020 6b 65 64 52 6f 74 61 74 65 33 32 00 00 00 00 00  kedRotate32.....
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 02 00  ................
+	0x0040 00 00 cf 01 01 12 61 00 00 cf 01 00 00 00 00 00  ......a.........
+	0x0050 00 00 00 12 72 00 00 cf 01 00 00 00 00 00 00 00  ....r...........
+	0x0060 00 0c 69 00 d0 01 00 00 00 00 00 00              ..i.........
+	rel 44+8 t=R_ADDR command-line-arguments.checkMaskedRotate32<1>+0
+	rel 52+8 t=R_ADDR command-line-arguments.checkMaskedRotate32<1>+330
+	rel 75+4 t=R_DWARFSECREF go:info.[]uint32<0>+0
+	rel 79+4 t=R_DWARFSECREF <0>+0
+	rel 89+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 93+4 t=R_DWARFSECREF <0>+365
+	rel 102+4 t=R_DWARFSECREF go:info.int<0>+0
+aux for command-line-arguments.checkArithmeticWithRotate<0> SDWARFLOC size=51
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 9f 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00                                         ...
+	rel 8+8 t=R_ADDR command-line-arguments.checkArithmeticWithRotate<1>+0
+aux for command-line-arguments.checkArithmeticWithRotate<0> SDWARFLINES size=55
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 eb 01  ................
+	0x0010 14 06 2d 06 89 06 37 06 89 06 37 06 89 06 37 06  ..-...7...7...7.
+	0x0020 7f 06 37 06 a7 06 37 06 c5 06 55 06 e3 06 55 06  ..7...7...U...U.
+	0x0030 6a 80 02 01 00 01 01                             j......
+	rel 3+8 t=R_ADDR command-line-arguments.checkArithmeticWithRotate<1>+0
+aux for command-line-arguments.checkArithmeticWithRotate<0> SDWARFFCN size=90
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 63 68 65 63 6b 41 72 69  guments.checkAri
+	0x0020 74 68 6d 65 74 69 63 57 69 74 68 52 6f 74 61 74  thmeticWithRotat
+	0x0030 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  e...............
+	0x0040 00 00 01 9c 02 00 00 00 ef 01 01 12 61 00 00 ef  ............a...
+	0x0050 01 00 00 00 00 00 00 00 00 00                    ..........
+	rel 50+8 t=R_ADDR command-line-arguments.checkArithmeticWithRotate<1>+0
+	rel 58+8 t=R_ADDR command-line-arguments.checkArithmeticWithRotate<1>+159
+	rel 81+4 t=R_DWARFSECREF go:info.*[1000]uint64<0>+0
+	rel 85+4 t=R_DWARFSECREF <0>+0

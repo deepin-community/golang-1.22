@@ -1,0 +1,896 @@
+# example.com/pgo/devirtualize [example.com/pgo/devirtualize.test]
+addIndirectEdges: example.com/pgo/devirtualize/mult%2epkg.MultFn not found in export data: example.com/pgo/devirtualize/mult%2epkg.MultFn is not a function (func sym mult.MultFn lookup error: mult.MultFn has 0+1 params, but instantiated with 0+0 args) or method (error looking up method symbol "MultFn": MultFn doesn't contain type split)
+addIndirectEdges: example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1 not found in export data: example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1 is not a function (func sym mult.MultClosure.func1 missing objReader) or method (type sym mult.MultClosure refers to non-type name: mult.MultClosure)
+addIndirectEdges: example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply found in export data
+addIndirectEdges: example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1 not found in export data: example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1 is not a function (func sym mult.NegMultClosure.func1 missing objReader) or method (type sym mult.NegMultClosure refers to non-type name: mult.NegMultClosure)
+addIndirectEdges: example.com/pgo/devirtualize/mult%2epkg.NegMultFn found in export data
+addIndirectEdges: example.com/pgo/devirtualize/mult%2epkg.NegMult.Multiply found in export data
+./devirt.go:101:32: PGO devirtualize considering call selectA(i)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:101:32","Caller":"example.com/pgo/devirtualize.ExerciseIface","Direct":true,"Interface":false,"Weight":106,"Hottest":"example.com/pgo/devirtualize.Add.Add","HottestWeight":55,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:101:43: PGO devirtualize considering call one(i)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:101:43","Caller":"example.com/pgo/devirtualize.ExerciseIface","Direct":true,"Interface":false,"Weight":106,"Hottest":"example.com/pgo/devirtualize.Add.Add","HottestWeight":55,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:101:39: PGO devirtualize considering call .autotmp_13.Add(one(i), 2)
+./devirt.go:101:39: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.ExerciseIface.func1 (weight 0): callee not a method
+./devirt.go:101:39: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.ExerciseIface.func2 (weight 0): callee not a method
+./devirt.go:101:39: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.Add.Add (weight 55): hottest so far
+./devirt.go:101:39: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply (weight 40): too cold (hottest 55)
+./devirt.go:101:39: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.Sub.Add (weight 7): too cold (hottest 55)
+./devirt.go:101:39: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize/mult%2epkg.NegMult.Multiply (weight 4): too cold (hottest 55)
+./devirt.go:101:39 call example.com/pgo/devirtualize.ExerciseIface:49: hottest callee example.com/pgo/devirtualize.Add.Add (weight 55)
+./devirt.go:101:39: PGO devirtualizing interface call .autotmp_13.Add to Add.Add
+PGO devirtualizing interface call to devirt.Add. After: 
+.   INLCALL int tc(1) # devirt.go:101:39
+.   INLCALL-Body
+.   .   IF-init
+.   .   .   AS-init
+.   .   .   .   DCL tc(1) # devirt.go:101:39
+.   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   AS tc(1) # devirt.go:101:39
+.   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   CALLFUNC devirt.Adder tc(1) # devirt.go:101:32
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt.selectA Class:PAUTO Offset:0 OnStack Used FUNC-func(int) Adder tc(1) # devirt.go:58:2
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt.i Class:PAUTO Offset:0 OnStack Used int tc(1) # devirt.go:86:6
+.   .   .   AS2 tc(1) # devirt.go:101:39
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_14 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   AS2-Rhs
+.   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:101:43
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt.one Class:PAUTO Offset:0 OnStack Used FUNC-func(int) int tc(1) # devirt.go:70:2
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt.i Class:PAUTO Offset:0 OnStack Used int tc(1) # devirt.go:86:6
+.   .   .   .   LITERAL-2 int tc(1) # devirt.go:101:48
+.   .   .   AS2DOTTYPE tc(1) # devirt.go:101:39
+.   .   .   AS2DOTTYPE-Lhs
+.   .   .   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Add tc(1) # devirt_test.go:69:6
+.   .   .   .   NAME-devirt..autotmp_18 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # devirt_test.go:69:6
+.   .   .   AS2DOTTYPE-Rhs
+.   .   .   .   DOTTYPE2 devirt.Add tc(1) # devirt.go:101:39
+.   .   .   .   .   NAME-devirt..autotmp_14 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   IF Likely tc(1) # devirt.go:101:39
+.   .   IF-Cond
+.   .   .   NAME-devirt..autotmp_18 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # devirt_test.go:69:6
+.   .   IF-Body
+.   .   .   AS2 tc(1) # devirt.go:101:39
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_19 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   AS2-Rhs
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:101:39
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   METHEXPR devirt.Add FUNC-func(Add, int, int) int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   TYPE devirt.Add Class:PEXTERN Offset:0 type devirt.Add tc(1) # devirt.go:31:6
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Add tc(1) # devirt_test.go:69:6
+.   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   IF-Else
+.   .   .   AS2 tc(1) # devirt.go:101:39
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_19 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   AS2-Rhs
+.   .   .   .   CALLINTER int tc(1) # devirt.go:101:39
+.   .   .   .   CALLINTER-Fun
+.   .   .   .   .   DOTINTER devirt.Add FUNC-method(*struct {}) func(int, int) int tc(1) # devirt.go:101:35
+.   .   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   CALLINTER-Args
+.   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   INLCALL-ReturnVars
+.   .   NAME-devirt..autotmp_19 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:101:39","Caller":"example.com/pgo/devirtualize.ExerciseIface","Direct":false,"Interface":true,"Weight":106,"Hottest":"example.com/pgo/devirtualize.Add.Add","HottestWeight":55,"Devirtualized":"example.com/pgo/devirtualize.Add.Add","DevirtualizedWeight":55}
+./devirt.go:101:20: PGO devirtualize considering call m.Multiply(42, .autotmp_19)
+./devirt.go:101:20: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.ExerciseIface.func1 (weight 0): callee not a method
+./devirt.go:101:20: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.ExerciseIface.func2 (weight 0): callee not a method
+./devirt.go:101:20: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.Add.Add (weight 55): Add doesn't implement mult.Multiplier (Add does not implement mult.Multiplier (missing Multiply method))
+./devirt.go:101:20: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply (weight 40): hottest so far
+./devirt.go:101:20: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize.Sub.Add (weight 7): too cold (hottest 40)
+./devirt.go:101:20: edge example.com/pgo/devirtualize.ExerciseIface:49 -> example.com/pgo/devirtualize/mult%2epkg.NegMult.Multiply (weight 4): too cold (hottest 40)
+./devirt.go:101:20 call example.com/pgo/devirtualize.ExerciseIface:49: hottest callee example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply (weight 40)
+./devirt.go:101:20: PGO devirtualizing interface call m.Multiply to mult.Mult.Multiply
+PGO devirtualizing interface call to mult.Mult. After: 
+.   INLCALL int tc(1) # devirt.go:101:20
+.   INLCALL-Body
+.   .   IF-init
+.   .   .   AS2 tc(1) # devirt.go:101:20
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_20 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used mult.Multiplier tc(1) # devirt.go:101:20
+.   .   .   .   NAME-devirt..autotmp_21 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   .   .   NAME-devirt..autotmp_22 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   .   AS2-Rhs
+.   .   .   .   NAME-devirt.m Class:PAUTO Offset:0 OnStack Used mult.Multiplier tc(1) # devirt.go:87:3
+.   .   .   .   LITERAL-42 int tc(1) # devirt.go:101:21
+.   .   .   .   INLCALL int tc(1) # devirt.go:101:39
+.   .   .   .   INLCALL-Body
+.   .   .   .   .   IF-init
+.   .   .   .   .   .   AS-init
+.   .   .   .   .   .   .   DCL tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   CALLFUNC devirt.Adder tc(1) # devirt.go:101:32
+.   .   .   .   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   .   .   .   NAME-devirt.selectA Class:PAUTO Offset:0 OnStack Used FUNC-func(int) Adder tc(1) # devirt.go:58:2
+.   .   .   .   .   .   .   CALLFUNC-Args
+.   .   .   .   .   .   .   .   NAME-devirt.i Class:PAUTO Offset:0 OnStack Used int tc(1) # devirt.go:86:6
+.   .   .   .   .   .   AS2 tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2-Lhs
+.   .   .   .   .   .   .   NAME-devirt..autotmp_14 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2-Rhs
+.   .   .   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   CALLFUNC int tc(1) # devirt.go:101:43
+.   .   .   .   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   .   .   .   NAME-devirt.one Class:PAUTO Offset:0 OnStack Used FUNC-func(int) int tc(1) # devirt.go:70:2
+.   .   .   .   .   .   .   CALLFUNC-Args
+.   .   .   .   .   .   .   .   NAME-devirt.i Class:PAUTO Offset:0 OnStack Used int tc(1) # devirt.go:86:6
+.   .   .   .   .   .   .   LITERAL-2 int tc(1) # devirt.go:101:48
+.   .   .   .   .   .   AS2DOTTYPE tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2DOTTYPE-Lhs
+.   .   .   .   .   .   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Add tc(1) # devirt_test.go:69:6
+.   .   .   .   .   .   .   NAME-devirt..autotmp_18 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # devirt_test.go:69:6
+.   .   .   .   .   .   AS2DOTTYPE-Rhs
+.   .   .   .   .   .   .   DOTTYPE2 devirt.Add tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_14 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   .   IF Likely tc(1) # devirt.go:101:39
+.   .   .   .   .   IF-Cond
+.   .   .   .   .   .   NAME-devirt..autotmp_18 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # devirt_test.go:69:6
+.   .   .   .   .   IF-Body
+.   .   .   .   .   .   AS2 tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2-Lhs
+.   .   .   .   .   .   .   NAME-devirt..autotmp_19 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2-Rhs
+.   .   .   .   .   .   .   CALLFUNC int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   .   .   .   METHEXPR devirt.Add FUNC-func(Add, int, int) int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   .   .   TYPE devirt.Add Class:PEXTERN Offset:0 type devirt.Add tc(1) # devirt.go:31:6
+.   .   .   .   .   .   .   CALLFUNC-Args
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Add tc(1) # devirt_test.go:69:6
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   IF-Else
+.   .   .   .   .   .   AS2 tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2-Lhs
+.   .   .   .   .   .   .   NAME-devirt..autotmp_19 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   AS2-Rhs
+.   .   .   .   .   .   .   CALLINTER int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   CALLINTER-Fun
+.   .   .   .   .   .   .   .   DOTINTER devirt.Add FUNC-method(*struct {}) func(int, int) int tc(1) # devirt.go:101:35
+.   .   .   .   .   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.Adder tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   CALLINTER-Args
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   .   INLCALL-ReturnVars
+.   .   .   .   .   NAME-devirt..autotmp_19 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:39
+.   .   .   AS2DOTTYPE tc(1) # devirt.go:101:20
+.   .   .   AS2DOTTYPE-Lhs
+.   .   .   .   NAME-devirt..autotmp_23 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used mult.Mult tc(1) # devirt_test.go:69:6
+.   .   .   .   NAME-devirt..autotmp_24 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # devirt_test.go:69:6
+.   .   .   AS2DOTTYPE-Rhs
+.   .   .   .   DOTTYPE2 mult.Mult tc(1) # devirt.go:101:20
+.   .   .   .   .   NAME-devirt..autotmp_20 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used mult.Multiplier tc(1) # devirt.go:101:20
+.   .   IF Likely tc(1) # devirt.go:101:20
+.   .   IF-Cond
+.   .   .   NAME-devirt..autotmp_24 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # devirt_test.go:69:6
+.   .   IF-Body
+.   .   .   AS2 tc(1) # devirt.go:101:20
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_25 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   .   AS2-Rhs
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:101:20
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   METHEXPR devirt.Multiply FUNC-func(mult.Mult, int, int) int tc(1) # devirt.go:101:20
+.   .   .   .   .   .   TYPE mult.Mult Class:PEXTERN Offset:0 type mult.Mult tc(1) # mult.go:16:6
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt..autotmp_23 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used mult.Mult tc(1) # devirt_test.go:69:6
+.   .   .   .   .   NAME-devirt..autotmp_21 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   .   .   .   NAME-devirt..autotmp_22 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   IF-Else
+.   .   .   AS2 tc(1) # devirt.go:101:20
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_25 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   .   AS2-Rhs
+.   .   .   .   CALLINTER int tc(1) # devirt.go:101:20
+.   .   .   .   CALLINTER-Fun
+.   .   .   .   .   DOTINTER devirt.Multiply FUNC-method(*struct {}) func(int, int) int tc(1) # devirt.go:101:11
+.   .   .   .   .   .   NAME-devirt.m Class:PAUTO Offset:0 OnStack Used mult.Multiplier tc(1) # devirt.go:87:3
+.   .   .   .   CALLINTER-Args
+.   .   .   .   .   NAME-devirt..autotmp_21 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   .   .   .   .   NAME-devirt..autotmp_22 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+.   INLCALL-ReturnVars
+.   .   NAME-devirt..autotmp_25 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:101:20
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:101:20","Caller":"example.com/pgo/devirtualize.ExerciseIface","Direct":false,"Interface":true,"Weight":106,"Hottest":"example.com/pgo/devirtualize.Add.Add","HottestWeight":55,"Devirtualized":"example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply","DevirtualizedWeight":40}
+./devirt.go:60:21: PGO devirtualize considering call fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:60:21","Caller":"example.com/pgo/devirtualize.ExerciseIface.func1","Direct":true,"Interface":false,"Weight":0,"Hottest":"fmt.Sprintf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:72:21: PGO devirtualize considering call fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:72:21","Caller":"example.com/pgo/devirtualize.ExerciseIface.func2","Direct":true,"Interface":false,"Weight":0,"Hottest":"fmt.Sprintf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:79:21: PGO devirtualize considering call fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:79:21","Caller":"example.com/pgo/devirtualize.ExerciseIface.func2","Direct":true,"Interface":false,"Weight":0,"Hottest":"fmt.Sprintf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:173:33: PGO devirtualize considering call selectA(i)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:173:33","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete","Direct":true,"Interface":false,"Weight":207,"Hottest":"example.com/pgo/devirtualize.AddFn","HottestWeight":103,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:173:40: PGO devirtualize considering call one(i)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:173:40","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete","Direct":true,"Interface":false,"Weight":207,"Hottest":"example.com/pgo/devirtualize.AddFn","HottestWeight":103,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:173:36: PGO devirtualize considering call .autotmp_13(one(i), 2)
+./devirt.go:173:36: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize/mult%2epkg.NegMultFn (weight 8): func(int64, int64) int64 doesn't match func(int, int) int
+./devirt.go:173:36: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.SubFn (weight 5): hottest so far
+./devirt.go:173:36: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.ExerciseFuncConcrete.func1 (weight 0): too cold (hottest 5)
+./devirt.go:173:36: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.ExerciseFuncConcrete.func2 (weight 0): too cold (hottest 5)
+./devirt.go:173:36: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.AddFn (weight 103): hottest so far
+./devirt.go:173:36: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize/mult%2epkg.MultFn (weight 91): too cold (hottest 103)
+./devirt.go:173:36 call example.com/pgo/devirtualize.ExerciseFuncConcrete:48: hottest callee example.com/pgo/devirtualize.AddFn (weight 103)
+./devirt.go:173:36: PGO devirtualizing function call .autotmp_13 to AddFn
+PGO devirtualizing function call to AddFn. After: 
+.   INLCALL int tc(1) # devirt.go:173:36
+.   INLCALL-Body
+.   .   IF-init
+.   .   .   AS-init
+.   .   .   .   DCL tc(1) # devirt.go:173:36
+.   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:173:36
+.   .   .   AS tc(1) # devirt.go:173:36
+.   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:173:36
+.   .   .   .   CALLFUNC devirt.AddFunc tc(1) # devirt.go:173:33
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt.selectA Class:PAUTO Offset:0 OnStack Used FUNC-func(int) AddFunc tc(1) # devirt.go:131:2
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt.i Class:PAUTO Offset:0 OnStack Used int tc(1) # devirt.go:159:6
+.   .   .   AS2 tc(1) # devirt.go:173:36
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_14 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:173:36
+.   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   .   AS2-Rhs
+.   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:173:36
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:173:40
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt.one Class:PAUTO Offset:0 OnStack Used FUNC-func(int) int tc(1) # devirt.go:143:2
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt.i Class:PAUTO Offset:0 OnStack Used int tc(1) # devirt.go:159:6
+.   .   .   .   LITERAL-2 int tc(1) # devirt.go:173:45
+.   .   IF Likely tc(1) # devirt.go:173:36
+.   .   IF-Cond
+.   .   .   EQ bool tc(1) # devirt_test.go:69:6
+.   .   .   .   DEREF uintptr tc(1) # devirt.go:173:36
+.   .   .   .   .   IDATA PTR-*uintptr tc(1) # devirt.go:173:36
+.   .   .   .   .   .   CONVIFACE INTER-interface {} tc(1) # devirt.go:173:36
+.   .   .   .   .   .   .   NAME-devirt..autotmp_14 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:173:36
+.   .   .   .   CONVNOP uintptr tc(1) # devirt.go:173:36
+.   .   .   .   .   ADDR PTR-*uintptr tc(1) # devirt.go:173:36
+.   .   .   .   .   .   LINKSYMOFFSET-example.com/pgo/devirtualize.AddFn Offset:0 uintptr tc(1)
+.   .   IF-Body
+.   .   .   AS2 tc(1) # devirt.go:173:36
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   .   AS2-Rhs
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:173:36
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt.AddFn Class:PFUNC Offset:0 Used FUNC-func(int, int) int tc(1) # devirt.go:108:6
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   IF-Else
+.   .   .   AS2 tc(1) # devirt.go:173:36
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   .   AS2-Rhs
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:173:36
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt..autotmp_13 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:173:36
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt..autotmp_15 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   .   .   .   .   NAME-devirt..autotmp_16 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+.   INLCALL-ReturnVars
+.   .   NAME-devirt..autotmp_17 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:173:36
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:173:36","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete","Direct":false,"Interface":false,"Weight":207,"Hottest":"example.com/pgo/devirtualize.AddFn","HottestWeight":103,"Devirtualized":"example.com/pgo/devirtualize.AddFn","DevirtualizedWeight":103}
+./devirt.go:173:15: PGO devirtualize considering call m(int64(42), int64(.autotmp_17))
+./devirt.go:173:15: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize/mult%2epkg.MultFn (weight 91) (missing IR): hottest so far
+./devirt.go:173:15: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize/mult%2epkg.NegMultFn (weight 8): too cold (hottest 91)
+./devirt.go:173:15: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.SubFn (weight 5): too cold (hottest 91)
+./devirt.go:173:15: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.ExerciseFuncConcrete.func1 (weight 0): too cold (hottest 91)
+./devirt.go:173:15: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.ExerciseFuncConcrete.func2 (weight 0): too cold (hottest 91)
+./devirt.go:173:15: edge example.com/pgo/devirtualize.ExerciseFuncConcrete:48 -> example.com/pgo/devirtualize.AddFn (weight 103): func(int, int) int doesn't match func(int64, int64) int64
+./devirt.go:173:15 call example.com/pgo/devirtualize.ExerciseFuncConcrete:48: hottest callee example.com/pgo/devirtualize/mult%2epkg.MultFn (weight 91)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:173:15","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete","Direct":false,"Interface":false,"Weight":207,"Hottest":"example.com/pgo/devirtualize.AddFn","HottestWeight":103,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:133:21: PGO devirtualize considering call fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:133:21","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete.func1","Direct":true,"Interface":false,"Weight":0,"Hottest":"fmt.Sprintf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:145:21: PGO devirtualize considering call fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:145:21","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete.func2","Direct":true,"Interface":false,"Weight":0,"Hottest":"fmt.Sprintf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:152:21: PGO devirtualize considering call fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:152:21","Caller":"example.com/pgo/devirtualize.ExerciseFuncConcrete.func2","Direct":true,"Interface":false,"Weight":0,"Hottest":"fmt.Sprintf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:207:35: PGO devirtualize considering call ops.a(1, 2)
+./devirt.go:207:35: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize/mult%2epkg.MultFn (weight 94) (missing IR): hottest so far
+./devirt.go:207:35: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize.SubFn (weight 12): too cold (hottest 94)
+./devirt.go:207:35: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize/mult%2epkg.NegMultFn (weight 8): too cold (hottest 94)
+./devirt.go:207:35: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize.AddFn (weight 101): hottest so far
+./devirt.go:207:35 call example.com/pgo/devirtualize.ExerciseFuncField:23: hottest callee example.com/pgo/devirtualize.AddFn (weight 101)
+./devirt.go:207:35: PGO devirtualizing function call ops.a to AddFn
+PGO devirtualizing function call to AddFn. After: 
+.   INLCALL int tc(1) # devirt.go:207:35
+.   INLCALL-Body
+.   .   IF-init
+.   .   .   AS2 tc(1) # devirt.go:207:35
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_9 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:207:35
+.   .   .   .   NAME-devirt..autotmp_10 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   .   .   NAME-devirt..autotmp_11 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   .   AS2-Rhs
+.   .   .   .   DOT devirt.a devirt.AddFunc tc(1) # devirt.go:207:33
+.   .   .   .   .   NAME-devirt.ops Class:PAUTO Offset:0 OnStack Used STRUCT-struct { a AddFunc; m mult.MultFunc } tc(1) # devirt.go:185:2
+.   .   .   .   LITERAL-1 int tc(1) # devirt.go:207:36
+.   .   .   .   LITERAL-2 int tc(1) # devirt.go:207:39
+.   .   IF Likely tc(1) # devirt.go:207:35
+.   .   IF-Cond
+.   .   .   EQ bool tc(1) # devirt_test.go:69:6
+.   .   .   .   DEREF uintptr tc(1) # devirt.go:207:35
+.   .   .   .   .   IDATA PTR-*uintptr tc(1) # devirt.go:207:35
+.   .   .   .   .   .   CONVIFACE INTER-interface {} tc(1) # devirt.go:207:35
+.   .   .   .   .   .   .   NAME-devirt..autotmp_9 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used devirt.AddFunc tc(1) # devirt.go:207:35
+.   .   .   .   CONVNOP uintptr tc(1) # devirt.go:207:35
+.   .   .   .   .   ADDR PTR-*uintptr tc(1) # devirt.go:207:35
+.   .   .   .   .   .   LINKSYMOFFSET-example.com/pgo/devirtualize.AddFn Offset:0 uintptr tc(1)
+.   .   IF-Body
+.   .   .   AS2 tc(1) # devirt.go:207:35
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_12 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   .   AS2-Rhs
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:207:35
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   NAME-devirt.AddFn Class:PFUNC Offset:0 Used FUNC-func(int, int) int tc(1) # devirt.go:108:6
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt..autotmp_10 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   .   .   .   NAME-devirt..autotmp_11 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   IF-Else
+.   .   .   AS2 tc(1) # devirt.go:207:35
+.   .   .   AS2-Lhs
+.   .   .   .   NAME-devirt..autotmp_12 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   .   AS2-Rhs
+.   .   .   .   CALLFUNC int tc(1) # devirt.go:207:35
+.   .   .   .   CALLFUNC-Fun
+.   .   .   .   .   DOT devirt.a devirt.AddFunc tc(1) # devirt.go:207:33
+.   .   .   .   .   .   NAME-devirt.ops Class:PAUTO Offset:0 OnStack Used STRUCT-struct { a AddFunc; m mult.MultFunc } tc(1) # devirt.go:185:2
+.   .   .   .   CALLFUNC-Args
+.   .   .   .   .   NAME-devirt..autotmp_10 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   .   .   .   .   NAME-devirt..autotmp_11 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+.   INLCALL-ReturnVars
+.   .   NAME-devirt..autotmp_12 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # devirt.go:207:35
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:207:35","Caller":"example.com/pgo/devirtualize.ExerciseFuncField","Direct":false,"Interface":false,"Weight":215,"Hottest":"example.com/pgo/devirtualize.AddFn","HottestWeight":101,"Devirtualized":"example.com/pgo/devirtualize.AddFn","DevirtualizedWeight":101}
+./devirt.go:207:19: PGO devirtualize considering call ops.m(int64(42), int64(.autotmp_12))
+./devirt.go:207:19: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize.AddFn (weight 101): func(int, int) int doesn't match func(int64, int64) int64
+./devirt.go:207:19: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize/mult%2epkg.MultFn (weight 94) (missing IR): hottest so far
+./devirt.go:207:19: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize.SubFn (weight 12): too cold (hottest 94)
+./devirt.go:207:19: edge example.com/pgo/devirtualize.ExerciseFuncField:23 -> example.com/pgo/devirtualize/mult%2epkg.NegMultFn (weight 8): too cold (hottest 94)
+./devirt.go:207:19 call example.com/pgo/devirtualize.ExerciseFuncField:23: hottest callee example.com/pgo/devirtualize/mult%2epkg.MultFn (weight 94)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:207:19","Caller":"example.com/pgo/devirtualize.ExerciseFuncField","Direct":false,"Interface":false,"Weight":215,"Hottest":"example.com/pgo/devirtualize.AddFn","HottestWeight":101,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:249:27: PGO devirtualize considering call a(1, 2)
+./devirt.go:249:27: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize.Sub.Add (weight 14): hottest so far
+./devirt.go:249:27: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1 (weight 10): too cold (hottest 14)
+./devirt.go:249:27: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1 (weight 93) (missing IR): hottest so far
+./devirt.go:249:27: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize.Add.Add (weight 92): too cold (hottest 93)
+./devirt.go:249:27 call example.com/pgo/devirtualize.ExerciseFuncClosure:18: hottest callee example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1 (weight 93)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:249:27","Caller":"example.com/pgo/devirtualize.ExerciseFuncClosure","Direct":false,"Interface":false,"Weight":209,"Hottest":"example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1","HottestWeight":93,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt.go:249:15: PGO devirtualize considering call m(int64(42), int64(a(1, 2)))
+./devirt.go:249:15: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1 (weight 10) (missing IR): hottest so far
+./devirt.go:249:15: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1 (weight 93) (missing IR): hottest so far
+./devirt.go:249:15: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize.Add.Add (weight 92): too cold (hottest 93)
+./devirt.go:249:15: edge example.com/pgo/devirtualize.ExerciseFuncClosure:18 -> example.com/pgo/devirtualize.Sub.Add (weight 14): too cold (hottest 93)
+./devirt.go:249:15 call example.com/pgo/devirtualize.ExerciseFuncClosure:18: hottest callee example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1 (weight 93)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt.go:249:15","Caller":"example.com/pgo/devirtualize.ExerciseFuncClosure","Direct":false,"Interface":false,"Weight":209,"Hottest":"example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1","HottestWeight":93,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:28:15: PGO devirtualize considering call ExerciseIface(b.N, a1, a2, m1, m2)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:28:15","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtIface","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.ExerciseIface","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:40:23: PGO devirtualize considering call ExerciseIface(10, a1, a2, m1, m2)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:40:23","Caller":"example.com/pgo/devirtualize.TestDevirtIface","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.ExerciseIface","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:41:11: PGO devirtualize considering call (*testing.common).Errorf(t.common, "ExerciseIface(10) got %d want 1176", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:41:11","Caller":"example.com/pgo/devirtualize.TestDevirtIface","Direct":true,"Interface":false,"Weight":0,"Hottest":"testing.(*common).Errorf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./mult.pkg/mult.go:37:6: PGO devirtualize considering call mult.MultFn[go.shape.int64](&mult..dict.MultFn[int64], mult.a, mult.b)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/mult.pkg/mult.go:37:6","Caller":"example.com/pgo/devirtualize/mult%2epkg.MultFn[int64]","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize/mult%2epkg.MultFn[go.shape.int64]","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:46:22: PGO devirtualize considering call ExerciseFuncConcrete(b.N, AddFn, SubFn, mult.MultFn[int64], mult.NegMultFn)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:46:22","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncConcrete","Direct":true,"Interface":false,"Weight":2,"Hottest":"example.com/pgo/devirtualize.ExerciseFuncConcrete","HottestWeight":2,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:50:30: PGO devirtualize considering call ExerciseFuncConcrete(10, AddFn, SubFn, mult.MultFn[int64], mult.NegMultFn)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:50:30","Caller":"example.com/pgo/devirtualize.TestDevirtFuncConcrete","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.ExerciseFuncConcrete","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:51:11: PGO devirtualize considering call (*testing.common).Errorf(t.common, "ExerciseFuncConcrete(10) got %d want 1176", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:51:11","Caller":"example.com/pgo/devirtualize.TestDevirtFuncConcrete","Direct":true,"Interface":false,"Weight":0,"Hottest":"testing.(*common).Errorf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:56:19: PGO devirtualize considering call ExerciseFuncField(b.N, AddFn, SubFn, mult.MultFn[int64], mult.NegMultFn)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:56:19","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncField","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.ExerciseFuncField","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:60:27: PGO devirtualize considering call ExerciseFuncField(10, AddFn, SubFn, mult.MultFn[int64], mult.NegMultFn)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:60:27","Caller":"example.com/pgo/devirtualize.TestDevirtFuncField","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.ExerciseFuncField","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:61:11: PGO devirtualize considering call (*testing.common).Errorf(t.common, "ExerciseFuncField(10) got %d want 1176", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:61:11","Caller":"example.com/pgo/devirtualize.TestDevirtFuncField","Direct":true,"Interface":false,"Weight":0,"Hottest":"testing.(*common).Errorf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:66:37: PGO devirtualize considering call AddClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:66:37","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:66:51: PGO devirtualize considering call SubClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:66:51","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:66:71: PGO devirtualize considering call mult.MultClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:66:71","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:66:94: PGO devirtualize considering call mult.NegMultClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:66:94","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:66:21: PGO devirtualize considering call ExerciseFuncClosure(b.N, AddClosure(), SubClosure(), mult.MultClosure(), mult.NegMultClosure())
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:66:21","Caller":"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:70:44: PGO devirtualize considering call AddClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:70:44","Caller":"example.com/pgo/devirtualize.TestDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:70:58: PGO devirtualize considering call SubClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:70:58","Caller":"example.com/pgo/devirtualize.TestDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:70:78: PGO devirtualize considering call mult.MultClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:70:78","Caller":"example.com/pgo/devirtualize.TestDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:70:101: PGO devirtualize considering call mult.NegMultClosure()
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:70:101","Caller":"example.com/pgo/devirtualize.TestDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:70:29: PGO devirtualize considering call ExerciseFuncClosure(10, AddClosure(), SubClosure(), mult.MultClosure(), mult.NegMultClosure())
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:70:29","Caller":"example.com/pgo/devirtualize.TestDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"example.com/pgo/devirtualize.AddClosure","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+./devirt_test.go:71:11: PGO devirtualize considering call (*testing.common).Errorf(t.common, "ExerciseFuncClosure(10) got %d want 1176", ... argument...)
+{"Pkg":"example.com/pgo/devirtualize","Pos":"/tmp/TestLookupFuncGeneric2479138411/001/devirt_test.go:71:11","Caller":"example.com/pgo/devirtualize.TestDevirtFuncClosure","Direct":true,"Interface":false,"Weight":0,"Hottest":"testing.(*common).Errorf","HottestWeight":0,"Devirtualized":"","DevirtualizedWeight":0}
+hot-callsite-thres-from-CDF=0.6765899864682002
+hot-cg before inline in dot format:
+digraph G {
+forcelabels=true;
+"example.com/pgo/devirtualize.ExerciseFuncConcrete.func2" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseFuncConcrete.func2"];
+"example.com/pgo/devirtualize.ExerciseFuncField" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseFuncField"];
+"example.com/pgo/devirtualize.AddClosure" [color=black, style=solid, label="example.com/pgo/devirtualize.AddClosure"];
+"example.com/pgo/devirtualize/mult%2epkg.NegMultClosure" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.NegMultClosure"];
+"example.com/pgo/devirtualize/mult%2epkg.MultFn[go.shape.int64]" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.MultFn[go.shape.int64]"];
+"example.com/pgo/devirtualize/mult%2epkg.MultFn" [color=black, style=dashed, label="example.com/pgo/devirtualize/mult%2epkg.MultFn"];
+"example.com/pgo/devirtualize/mult%2epkg.NegMultFn" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.NegMultFn,inl_cost=21"];
+"example.com/pgo/devirtualize.SubFn" [color=black, style=solid, label="example.com/pgo/devirtualize.SubFn"];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncConcrete" [color=black, style=solid, label="example.com/pgo/devirtualize.BenchmarkDevirtFuncConcrete"];
+"example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply,inl_cost=19"];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete.func1" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseFuncConcrete.func1"];
+"example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1" [color=black, style=dashed, label="example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1"];
+"example.com/pgo/devirtualize.SubClosure" [color=black, style=solid, label="example.com/pgo/devirtualize.SubClosure"];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncField" [color=black, style=solid, label="example.com/pgo/devirtualize.BenchmarkDevirtFuncField"];
+"example.com/pgo/devirtualize/mult%2epkg.NegMult.Multiply" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.NegMult.Multiply,inl_cost=21"];
+"example.com/pgo/devirtualize.BenchmarkDevirtIface" [color=black, style=solid, label="example.com/pgo/devirtualize.BenchmarkDevirtIface"];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" [color=black, style=solid, label="example.com/pgo/devirtualize.TestDevirtFuncClosure"];
+"example.com/pgo/devirtualize.ExerciseIface.func2" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseIface.func2"];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseFuncConcrete"];
+"example.com/pgo/devirtualize.AddFn" [color=black, style=solid, label="example.com/pgo/devirtualize.AddFn"];
+"example.com/pgo/devirtualize.ExerciseFuncClosure" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseFuncClosure"];
+"example.com/pgo/devirtualize/mult%2epkg.MultClosure" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.MultClosure"];
+"example.com/pgo/devirtualize/mult%2epkg.MultFn[int64]" [color=black, style=solid, label="example.com/pgo/devirtualize/mult%2epkg.MultFn[int64]"];
+"example.com/pgo/devirtualize.TestDevirtFuncConcrete" [color=black, style=solid, label="example.com/pgo/devirtualize.TestDevirtFuncConcrete"];
+"example.com/pgo/devirtualize.Sub.Add" [color=black, style=solid, label="example.com/pgo/devirtualize.Sub.Add"];
+"example.com/pgo/devirtualize.ExerciseIface.func1" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseIface.func1"];
+"example.com/pgo/devirtualize.Add.Add" [color=black, style=solid, label="example.com/pgo/devirtualize.Add.Add"];
+"example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1" [color=black, style=dashed, label="example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1"];
+"testing.(*common).Errorf" [color=black, style=solid, label="testing.(*common).Errorf"];
+"example.com/pgo/devirtualize.ExerciseIface" [color=black, style=solid, label="example.com/pgo/devirtualize.ExerciseIface"];
+"fmt.Sprintf" [color=black, style=solid, label="fmt.Sprintf"];
+"example.com/pgo/devirtualize.TestDevirtIface" [color=black, style=solid, label="example.com/pgo/devirtualize.TestDevirtIface"];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure" [color=black, style=solid, label="example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure"];
+"example.com/pgo/devirtualize.TestDevirtFuncField" [color=black, style=solid, label="example.com/pgo/devirtualize.TestDevirtFuncField"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface" -> "example.com/pgo/devirtualize.Add.Add" [label="7.44"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface" -> "example.com/pgo/devirtualize/mult%2epkg.Mult.Multiply" [label="5.41"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface" -> "example.com/pgo/devirtualize.Sub.Add" [label="0.95"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface" -> "example.com/pgo/devirtualize/mult%2epkg.NegMult.Multiply" [label="0.54"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface" -> "example.com/pgo/devirtualize.ExerciseIface.func1" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface" -> "example.com/pgo/devirtualize.ExerciseIface.func2" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface.func1" -> "fmt.Sprintf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface.func2" -> "fmt.Sprintf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseIface.func2" -> "fmt.Sprintf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" -> "example.com/pgo/devirtualize.ExerciseFuncConcrete.func1" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" -> "example.com/pgo/devirtualize.ExerciseFuncConcrete.func2" [label="0.00"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" -> "example.com/pgo/devirtualize.AddFn" [label="13.94"];
+edge [color=red, style=dashed];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" -> "example.com/pgo/devirtualize/mult%2epkg.MultFn" [label="12.31"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" -> "example.com/pgo/devirtualize/mult%2epkg.NegMultFn" [label="1.08"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete" -> "example.com/pgo/devirtualize.SubFn" [label="0.68"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete.func1" -> "fmt.Sprintf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete.func2" -> "fmt.Sprintf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncConcrete.func2" -> "fmt.Sprintf" [label="0.00"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncField" -> "example.com/pgo/devirtualize.AddFn" [label="13.67"];
+edge [color=red, style=dashed];
+"example.com/pgo/devirtualize.ExerciseFuncField" -> "example.com/pgo/devirtualize/mult%2epkg.MultFn" [label="12.72"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncField" -> "example.com/pgo/devirtualize.SubFn" [label="1.62"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncField" -> "example.com/pgo/devirtualize/mult%2epkg.NegMultFn" [label="1.08"];
+edge [color=red, style=dashed];
+"example.com/pgo/devirtualize.ExerciseFuncClosure" -> "example.com/pgo/devirtualize/mult%2epkg.MultClosure.func1" [label="12.58"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncClosure" -> "example.com/pgo/devirtualize.Add.Add" [label="12.45"];
+edge [color=red, style=solid];
+"example.com/pgo/devirtualize.ExerciseFuncClosure" -> "example.com/pgo/devirtualize.Sub.Add" [label="1.89"];
+edge [color=red, style=dashed];
+"example.com/pgo/devirtualize.ExerciseFuncClosure" -> "example.com/pgo/devirtualize/mult%2epkg.NegMultClosure.func1" [label="1.35"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtIface" -> "example.com/pgo/devirtualize.ExerciseIface" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtIface" -> "example.com/pgo/devirtualize.ExerciseIface" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtIface" -> "testing.(*common).Errorf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize/mult%2epkg.MultFn[int64]" -> "example.com/pgo/devirtualize/mult%2epkg.MultFn[go.shape.int64]" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncConcrete" -> "example.com/pgo/devirtualize.ExerciseFuncConcrete" [label="0.27"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncConcrete" -> "example.com/pgo/devirtualize.ExerciseFuncConcrete" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncConcrete" -> "testing.(*common).Errorf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncField" -> "example.com/pgo/devirtualize.ExerciseFuncField" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncField" -> "example.com/pgo/devirtualize.ExerciseFuncField" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncField" -> "testing.(*common).Errorf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure" -> "example.com/pgo/devirtualize.ExerciseFuncClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure" -> "example.com/pgo/devirtualize.AddClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure" -> "example.com/pgo/devirtualize.SubClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure" -> "example.com/pgo/devirtualize/mult%2epkg.MultClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.BenchmarkDevirtFuncClosure" -> "example.com/pgo/devirtualize/mult%2epkg.NegMultClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" -> "example.com/pgo/devirtualize.AddClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" -> "example.com/pgo/devirtualize.SubClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" -> "example.com/pgo/devirtualize/mult%2epkg.MultClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" -> "example.com/pgo/devirtualize/mult%2epkg.NegMultClosure" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" -> "testing.(*common).Errorf" [label="0.00"];
+edge [color=black, style=solid];
+"example.com/pgo/devirtualize.TestDevirtFuncClosure" -> "example.com/pgo/devirtualize.ExerciseFuncClosure" [label="0.00"];
+}
+hot-node enabled increased budget=2000 for func=example.com/pgo/devirtualize.Add.Add
+./devirt.go:33:6: can inline Add.Add with cost 19 as: method(Add) func(int, int) int { for loop; return a + b }
+hot-node enabled increased budget=2000 for func=example.com/pgo/devirtualize.Sub.Add
+./devirt.go:42:6: can inline Sub.Add with cost 19 as: method(Sub) func(int, int) int { for loop; return a - b }
+./devirt.go:52:6: cannot inline ExerciseIface: marked go:noinline
+./devirt.go:58:13: cannot inline ExerciseIface.func1: function too complex: cost 85 exceeds budget 80
+./devirt.go:70:9: cannot inline ExerciseIface.func2: function too complex: cost 149 exceeds budget 80
+./devirt.go:101:39: inlining call to Add.Add
+./devirt.go:101:20: inlining call to mult.Mult.Multiply
+hot-node enabled increased budget=2000 for func=example.com/pgo/devirtualize.AddFn
+./devirt.go:108:6: can inline AddFn with cost 19 as: func(int, int) int { for loop; return a + b }
+hot-node enabled increased budget=2000 for func=example.com/pgo/devirtualize.SubFn
+./devirt.go:115:6: can inline SubFn with cost 19 as: func(int, int) int { for loop; return a - b }
+./devirt.go:125:6: cannot inline ExerciseFuncConcrete: marked go:noinline
+./devirt.go:131:13: cannot inline ExerciseFuncConcrete.func1: function too complex: cost 85 exceeds budget 80
+./devirt.go:143:9: cannot inline ExerciseFuncConcrete.func2: function too complex: cost 149 exceeds budget 80
+./devirt.go:173:36: inlining call to AddFn
+./devirt.go:184:6: cannot inline ExerciseFuncField: marked go:noinline
+./devirt.go:207:35: inlining call to AddFn
+./devirt.go:213:6: cannot inline AddClosure: marked go:noinline
+./devirt.go:220:6: cannot inline SubClosure: marked go:noinline
+./devirt.go:231:6: cannot inline ExerciseFuncClosure: marked go:noinline
+./devirt_test.go:20:6: cannot inline BenchmarkDevirtIface: function too complex: cost 85 exceeds budget 80
+./devirt_test.go:32:6: cannot inline TestDevirtIface: function too complex: cost 156 exceeds budget 80
+./mult.pkg/mult.go:37:6: can inline mult.MultFn[go.shape.int64] with cost 19 as: func(*[1]uintptr, go.shape.int64, go.shape.int64) go.shape.int64 { for loop; return mult.a * mult.b }
+./mult.pkg/mult.go:37:6: can inline mult.MultFn[int64] with cost 26 as: func(int64, int64) int64 { return mult.MultFn[go.shape.int64](&mult..dict.MultFn[int64], mult.a, mult.b) }
+./mult.pkg/mult.go:37:6: inlining call to mult.MultFn[go.shape.int64]
+./devirt_test.go:45:6: can inline BenchmarkDevirtFuncConcrete with cost 65 as: func(*testing.B) { ExerciseFuncConcrete(b.N, AddFn, SubFn, mult.MultFn[int64], mult.NegMultFn) }
+./devirt_test.go:49:6: cannot inline TestDevirtFuncConcrete: function too complex: cost 136 exceeds budget 80
+./devirt_test.go:55:6: can inline BenchmarkDevirtFuncField with cost 65 as: func(*testing.B) { ExerciseFuncField(b.N, AddFn, SubFn, mult.MultFn[int64], mult.NegMultFn) }
+./devirt_test.go:59:6: cannot inline TestDevirtFuncField: function too complex: cost 136 exceeds budget 80
+./devirt_test.go:65:6: cannot inline BenchmarkDevirtFuncClosure: function too complex: cost 297 exceeds budget 80
+./devirt_test.go:69:6: cannot inline TestDevirtFuncClosure: function too complex: cost 368 exceeds budget 80
+<autogenerated>:1: inlining call to Add.Add
+<autogenerated>:1: inlining call to Sub.Add
+<autogenerated>:1: inlining call to Sub.Add
+<autogenerated>:1: inlining call to Add.Add
+./devirt.go:60:21: fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) escapes to heap:
+./devirt.go:60:21:   flow: {heap} = &{storage for fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...)}:
+./devirt.go:60:21:     from fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) (spill) at ./devirt.go:60:21
+./devirt.go:60:21:     from panic(fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...)) (call parameter) at ./devirt.go:60:9
+./devirt.go:72:21: fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) escapes to heap:
+./devirt.go:72:21:   flow: {heap} = &{storage for fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...)}:
+./devirt.go:72:21:     from fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) (spill) at ./devirt.go:72:21
+./devirt.go:72:21:     from panic(fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...)) (call parameter) at ./devirt.go:72:9
+./devirt.go:79:21: fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) escapes to heap:
+./devirt.go:79:21:   flow: {heap} = &{storage for fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...)}:
+./devirt.go:79:21:     from fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) (spill) at ./devirt.go:79:21
+./devirt.go:79:21:     from panic(fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...)) (call parameter) at ./devirt.go:79:9
+./devirt.go:57:2: ExerciseIface capturing by ref: selectI (addr=false assign=true width=8)
+./devirt.go:52:34: ExerciseIface capturing by value: a2 (addr=false assign=false width=16)
+./devirt.go:52:30: ExerciseIface capturing by value: a1 (addr=false assign=false width=16)
+./devirt.go:69:2: ExerciseIface capturing by ref: oneI (addr=false assign=true width=8)
+./devirt.go:57:2: ExerciseIface capturing by ref: selectI (addr=true assign=true width=8)
+./devirt.go:52:48: parameter m2 leaks to {heap} with derefs=0:
+./devirt.go:52:48:   flow: m = m2:
+./devirt.go:52:48:     from m = m2 (assign) at ./devirt.go:89:6
+./devirt.go:52:48:   flow: {heap} = m:
+./devirt.go:52:48:     from m.Multiply(.autotmp_21, .autotmp_22) (call parameter) at ./devirt.go:101:20
+./devirt.go:52:44: parameter m1 leaks to {heap} with derefs=0:
+./devirt.go:52:44:   flow: m = m1:
+./devirt.go:52:44:     from m := m1 (assign) at ./devirt.go:87:5
+./devirt.go:52:44:   flow: {heap} = m:
+./devirt.go:52:44:     from m.Multiply(.autotmp_21, .autotmp_22) (call parameter) at ./devirt.go:101:20
+./devirt.go:52:30: parameter a1 leaks to {heap} with derefs=0:
+./devirt.go:52:30:   flow: ~r0 = a1:
+./devirt.go:52:30:     from return a1 (return) at ./devirt.go:67:3
+./devirt.go:52:30:   flow: .autotmp_13 = ~r0:
+./devirt.go:52:30:     from .autotmp_13 = selectA(i) (assign) at ./devirt.go:101:39
+./devirt.go:52:30:   flow: {heap} = .autotmp_13:
+./devirt.go:52:30:     from .autotmp_13.Add(.autotmp_15, .autotmp_16) (call parameter) at ./devirt.go:101:39
+./devirt.go:52:34: parameter a2 leaks to {heap} with derefs=0:
+./devirt.go:52:34:   flow: ~r0 = a2:
+./devirt.go:52:34:     from return a2 (return) at ./devirt.go:65:4
+./devirt.go:52:34:   flow: .autotmp_13 = ~r0:
+./devirt.go:52:34:     from .autotmp_13 = selectA(i) (assign) at ./devirt.go:101:39
+./devirt.go:52:34:   flow: {heap} = .autotmp_13:
+./devirt.go:52:34:     from .autotmp_13.Add(.autotmp_15, .autotmp_16) (call parameter) at ./devirt.go:101:39
+./devirt.go:79:100: oneI escapes to heap:
+./devirt.go:79:100:   flow: {storage for ... argument} = &{storage for oneI}:
+./devirt.go:79:100:     from oneI (spill) at ./devirt.go:79:100
+./devirt.go:79:100:     from ... argument (slice-literal-element) at ./devirt.go:79:21
+./devirt.go:79:100:   flow: {heap} = {storage for ... argument}:
+./devirt.go:79:100:     from ... argument (spill) at ./devirt.go:79:21
+./devirt.go:79:100:     from fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:79:21
+./devirt.go:79:91: selectI escapes to heap:
+./devirt.go:79:91:   flow: {storage for ... argument} = &{storage for selectI}:
+./devirt.go:79:91:     from selectI (spill) at ./devirt.go:79:91
+./devirt.go:79:91:     from ... argument (slice-literal-element) at ./devirt.go:79:21
+./devirt.go:79:91:   flow: {heap} = {storage for ... argument}:
+./devirt.go:79:91:     from ... argument (spill) at ./devirt.go:79:21
+./devirt.go:79:91:     from fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:79:21
+./devirt.go:72:83: oneI escapes to heap:
+./devirt.go:72:83:   flow: {storage for ... argument} = &{storage for oneI}:
+./devirt.go:72:83:     from oneI (spill) at ./devirt.go:72:83
+./devirt.go:72:83:     from ... argument (slice-literal-element) at ./devirt.go:72:21
+./devirt.go:72:83:   flow: {heap} = {storage for ... argument}:
+./devirt.go:72:83:     from ... argument (spill) at ./devirt.go:72:21
+./devirt.go:72:83:     from fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:72:21
+./devirt.go:72:77: gotI escapes to heap:
+./devirt.go:72:77:   flow: {storage for ... argument} = &{storage for gotI}:
+./devirt.go:72:77:     from gotI (spill) at ./devirt.go:72:77
+./devirt.go:72:77:     from ... argument (slice-literal-element) at ./devirt.go:72:21
+./devirt.go:72:77:   flow: {heap} = {storage for ... argument}:
+./devirt.go:72:77:     from ... argument (spill) at ./devirt.go:72:21
+./devirt.go:72:77:     from fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:72:21
+./devirt.go:60:87: selectI escapes to heap:
+./devirt.go:60:87:   flow: {storage for ... argument} = &{storage for selectI}:
+./devirt.go:60:87:     from selectI (spill) at ./devirt.go:60:87
+./devirt.go:60:87:     from ... argument (slice-literal-element) at ./devirt.go:60:21
+./devirt.go:60:87:   flow: {heap} = {storage for ... argument}:
+./devirt.go:60:87:     from ... argument (spill) at ./devirt.go:60:21
+./devirt.go:60:87:     from fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:60:21
+./devirt.go:60:81: gotI escapes to heap:
+./devirt.go:60:81:   flow: {storage for ... argument} = &{storage for gotI}:
+./devirt.go:60:81:     from gotI (spill) at ./devirt.go:60:81
+./devirt.go:60:81:     from ... argument (slice-literal-element) at ./devirt.go:60:21
+./devirt.go:60:81:   flow: {heap} = {storage for ... argument}:
+./devirt.go:60:81:     from ... argument (spill) at ./devirt.go:60:21
+./devirt.go:60:81:     from fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:60:21
+./devirt.go:52:30: leaking param: a1
+./devirt.go:52:34: leaking param: a2
+./devirt.go:52:44: leaking param: m1
+./devirt.go:52:48: leaking param: m2
+./devirt.go:58:13: func literal does not escape
+./devirt.go:60:21: fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) escapes to heap
+./devirt.go:60:21: ... argument does not escape
+./devirt.go:60:81: gotI escapes to heap
+./devirt.go:60:87: selectI escapes to heap
+./devirt.go:70:9: func literal does not escape
+./devirt.go:72:21: fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) escapes to heap
+./devirt.go:72:21: ... argument does not escape
+./devirt.go:72:77: gotI escapes to heap
+./devirt.go:72:83: oneI escapes to heap
+./devirt.go:79:21: fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) escapes to heap
+./devirt.go:79:21: ... argument does not escape
+./devirt.go:79:91: selectI escapes to heap
+./devirt.go:79:100: oneI escapes to heap
+./devirt.go:133:21: fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) escapes to heap:
+./devirt.go:133:21:   flow: {heap} = &{storage for fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...)}:
+./devirt.go:133:21:     from fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) (spill) at ./devirt.go:133:21
+./devirt.go:133:21:     from panic(fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...)) (call parameter) at ./devirt.go:133:9
+./devirt.go:145:21: fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) escapes to heap:
+./devirt.go:145:21:   flow: {heap} = &{storage for fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...)}:
+./devirt.go:145:21:     from fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) (spill) at ./devirt.go:145:21
+./devirt.go:145:21:     from panic(fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...)) (call parameter) at ./devirt.go:145:9
+./devirt.go:152:21: fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) escapes to heap:
+./devirt.go:152:21:   flow: {heap} = &{storage for fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...)}:
+./devirt.go:152:21:     from fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) (spill) at ./devirt.go:152:21
+./devirt.go:152:21:     from panic(fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...)) (call parameter) at ./devirt.go:152:9
+./devirt.go:130:2: ExerciseFuncConcrete capturing by ref: selectI (addr=false assign=true width=8)
+./devirt.go:125:41: ExerciseFuncConcrete capturing by value: a2 (addr=false assign=false width=8)
+./devirt.go:125:37: ExerciseFuncConcrete capturing by value: a1 (addr=false assign=false width=8)
+./devirt.go:142:2: ExerciseFuncConcrete capturing by ref: oneI (addr=false assign=true width=8)
+./devirt.go:130:2: ExerciseFuncConcrete capturing by ref: selectI (addr=true assign=true width=8)
+./devirt.go:152:100: oneI escapes to heap:
+./devirt.go:152:100:   flow: {storage for ... argument} = &{storage for oneI}:
+./devirt.go:152:100:     from oneI (spill) at ./devirt.go:152:100
+./devirt.go:152:100:     from ... argument (slice-literal-element) at ./devirt.go:152:21
+./devirt.go:152:100:   flow: {heap} = {storage for ... argument}:
+./devirt.go:152:100:     from ... argument (spill) at ./devirt.go:152:21
+./devirt.go:152:100:     from fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:152:21
+./devirt.go:152:91: selectI escapes to heap:
+./devirt.go:152:91:   flow: {storage for ... argument} = &{storage for selectI}:
+./devirt.go:152:91:     from selectI (spill) at ./devirt.go:152:91
+./devirt.go:152:91:     from ... argument (slice-literal-element) at ./devirt.go:152:21
+./devirt.go:152:91:   flow: {heap} = {storage for ... argument}:
+./devirt.go:152:91:     from ... argument (spill) at ./devirt.go:152:21
+./devirt.go:152:91:     from fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:152:21
+./devirt.go:145:83: oneI escapes to heap:
+./devirt.go:145:83:   flow: {storage for ... argument} = &{storage for oneI}:
+./devirt.go:145:83:     from oneI (spill) at ./devirt.go:145:83
+./devirt.go:145:83:     from ... argument (slice-literal-element) at ./devirt.go:145:21
+./devirt.go:145:83:   flow: {heap} = {storage for ... argument}:
+./devirt.go:145:83:     from ... argument (spill) at ./devirt.go:145:21
+./devirt.go:145:83:     from fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:145:21
+./devirt.go:145:77: gotI escapes to heap:
+./devirt.go:145:77:   flow: {storage for ... argument} = &{storage for gotI}:
+./devirt.go:145:77:     from gotI (spill) at ./devirt.go:145:77
+./devirt.go:145:77:     from ... argument (slice-literal-element) at ./devirt.go:145:21
+./devirt.go:145:77:   flow: {heap} = {storage for ... argument}:
+./devirt.go:145:77:     from ... argument (spill) at ./devirt.go:145:21
+./devirt.go:145:77:     from fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:145:21
+./devirt.go:133:87: selectI escapes to heap:
+./devirt.go:133:87:   flow: {storage for ... argument} = &{storage for selectI}:
+./devirt.go:133:87:     from selectI (spill) at ./devirt.go:133:87
+./devirt.go:133:87:     from ... argument (slice-literal-element) at ./devirt.go:133:21
+./devirt.go:133:87:   flow: {heap} = {storage for ... argument}:
+./devirt.go:133:87:     from ... argument (spill) at ./devirt.go:133:21
+./devirt.go:133:87:     from fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:133:21
+./devirt.go:133:81: gotI escapes to heap:
+./devirt.go:133:81:   flow: {storage for ... argument} = &{storage for gotI}:
+./devirt.go:133:81:     from gotI (spill) at ./devirt.go:133:81
+./devirt.go:133:81:     from ... argument (slice-literal-element) at ./devirt.go:133:21
+./devirt.go:133:81:   flow: {heap} = {storage for ... argument}:
+./devirt.go:133:81:     from ... argument (spill) at ./devirt.go:133:21
+./devirt.go:133:81:     from fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) (call parameter) at ./devirt.go:133:21
+./devirt.go:125:37: a1 does not escape
+./devirt.go:125:41: a2 does not escape
+./devirt.go:125:53: m1 does not escape
+./devirt.go:125:57: m2 does not escape
+./devirt.go:131:13: func literal does not escape
+./devirt.go:133:21: fmt.Sprintf("selectA not called once per iteration; got i %d want %d", ... argument...) escapes to heap
+./devirt.go:133:21: ... argument does not escape
+./devirt.go:133:81: gotI escapes to heap
+./devirt.go:133:87: selectI escapes to heap
+./devirt.go:143:9: func literal does not escape
+./devirt.go:145:21: fmt.Sprintf("one not called once per iteration; got i %d want %d", ... argument...) escapes to heap
+./devirt.go:145:21: ... argument does not escape
+./devirt.go:145:77: gotI escapes to heap
+./devirt.go:145:83: oneI escapes to heap
+./devirt.go:152:21: fmt.Sprintf("selectA not called before not called before one; got i %d want %d", ... argument...) escapes to heap
+./devirt.go:152:21: ... argument does not escape
+./devirt.go:152:91: selectI escapes to heap
+./devirt.go:152:100: oneI escapes to heap
+./devirt.go:184:34: a1 does not escape
+./devirt.go:184:38: a2 does not escape
+./devirt.go:184:50: m1 does not escape
+./devirt.go:184:54: m2 does not escape
+./devirt.go:216:10: a.Add escapes to heap:
+./devirt.go:216:10:   flow: ~r0 = &{storage for a.Add}:
+./devirt.go:216:10:     from a.Add (spill) at ./devirt.go:216:10
+./devirt.go:216:10:     from return a.Add (return) at ./devirt.go:216:2
+./devirt.go:216:10: a.Add escapes to heap
+./devirt.go:222:10: s.Add escapes to heap:
+./devirt.go:222:10:   flow: ~r0 = &{storage for s.Add}:
+./devirt.go:222:10:     from s.Add (spill) at ./devirt.go:222:10
+./devirt.go:222:10:     from return s.Add (return) at ./devirt.go:222:2
+./devirt.go:222:10: s.Add escapes to heap
+./devirt.go:231:36: a1 does not escape
+./devirt.go:231:40: a2 does not escape
+./devirt.go:231:52: m1 does not escape
+./devirt.go:231:56: m2 does not escape
+./devirt_test.go:28:21: a1 escapes to heap:
+./devirt_test.go:28:21:   flow: {heap} = &{storage for a1}:
+./devirt_test.go:28:21:     from a1 (spill) at ./devirt_test.go:28:21
+./devirt_test.go:28:21:     from ExerciseIface(b.N, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:28:15
+./devirt_test.go:28:25: a2 escapes to heap:
+./devirt_test.go:28:25:   flow: {heap} = &{storage for a2}:
+./devirt_test.go:28:25:     from a2 (spill) at ./devirt_test.go:28:25
+./devirt_test.go:28:25:     from ExerciseIface(b.N, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:28:15
+./devirt_test.go:28:29: m1 escapes to heap:
+./devirt_test.go:28:29:   flow: {heap} = &{storage for m1}:
+./devirt_test.go:28:29:     from m1 (spill) at ./devirt_test.go:28:29
+./devirt_test.go:28:29:     from ExerciseIface(b.N, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:28:15
+./devirt_test.go:28:33: m2 escapes to heap:
+./devirt_test.go:28:33:   flow: {heap} = &{storage for m2}:
+./devirt_test.go:28:33:     from m2 (spill) at ./devirt_test.go:28:33
+./devirt_test.go:28:33:     from ExerciseIface(b.N, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:28:15
+./devirt_test.go:20:27: b does not escape
+./devirt_test.go:28:21: a1 escapes to heap
+./devirt_test.go:28:25: a2 escapes to heap
+./devirt_test.go:28:29: m1 escapes to heap
+./devirt_test.go:28:33: m2 escapes to heap
+./devirt_test.go:40:28: a1 escapes to heap:
+./devirt_test.go:40:28:   flow: {heap} = &{storage for a1}:
+./devirt_test.go:40:28:     from a1 (spill) at ./devirt_test.go:40:28
+./devirt_test.go:40:28:     from ExerciseIface(10, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:40:23
+./devirt_test.go:40:32: a2 escapes to heap:
+./devirt_test.go:40:32:   flow: {heap} = &{storage for a2}:
+./devirt_test.go:40:32:     from a2 (spill) at ./devirt_test.go:40:32
+./devirt_test.go:40:32:     from ExerciseIface(10, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:40:23
+./devirt_test.go:40:36: m1 escapes to heap:
+./devirt_test.go:40:36:   flow: {heap} = &{storage for m1}:
+./devirt_test.go:40:36:     from m1 (spill) at ./devirt_test.go:40:36
+./devirt_test.go:40:36:     from ExerciseIface(10, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:40:23
+./devirt_test.go:40:40: m2 escapes to heap:
+./devirt_test.go:40:40:   flow: {heap} = &{storage for m2}:
+./devirt_test.go:40:40:     from m2 (spill) at ./devirt_test.go:40:40
+./devirt_test.go:40:40:     from ExerciseIface(10, a1, a2, m1, m2) (call parameter) at ./devirt_test.go:40:23
+./devirt_test.go:41:50: v escapes to heap:
+./devirt_test.go:41:50:   flow: {storage for ... argument} = &{storage for v}:
+./devirt_test.go:41:50:     from v (spill) at ./devirt_test.go:41:50
+./devirt_test.go:41:50:     from ... argument (slice-literal-element) at ./devirt_test.go:41:11
+./devirt_test.go:41:50:   flow: {heap} = {storage for ... argument}:
+./devirt_test.go:41:50:     from ... argument (spill) at ./devirt_test.go:41:11
+./devirt_test.go:41:50:     from (*testing.common).Errorf(t.common, "ExerciseIface(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:41:11
+./devirt_test.go:32:22: parameter t leaks to {heap} with derefs=0:
+./devirt_test.go:32:22:   flow: {heap} = t:
+./devirt_test.go:32:22:     from t.common (dot of pointer) at ./devirt_test.go:41:4
+./devirt_test.go:32:22:     from t.common (address-of) at ./devirt_test.go:41:4
+./devirt_test.go:32:22:     from (*testing.common).Errorf(t.common, "ExerciseIface(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:41:11
+./devirt_test.go:32:22: leaking param: t
+./devirt_test.go:40:28: a1 escapes to heap
+./devirt_test.go:40:32: a2 escapes to heap
+./devirt_test.go:40:36: m1 escapes to heap
+./devirt_test.go:40:40: m2 escapes to heap
+./devirt_test.go:41:11: ... argument does not escape
+./devirt_test.go:41:50: v escapes to heap
+./devirt_test.go:45:34: b does not escape
+./devirt_test.go:51:57: v escapes to heap:
+./devirt_test.go:51:57:   flow: {storage for ... argument} = &{storage for v}:
+./devirt_test.go:51:57:     from v (spill) at ./devirt_test.go:51:57
+./devirt_test.go:51:57:     from ... argument (slice-literal-element) at ./devirt_test.go:51:11
+./devirt_test.go:51:57:   flow: {heap} = {storage for ... argument}:
+./devirt_test.go:51:57:     from ... argument (spill) at ./devirt_test.go:51:11
+./devirt_test.go:51:57:     from (*testing.common).Errorf(t.common, "ExerciseFuncConcrete(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:51:11
+./devirt_test.go:49:29: parameter t leaks to {heap} with derefs=0:
+./devirt_test.go:49:29:   flow: {heap} = t:
+./devirt_test.go:49:29:     from t.common (dot of pointer) at ./devirt_test.go:51:4
+./devirt_test.go:49:29:     from t.common (address-of) at ./devirt_test.go:51:4
+./devirt_test.go:49:29:     from (*testing.common).Errorf(t.common, "ExerciseFuncConcrete(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:51:11
+./devirt_test.go:49:29: leaking param: t
+./devirt_test.go:51:11: ... argument does not escape
+./devirt_test.go:51:57: v escapes to heap
+./devirt_test.go:55:31: b does not escape
+./devirt_test.go:61:54: v escapes to heap:
+./devirt_test.go:61:54:   flow: {storage for ... argument} = &{storage for v}:
+./devirt_test.go:61:54:     from v (spill) at ./devirt_test.go:61:54
+./devirt_test.go:61:54:     from ... argument (slice-literal-element) at ./devirt_test.go:61:11
+./devirt_test.go:61:54:   flow: {heap} = {storage for ... argument}:
+./devirt_test.go:61:54:     from ... argument (spill) at ./devirt_test.go:61:11
+./devirt_test.go:61:54:     from (*testing.common).Errorf(t.common, "ExerciseFuncField(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:61:11
+./devirt_test.go:59:26: parameter t leaks to {heap} with derefs=0:
+./devirt_test.go:59:26:   flow: {heap} = t:
+./devirt_test.go:59:26:     from t.common (dot of pointer) at ./devirt_test.go:61:4
+./devirt_test.go:59:26:     from t.common (address-of) at ./devirt_test.go:61:4
+./devirt_test.go:59:26:     from (*testing.common).Errorf(t.common, "ExerciseFuncField(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:61:11
+./devirt_test.go:59:26: leaking param: t
+./devirt_test.go:61:11: ... argument does not escape
+./devirt_test.go:61:54: v escapes to heap
+./devirt_test.go:65:33: b does not escape
+./devirt_test.go:71:56: v escapes to heap:
+./devirt_test.go:71:56:   flow: {storage for ... argument} = &{storage for v}:
+./devirt_test.go:71:56:     from v (spill) at ./devirt_test.go:71:56
+./devirt_test.go:71:56:     from ... argument (slice-literal-element) at ./devirt_test.go:71:11
+./devirt_test.go:71:56:   flow: {heap} = {storage for ... argument}:
+./devirt_test.go:71:56:     from ... argument (spill) at ./devirt_test.go:71:11
+./devirt_test.go:71:56:     from (*testing.common).Errorf(t.common, "ExerciseFuncClosure(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:71:11
+./devirt_test.go:69:28: parameter t leaks to {heap} with derefs=0:
+./devirt_test.go:69:28:   flow: {heap} = t:
+./devirt_test.go:69:28:     from t.common (dot of pointer) at ./devirt_test.go:71:4
+./devirt_test.go:69:28:     from t.common (address-of) at ./devirt_test.go:71:4
+./devirt_test.go:69:28:     from (*testing.common).Errorf(t.common, "ExerciseFuncClosure(10) got %d want 1176", ... argument...) (call parameter) at ./devirt_test.go:71:11
+./devirt_test.go:69:28: leaking param: t
+./devirt_test.go:71:11: ... argument does not escape
+./devirt_test.go:71:56: v escapes to heap
+<autogenerated>:1: parameter ~p0 leaks to {heap} with derefs=0:
+<autogenerated>:1:   flow: {heap} = ~p0:
+<autogenerated>:1:     from ~p0.Add(a, b) (call parameter) at <autogenerated>:1

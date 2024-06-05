@@ -1,0 +1,3 @@
+./atomic_andor_test.go
+./atomic_test.go
+./bench_test.go

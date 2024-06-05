@@ -1,0 +1,6 @@
+./backdoor.go
+./buildid_linux.go
+./issue21897b.go
+./issue42018.go
+./issue8517.go
+./test_unix.go

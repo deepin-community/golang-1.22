@@ -1,0 +1,4 @@
+//line /tmp/cmd-go-test-450200580/tmpdir643344870/test_empty1625040050/gopath/src/empty/pkg/pkg.go:1:1
+package p; import _cover_atomic_ "sync/atomic"
+
+var _ = _cover_atomic_.LoadUint32

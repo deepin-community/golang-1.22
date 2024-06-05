@@ -1,0 +1,314 @@
+# command-line-arguments
+command-line-arguments.f<1> STEXT size=168 args=0x18 locals=0x60 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	TEXT	command-line-arguments.f(SB), ABIInternal, $96-24
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	CMPQ	SP, 16(R14)
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PCDATA	$0, $-2
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	JLS	128
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PCDATA	$0, $-1
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PUSHQ	BP
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	SP, BP
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	SUBQ	$88, SP
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	FUNCDATA	$0, gclocals·wgcWObbY2HYnK2SU/U22lA==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	FUNCDATA	$5, command-line-arguments.f.arginfo1(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	FUNCDATA	$6, command-line-arguments.f.argliveinfo(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PCDATA	$3, $1
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	MOVQ	BX, command-line-arguments.x+112(SP)
+	0x0013 00019 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	MOVQ	AX, command-line-arguments.x+104(SP)
+	0x0018 00024 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	PCDATA	$3, $2
+	0x0018 00024 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:14)	MOVUPS	X15, command-line-arguments..autotmp_4+64(SP)
+	0x001e 00030 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:14)	MOVUPS	X15, command-line-arguments..autotmp_4+72(SP)
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	MOVL	$3, CX
+	0x0029 00041 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	MOVL	$2, DI
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	LEAQ	type:int(SB), SI
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	LEAQ	command-line-arguments..autotmp_4+64(SP), AX
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	MOVL	$5, BX
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	PCDATA	$1, $0
+	0x003f 00063 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	NOP
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	CALL	runtime.growslice(SB)
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	MOVQ	$4, 24(AX)
+	0x004d 00077 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:15)	MOVQ	$5, 32(AX)
+	0x0055 00085 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	MOVQ	command-line-arguments.x+112(SP), CX
+	0x005a 00090 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	NOP
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	CMPQ	CX, $5
+	0x0064 00100 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	JLS	117
+	0x0066 00102 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	MOVQ	command-line-arguments.x+104(SP), CX
+	0x006b 00107 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	MOVQ	40(CX), AX
+	0x006f 00111 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	ADDQ	$88, SP
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	POPQ	BP
+	0x0074 00116 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	RET
+	0x0075 00117 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	MOVL	$5, AX
+	0x007a 00122 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	PCDATA	$1, $1
+	0x007a 00122 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	CALL	runtime.panicIndex(SB)
+	0x007f 00127 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	XCHGL	AX, AX
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:17)	NOP
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PCDATA	$1, $-1
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PCDATA	$0, $-2
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	AX, 8(SP)
+	0x0085 00133 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	BX, 16(SP)
+	0x008a 00138 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	CX, 24(SP)
+	0x008f 00143 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	CALL	runtime.morestack_noctxt(SB)
+	0x0094 00148 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	PCDATA	$0, $-1
+	0x0094 00148 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	8(SP), AX
+	0x0099 00153 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	16(SP), BX
+	0x009e 00158 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	MOVQ	24(SP), CX
+	0x00a3 00163 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:13)	JMP	0
+	0x0000 49 3b 66 10 76 7a 55 48 89 e5 48 83 ec 58 48 89  I;f.vzUH..H..XH.
+	0x0010 5c 24 70 48 89 44 24 68 44 0f 11 7c 24 40 44 0f  \$pH.D$hD..|$@D.
+	0x0020 11 7c 24 48 b9 03 00 00 00 bf 02 00 00 00 48 8d  .|$H..........H.
+	0x0030 35 00 00 00 00 48 8d 44 24 40 bb 05 00 00 00 90  5....H.D$@......
+	0x0040 e8 00 00 00 00 48 c7 40 18 04 00 00 00 48 c7 40  .....H.@.....H.@
+	0x0050 20 05 00 00 00 48 8b 4c 24 70 66 0f 1f 44 00 00   ....H.L$pf..D..
+	0x0060 48 83 f9 05 76 0f 48 8b 4c 24 68 48 8b 41 28 48  H...v.H.L$hH.A(H
+	0x0070 83 c4 58 5d c3 b8 05 00 00 00 e8 00 00 00 00 90  ..X]............
+	0x0080 48 89 44 24 08 48 89 5c 24 10 48 89 4c 24 18 e8  H.D$.H.\$.H.L$..
+	0x0090 00 00 00 00 48 8b 44 24 08 48 8b 5c 24 10 48 8b  ....H.D$.H.\$.H.
+	0x00a0 4c 24 18 e9 58 ff ff ff                          L$..X...
+	rel 49+4 t=R_PCREL type:int<0>+0
+	rel 65+4 t=R_CALL runtime.growslice<1>+0
+	rel 123+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 144+4 t=R_CALL runtime.morestack_noctxt<0>+0
+command-line-arguments.g<1> STEXT size=298 args=0x20 locals=0x60 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	TEXT	command-line-arguments.g(SB), ABIInternal, $96-32
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	CMPQ	SP, 16(R14)
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PCDATA	$0, $-2
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	JLS	248
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PCDATA	$0, $-1
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PUSHQ	BP
+	0x000b 00011 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	SP, BP
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	SUBQ	$88, SP
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	FUNCDATA	$0, gclocals·cNGUyZq94N9QFR70tEjj5A==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	FUNCDATA	$1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	FUNCDATA	$5, command-line-arguments.g.arginfo1(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	FUNCDATA	$6, command-line-arguments.g.argliveinfo(SB)
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PCDATA	$3, $1
+	0x0012 00018 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:22)	MOVQ	DI, command-line-arguments.p+128(SP)
+	0x001a 00026 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:22)	MOVQ	AX, command-line-arguments.x+104(SP)
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:22)	MOVQ	BX, command-line-arguments.x+112(SP)
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:22)	PCDATA	$3, $2
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:21)	MOVUPS	X15, command-line-arguments..autotmp_5+64(SP)
+	0x002a 00042 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:21)	MOVUPS	X15, command-line-arguments..autotmp_5+72(SP)
+	0x0030 00048 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:21)	MOVL	$3, CX
+	0x0035 00053 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:21)	LEAQ	command-line-arguments..autotmp_5+64(SP), DX
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:21)	NOP
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	CMPQ	CX, $3
+	0x0044 00068 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	JCS	234
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:24)	CMPQ	CX, $5
+	0x004e 00078 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:24)	JGE	128
+	0x0050 00080 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:25)	LEAQ	type:int(SB), AX
+	0x0057 00087 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:25)	MOVL	$3, BX
+	0x005c 00092 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:25)	MOVL	$5, CX
+	0x0061 00097 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:25)	PCDATA	$1, $0
+	0x0061 00097 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:25)	CALL	runtime.makeslice(SB)
+	0x0066 00102 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVQ	command-line-arguments.x+112(SP), BX
+	0x006b 00107 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:28)	MOVQ	command-line-arguments.p+128(SP), DI
+	0x0073 00115 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:28)	MOVL	$5, CX
+	0x0078 00120 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVQ	AX, DX
+	0x007b 00123 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVQ	command-line-arguments.x+104(SP), AX
+	0x0080 00128 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	CMPQ	CX, $5
+	0x0084 00132 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	JCC	180
+	0x0086 00134 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVQ	DX, AX
+	0x0089 00137 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVL	$5, BX
+	0x008e 00142 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVL	$2, DI
+	0x0093 00147 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	LEAQ	type:int(SB), SI
+	0x009a 00154 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	CALL	runtime.growslice(SB)
+	0x009f 00159 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVQ	command-line-arguments.x+112(SP), BX
+	0x00a4 00164 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:28)	MOVQ	command-line-arguments.p+128(SP), DI
+	0x00ac 00172 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVQ	AX, DX
+	0x00af 00175 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVQ	command-line-arguments.x+104(SP), AX
+	0x00b4 00180 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVQ	$4, 24(DX)
+	0x00bc 00188 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:27)	MOVQ	$5, 32(DX)
+	0x00c4 00196 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:28)	CMPB	(DI), $0
+	0x00c7 00199 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:28)	JEQ	64
+	0x00cd 00205 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	CMPQ	BX, $5
+	0x00d1 00209 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	JLS	221
+	0x00d3 00211 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVQ	40(AX), AX
+	0x00d7 00215 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	ADDQ	$88, SP
+	0x00db 00219 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	POPQ	BP
+	0x00dc 00220 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	RET
+	0x00dd 00221 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVL	$5, AX
+	0x00e2 00226 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	MOVQ	BX, CX
+	0x00e5 00229 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	PCDATA	$1, $1
+	0x00e5 00229 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:30)	CALL	runtime.panicIndex(SB)
+	0x00ea 00234 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	MOVQ	CX, DX
+	0x00ed 00237 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	MOVL	$3, CX
+	0x00f2 00242 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	CALL	runtime.panicSliceAcap(SB)
+	0x00f7 00247 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	XCHGL	AX, AX
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:23)	NOP
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PCDATA	$1, $-1
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PCDATA	$0, $-2
+	0x00f8 00248 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	AX, 8(SP)
+	0x00fd 00253 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	BX, 16(SP)
+	0x0102 00258 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	CX, 24(SP)
+	0x0107 00263 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	DI, 32(SP)
+	0x010c 00268 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	CALL	runtime.morestack_noctxt(SB)
+	0x0111 00273 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	PCDATA	$0, $-1
+	0x0111 00273 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	8(SP), AX
+	0x0116 00278 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	16(SP), BX
+	0x011b 00283 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	24(SP), CX
+	0x0120 00288 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	MOVQ	32(SP), DI
+	0x0125 00293 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/issue56440.go:20)	JMP	0
+	0x0000 49 3b 66 10 0f 86 ee 00 00 00 55 48 89 e5 48 83  I;f.......UH..H.
+	0x0010 ec 58 48 89 bc 24 80 00 00 00 48 89 44 24 68 48  .XH..$....H.D$hH
+	0x0020 89 5c 24 70 44 0f 11 7c 24 40 44 0f 11 7c 24 48  .\$pD..|$@D..|$H
+	0x0030 b9 03 00 00 00 48 8d 54 24 40 66 0f 1f 44 00 00  .....H.T$@f..D..
+	0x0040 48 83 f9 03 0f 82 a0 00 00 00 48 83 f9 05 7d 30  H.........H...}0
+	0x0050 48 8d 05 00 00 00 00 bb 03 00 00 00 b9 05 00 00  H...............
+	0x0060 00 e8 00 00 00 00 48 8b 5c 24 70 48 8b bc 24 80  ......H.\$pH..$.
+	0x0070 00 00 00 b9 05 00 00 00 48 89 c2 48 8b 44 24 68  ........H..H.D$h
+	0x0080 48 83 f9 05 73 2e 48 89 d0 bb 05 00 00 00 bf 02  H...s.H.........
+	0x0090 00 00 00 48 8d 35 00 00 00 00 e8 00 00 00 00 48  ...H.5.........H
+	0x00a0 8b 5c 24 70 48 8b bc 24 80 00 00 00 48 89 c2 48  .\$pH..$....H..H
+	0x00b0 8b 44 24 68 48 c7 42 18 04 00 00 00 48 c7 42 20  .D$hH.B.....H.B 
+	0x00c0 05 00 00 00 80 3f 00 0f 84 73 ff ff ff 48 83 fb  .....?...s...H..
+	0x00d0 05 76 0a 48 8b 40 28 48 83 c4 58 5d c3 b8 05 00  .v.H.@(H..X]....
+	0x00e0 00 00 48 89 d9 e8 00 00 00 00 48 89 ca b9 03 00  ..H.......H.....
+	0x00f0 00 00 e8 00 00 00 00 90 48 89 44 24 08 48 89 5c  ........H.D$.H.\
+	0x0100 24 10 48 89 4c 24 18 48 89 7c 24 20 e8 00 00 00  $.H.L$.H.|$ ....
+	0x0110 00 48 8b 44 24 08 48 8b 5c 24 10 48 8b 4c 24 18  .H.D$.H.\$.H.L$.
+	0x0120 48 8b 7c 24 20 e9 d6 fe ff ff                    H.|$ .....
+	rel 83+4 t=R_PCREL type:int<0>+0
+	rel 98+4 t=R_CALL runtime.makeslice<1>+0
+	rel 150+4 t=R_PCREL type:int<0>+0
+	rel 155+4 t=R_CALL runtime.growslice<1>+0
+	rel 230+4 t=R_CALL runtime.panicIndex<1>+0
+	rel 243+4 t=R_CALL runtime.panicSliceAcap<1>+0
+	rel 269+4 t=R_CALL runtime.morestack_noctxt<0>+0
+go:cuinfo.producer.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 70                                               p
+type:.eqfunc24<0> SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	rel 0+8 t=R_ADDR runtime.memequal_varlen<1>+0
+runtime.memequal64·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal64<1>+0
+runtime.gcbits.0100000000000000<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*[3]int-<0> SRODATA dupok size=9
+	0x0000 00 07 2a 5b 33 5d 69 6e 74                       ..*[3]int
+type:*[3]int<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 b7 c2 a0 47 08 08 08 36 00 00 00 00 00 00 00 00  ...G...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[3]int-<0>+0
+	rel 48+8 t=R_ADDR type:[3]int<0>+0
+runtime.gcbits.<0> SRODATA dupok size=0
+type:[3]int<0> SRODATA dupok size=72
+	0x0000 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 15 04 bf d2 0a 08 08 11 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 03 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc24<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[3]int-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[3]int<0>+0
+	rel 48+8 t=R_ADDR type:int<0>+0
+	rel 56+8 t=R_ADDR type:[]int<0>+0
+gclocals·wgcWObbY2HYnK2SU/U22lA==<0> SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==<0> SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+command-line-arguments.f.arginfo1<0> SRODATA static dupok size=9
+	0x0000 fe 00 08 08 08 10 08 fd ff                       .........
+command-line-arguments.f.argliveinfo<0> SRODATA static dupok size=3
+	0x0000 00 00 03                                         ...
+gclocals·cNGUyZq94N9QFR70tEjj5A==<0> SRODATA dupok size=10
+	0x0000 02 00 00 00 04 00 00 00 09 00                    ..........
+command-line-arguments.g.arginfo1<0> SRODATA static dupok size=11
+	0x0000 fe 00 08 08 08 10 08 fd 18 08 ff                 ...........
+command-line-arguments.g.argliveinfo<0> SRODATA static dupok size=3
+	0x0000 00 00 0b                                         ...
+aux for command-line-arguments.f<0> SDWARFLOC size=140
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 29 00 00 00 00 00 00 00  ........).......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 29 00 00 00 00  ..P..S..R..)....
+	0x0030 00 00 00 3a 00 00 00 00 00 00 00 09 00 9c 93 08  ...:............
+	0x0040 91 08 93 08 93 08 3a 00 00 00 00 00 00 00 3f 00  ......:.......?.
+	0x0050 00 00 00 00 00 00 09 00 9c 93 08 91 08 93 08 93  ................
+	0x0060 08 3f 00 00 00 00 00 00 00 a8 00 00 00 00 00 00  .?..............
+	0x0070 00 09 00 9c 93 08 91 08 93 08 93 08 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 00 00 00 00              ............
+	rel 8+8 t=R_ADDR command-line-arguments.f<1>+0
+aux for command-line-arguments.f<0> SDWARFLINES size=48
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 07 14  ................
+	0x0010 0a 73 06 3b 06 70 06 4b 06 4c 06 41 06 f5 06 41  .s.;.p.K.L.A...A
+	0x0020 06 b1 06 41 06 87 06 41 06 d7 15 02 28 00 01 01  ...A...A....(...
+	rel 3+8 t=R_ADDR command-line-arguments.f<1>+0
+aux for command-line-arguments.f<0> SDWARFFCN size=85
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 66 00 00 00 00 00 00 00  guments.f.......
+	0x0020 00 00 00 00 00 00 00 00 00 00 01 9c 02 00 00 00  ................
+	0x0030 0d 01 12 78 00 00 0d 00 00 00 00 00 00 00 00 11  ...x............
+	0x0040 7e 72 30 00 01 0d 00 00 00 00 00 0c 73 00 0e 00  ~r0.........s...
+	0x0050 00 00 00 00 00                                   .....
+	rel 0+0 t=R_USETYPE type:[3]int<0>+0
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 26+8 t=R_ADDR command-line-arguments.f<1>+0
+	rel 34+8 t=R_ADDR command-line-arguments.f<1>+168
+	rel 55+4 t=R_DWARFSECREF go:info.[]int<0>+0
+	rel 59+4 t=R_DWARFSECREF <0>+0
+	rel 70+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 79+4 t=R_DWARFSECREF go:info.[]int<0>+0
+aux for command-line-arguments.g<0> SDWARFLOC size=421
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 35 00 00 00 00 00 00 00  ........5.......
+	0x0020 09 00 50 93 08 53 93 08 52 93 08 35 00 00 00 00  ..P..S..R..5....
+	0x0030 00 00 00 57 00 00 00 00 00 00 00 09 00 9c 93 08  ...W............
+	0x0040 91 08 93 08 93 08 57 00 00 00 00 00 00 00 5c 00  ......W.......\.
+	0x0050 00 00 00 00 00 00 09 00 9c 93 08 91 08 93 08 93  ................
+	0x0060 08 5c 00 00 00 00 00 00 00 2a 01 00 00 00 00 00  .\.......*......
+	0x0070 00 09 00 9c 93 08 91 08 93 08 93 08 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0090 ff ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 00 00 00 00 66 00 00 00 00 00 00 00 01 00 55 66  ....f.........Uf
+	0x00b0 00 00 00 00 00 00 00 2a 01 00 00 00 00 00 00 02  .......*........
+	0x00c0 00 91 18 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00d0 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x00e0 00 00 00 40 00 00 00 00 00 00 00 61 00 00 00 00  ...@.......a....
+	0x00f0 00 00 00 08 00 51 93 08 93 08 52 93 08 61 00 00  .....Q....R..a..
+	0x0100 00 00 00 00 00 66 00 00 00 00 00 00 00 07 00 51  .....f.........Q
+	0x0110 93 08 93 08 93 08 66 00 00 00 00 00 00 00 80 00  ......f.........
+	0x0120 00 00 00 00 00 00 07 00 50 93 08 93 08 93 08 80  ........P.......
+	0x0130 00 00 00 00 00 00 00 9f 00 00 00 00 00 00 00 08  ................
+	0x0140 00 51 93 08 93 08 52 93 08 b4 00 00 00 00 00 00  .Q....R.........
+	0x0150 00 e5 00 00 00 00 00 00 00 08 00 51 93 08 93 08  ...........Q....
+	0x0160 52 93 08 e5 00 00 00 00 00 00 00 ed 00 00 00 00  R...............
+	0x0170 00 00 00 07 00 51 93 08 93 08 93 08 ed 00 00 00  .....Q..........
+	0x0180 00 00 00 00 f2 00 00 00 00 00 00 00 07 00 93 08  ................
+	0x0190 93 08 52 93 08 00 00 00 00 00 00 00 00 00 00 00  ..R.............
+	0x01a0 00 00 00 00 00                                   .....
+	rel 8+8 t=R_ADDR command-line-arguments.g<1>+0
+	rel 148+8 t=R_ADDR command-line-arguments.g<1>+0
+	rel 219+8 t=R_ADDR command-line-arguments.g<1>+0
+aux for command-line-arguments.g<0> SDWARFLINES size=76
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 0e 14  ................
+	0x0010 0a 9b 06 39 06 c2 06 4b 06 ed 06 37 06 4c 06 37  ...9...K...7.L.7
+	0x0020 06 24 06 55 06 73 06 46 3f 90 30 06 3e 06 37 08  .$.U.s.F?.0.>.7.
+	0x0030 30 3f 5e 30 3e 06 b0 06 2d 06 4d 06 37 06 23 06  0?^0>...-.M.7.#.
+	0x0040 37 03 7d c9 06 91 16 02 32 00 01 01              7.}.....2...
+	rel 3+8 t=R_ADDR command-line-arguments.g<1>+0
+aux for command-line-arguments.g<0> SDWARFFCN size=101
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 67 00 00 00 00 00 00 00  guments.g.......
+	0x0020 00 00 00 00 00 00 00 00 00 00 01 9c 02 00 00 00  ................
+	0x0030 14 01 12 78 00 00 14 00 00 00 00 00 00 00 00 12  ...x............
+	0x0040 70 00 00 14 00 00 00 00 00 00 00 00 11 7e 72 30  p............~r0
+	0x0050 00 01 14 00 00 00 00 00 0d 73 00 15 00 00 00 00  .........s......
+	0x0060 00 00 00 00 00                                   .....
+	rel 0+0 t=R_USETYPE type:[3]int<0>+0
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 26+8 t=R_ADDR command-line-arguments.g<1>+0
+	rel 34+8 t=R_ADDR command-line-arguments.g<1>+298
+	rel 55+4 t=R_DWARFSECREF go:info.[]int<0>+0
+	rel 59+4 t=R_DWARFSECREF <0>+0
+	rel 68+4 t=R_DWARFSECREF go:info.*bool<0>+0
+	rel 72+4 t=R_DWARFSECREF <0>+140
+	rel 83+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 92+4 t=R_DWARFSECREF go:info.[]int<0>+0
+	rel 96+4 t=R_DWARFSECREF <0>+211

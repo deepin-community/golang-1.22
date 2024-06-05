@@ -1,0 +1,172 @@
+# command-line-arguments
+command-line-arguments.f1<1> STEXT size=63 args=0x10 locals=0x20 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	TEXT	command-line-arguments.f1(SB), ABIInternal, $32-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	CMPQ	SP, 16(R14)
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PCDATA	$0, $-2
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	JLS	36
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PCDATA	$0, $-1
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PUSHQ	BP
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	MOVQ	SP, BP
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	SUBQ	$24, SP
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	FUNCDATA	$5, command-line-arguments.f1.arginfo1(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	FUNCDATA	$6, command-line-arguments.f1.argliveinfo(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PCDATA	$3, $1
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:12)	MOVQ	BX, CX
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:12)	MOVQ	AX, BX
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:12)	MOVL	$1, AX
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:12)	PCDATA	$1, $0
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:12)	CALL	command-line-arguments.g(SB)
+	0x001e 00030 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:13)	ADDQ	$24, SP
+	0x0022 00034 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:13)	POPQ	BP
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:13)	RET
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:13)	NOP
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PCDATA	$1, $-1
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PCDATA	$0, $-2
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	MOVQ	AX, 8(SP)
+	0x0029 00041 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	MOVQ	BX, 16(SP)
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	CALL	runtime.morestack_noctxt(SB)
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	PCDATA	$0, $-1
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	MOVQ	8(SP), AX
+	0x0038 00056 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	MOVQ	16(SP), BX
+	0x003d 00061 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:10)	JMP	0
+	0x0000 49 3b 66 10 76 1e 55 48 89 e5 48 83 ec 18 48 89  I;f.v.UH..H...H.
+	0x0010 d9 48 89 c3 b8 01 00 00 00 e8 00 00 00 00 48 83  .H............H.
+	0x0020 c4 18 5d c3 48 89 44 24 08 48 89 5c 24 10 e8 00  ..].H.D$.H.\$...
+	0x0030 00 00 00 48 8b 44 24 08 48 8b 5c 24 10 eb c1     ...H.D$.H.\$...
+	rel 26+4 t=R_CALL command-line-arguments.g<1>+0
+	rel 47+4 t=R_CALL runtime.morestack_noctxt<0>+0
+command-line-arguments.f2<1> STEXT size=58 args=0x10 locals=0x20 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	TEXT	command-line-arguments.f2(SB), ABIInternal, $32-16
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	CMPQ	SP, 16(R14)
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PCDATA	$0, $-2
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	JLS	31
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PCDATA	$0, $-1
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PUSHQ	BP
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	MOVQ	SP, BP
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	SUBQ	$24, SP
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	FUNCDATA	$5, command-line-arguments.f2.arginfo1(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	FUNCDATA	$6, command-line-arguments.f2.argliveinfo(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PCDATA	$3, $1
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:18)	MOVQ	BX, AX
+	0x0011 00017 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:18)	MOVQ	AX, CX
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:18)	PCDATA	$1, $0
+	0x0014 00020 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:18)	CALL	command-line-arguments.g(SB)
+	0x0019 00025 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:19)	ADDQ	$24, SP
+	0x001d 00029 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:19)	POPQ	BP
+	0x001e 00030 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:19)	RET
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:19)	NOP
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PCDATA	$1, $-1
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PCDATA	$0, $-2
+	0x001f 00031 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	MOVQ	AX, 8(SP)
+	0x0024 00036 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	MOVQ	BX, 16(SP)
+	0x0029 00041 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	CALL	runtime.morestack_noctxt(SB)
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	PCDATA	$0, $-1
+	0x002e 00046 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	MOVQ	8(SP), AX
+	0x0033 00051 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	MOVQ	16(SP), BX
+	0x0038 00056 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:16)	JMP	0
+	0x0000 49 3b 66 10 76 19 55 48 89 e5 48 83 ec 18 48 89  I;f.v.UH..H...H.
+	0x0010 d8 48 89 c1 e8 00 00 00 00 48 83 c4 18 5d c3 48  .H.......H...].H
+	0x0020 89 44 24 08 48 89 5c 24 10 e8 00 00 00 00 48 8b  .D$.H.\$......H.
+	0x0030 44 24 08 48 8b 5c 24 10 eb c6                    D$.H.\$...
+	rel 21+4 t=R_CALL command-line-arguments.g<1>+0
+	rel 42+4 t=R_CALL runtime.morestack_noctxt<0>+0
+command-line-arguments.g<1> STEXT nosplit size=1 args=0x18 locals=0x0 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	TEXT	command-line-arguments.g(SB), NOSPLIT|NOFRAME|ABIInternal, $0-24
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	FUNCDATA	$0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	FUNCDATA	$1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	FUNCDATA	$5, command-line-arguments.g.arginfo1(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	FUNCDATA	$6, command-line-arguments.g.argliveinfo(SB)
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	PCDATA	$3, $1
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/regabi_regalloc.go:23)	RET
+	0x0000 c3                                               .
+go:cuinfo.producer.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 63 6f 64 65 67 65 6e                             codegen
+gclocals·g2BeySu+wFnoycgXfElmcg==<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+command-line-arguments.f1.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+command-line-arguments.f1.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.f2.arginfo1<0> SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+command-line-arguments.f2.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+command-line-arguments.g.arginfo1<0> SRODATA static dupok size=7
+	0x0000 00 08 08 08 10 08 ff                             .......
+command-line-arguments.g.argliveinfo<0> SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+aux for command-line-arguments.f1<0> SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 19 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.f1<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.f1<1>+0
+aux for command-line-arguments.f1<0> SDWARFLINES size=29
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 04 14  ................
+	0x0010 0a 73 39 06 2d 06 92 48 02 1b 00 01 01           .s9.-..H.....
+	rel 3+8 t=R_ADDR command-line-arguments.f1<1>+0
+aux for command-line-arguments.f1<0> SDWARFFCN size=78
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 66 31 00 00 00 00 00 00  guments.f1......
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 01 9c 02 00 00  ................
+	0x0030 00 0a 01 12 61 00 00 0a 00 00 00 00 00 00 00 00  ....a...........
+	0x0040 12 62 00 00 0a 00 00 00 00 00 00 00 00 00        .b............
+	rel 27+8 t=R_ADDR command-line-arguments.f1<1>+0
+	rel 35+8 t=R_ADDR command-line-arguments.f1<1>+63
+	rel 56+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 60+4 t=R_DWARFSECREF <0>+0
+	rel 69+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 73+4 t=R_DWARFSECREF <0>+51
+aux for command-line-arguments.f2<0> SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 00  ................
+	0x0020 01 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00  ..P.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 19 00 00 00 00  ................
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=R_ADDR command-line-arguments.f2<1>+0
+	rel 59+8 t=R_ADDR command-line-arguments.f2<1>+0
+aux for command-line-arguments.f2<0> SDWARFLINES size=29
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 0a 14  ................
+	0x0010 0a 73 39 06 2d 06 60 48 02 1b 00 01 01           .s9.-.`H.....
+	rel 3+8 t=R_ADDR command-line-arguments.f2<1>+0
+aux for command-line-arguments.f2<0> SDWARFFCN size=78
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 66 32 00 00 00 00 00 00  guments.f2......
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 01 9c 02 00 00  ................
+	0x0030 00 10 01 12 61 00 00 10 00 00 00 00 00 00 00 00  ....a...........
+	0x0040 12 62 00 00 10 00 00 00 00 00 00 00 00 00        .b............
+	rel 27+8 t=R_ADDR command-line-arguments.f2<1>+0
+	rel 35+8 t=R_ADDR command-line-arguments.f2<1>+58
+	rel 56+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 60+4 t=R_DWARFSECREF <0>+0
+	rel 69+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 73+4 t=R_DWARFSECREF <0>+51
+aux for command-line-arguments.g<0> SDWARFLINES size=21
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 11 14  ................
+	0x0010 02 01 00 01 01                                   .....
+	rel 3+8 t=R_ADDR command-line-arguments.g<1>+0
+aux for command-line-arguments.g<0> SDWARFFCN size=87
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 67 00 00 00 00 00 00 00  guments.g.......
+	0x0020 00 00 00 00 00 00 00 00 00 00 01 9c 02 00 00 00  ................
+	0x0030 17 01 11 7e 70 30 00 00 17 00 00 00 00 00 11 7e  ...~p0.........~
+	0x0040 70 31 00 00 17 00 00 00 00 00 11 7e 70 32 00 00  p1.........~p2..
+	0x0050 17 00 00 00 00 00 00                             .......
+	rel 0+0 t=R_USETYPE type:int<0>+0
+	rel 26+8 t=R_ADDR command-line-arguments.g<1>+0
+	rel 34+8 t=R_ADDR command-line-arguments.g<1>+1
+	rel 57+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 69+4 t=R_DWARFSECREF go:info.int<0>+0
+	rel 81+4 t=R_DWARFSECREF go:info.int<0>+0

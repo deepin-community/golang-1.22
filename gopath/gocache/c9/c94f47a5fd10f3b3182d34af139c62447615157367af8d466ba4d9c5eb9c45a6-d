@@ -1,0 +1,8 @@
+//line /home/xzl/work/golang-1.22/golang-1.22/src/cmd/internal/cov/testdata/small.go:1:1
+package main; import _ "runtime/coverage"
+
+import "os"
+
+func main() {goCover_14e7eac9fa7b__0[0] = 1 ; goCover_14e7eac9fa7b__0[1] = goCover_14e7eac9fa7b_P ; goCover_14e7eac9fa7b__0[2] = 0 ; goCover_14e7eac9fa7b__0[3] = 1;
+	println(len(os.Args))
+}

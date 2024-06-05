@@ -1,0 +1,9 @@
+./base.go
+./batch.go
+./batchcursor.go
+./event.go
+./generation.go
+./order.go
+./reader.go
+./resources.go
+./value.go

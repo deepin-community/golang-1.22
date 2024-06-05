@@ -1,0 +1,31 @@
+//line /home/xzl/work/golang-1.22/golang-1.22/src/cmd/cover/testdata/html/html.go:1:1
+package html
+
+import "fmt"
+
+// This file is tested by html_test.go.
+// The comments below are markers for extracting the annotated source
+// from the HTML output.
+
+// This is a regression test for incorrect sorting of boundaries
+// that coincide, specifically for empty select clauses.
+// START f
+func f() {goCover_f50f3d77666f__0[0] = 3 ; goCover_f50f3d77666f__0[1] = goCover_f50f3d77666f_P ; goCover_f50f3d77666f__0[2] = 0 ; goCover_f50f3d77666f__0[3] = 1;
+	ch := make(chan int)
+	select {
+	case <-ch:goCover_f50f3d77666f__0[4] = 1;
+	default:goCover_f50f3d77666f__0[5] = 1;
+	}
+}
+
+// END f
+
+// https://golang.org/issue/25767
+// START g
+func g() {goCover_f50f3d77666f__1[0] = 2 ; goCover_f50f3d77666f__1[1] = goCover_f50f3d77666f_P ; goCover_f50f3d77666f__1[2] = 1 ; goCover_f50f3d77666f__1[3] = 1;
+	if false {goCover_f50f3d77666f__1[4] = 1;
+		fmt.Printf("Hello")
+	}
+}
+
+// END g
