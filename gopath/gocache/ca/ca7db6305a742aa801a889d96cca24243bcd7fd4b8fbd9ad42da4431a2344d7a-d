@@ -1,0 +1,6 @@
+./cover.go
+./flagdefs.go
+./test.go
+./test_unix.go
+./testflag.go
+./flagdefs_test.go

@@ -1,0 +1,3 @@
+//line /tmp/cmd-cover-test-1169819266/005/issue58370/noeol.go:1:1
+package noeol; import _cover_atomic_ "sync/atomic"
+var _ = _cover_atomic_.LoadUint32

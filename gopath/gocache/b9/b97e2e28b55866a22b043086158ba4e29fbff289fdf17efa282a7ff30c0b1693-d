@@ -1,0 +1,3 @@
+./devirtualize.go
+./pgo.go
+./pgo_test.go

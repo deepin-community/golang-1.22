@@ -1,0 +1,202 @@
+# command-line-arguments
+command-line-arguments.f<1> STEXT size=120 args=0x0 locals=0x70 funcid=0x0 align=0x0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	TEXT	command-line-arguments.f(SB), ABIInternal, $112-0
+	0x0000 00000 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	CMPQ	SP, 16(R14)
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	PCDATA	$0, $-2
+	0x0004 00004 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	JLS	113
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	PCDATA	$0, $-1
+	0x0006 00006 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	PUSHQ	BP
+	0x0007 00007 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	MOVQ	SP, BP
+	0x000a 00010 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	SUBQ	$104, SP
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	FUNCDATA	$0, gclocals·ykHN0vawYuq1dUW4zEe2gA==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	FUNCDATA	$1, gclocals·M5gL/1F/vWBBJ1PzOTgzaA==(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	FUNCDATA	$2, command-line-arguments.f.stkobj(SB)
+	0x000e 00014 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:10)	LEAQ	type:chan int(SB), AX
+	0x0015 00021 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:10)	XORL	BX, BX
+	0x0017 00023 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:10)	PCDATA	$1, $0
+	0x0017 00023 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:10)	CALL	runtime.makechan(SB)
+	0x001c 00028 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:10)	MOVQ	AX, command-line-arguments.ch1+64(SP)
+	0x0021 00033 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:11)	XORL	BX, BX
+	0x0023 00035 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:11)	LEAQ	type:chan int(SB), AX
+	0x002a 00042 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:11)	PCDATA	$1, $1
+	0x002a 00042 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:11)	CALL	runtime.makechan(SB)
+	0x002f 00047 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:11)	MOVQ	AX, command-line-arguments.ch2+56(SP)
+	0x0034 00052 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	MOVUPS	X15, command-line-arguments..autotmp_4+72(SP)
+	0x003a 00058 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	MOVUPS	X15, command-line-arguments..autotmp_4+88(SP)
+	0x0040 00064 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:15)	MOVQ	command-line-arguments.ch1+64(SP), DX
+	0x0045 00069 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:15)	MOVQ	DX, command-line-arguments..autotmp_4+88(SP)
+	0x004a 00074 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:16)	MOVQ	AX, command-line-arguments..autotmp_4+72(SP)
+	0x004f 00079 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	LEAQ	command-line-arguments..autotmp_5+48(SP), BX
+	0x0054 00084 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	XORL	CX, CX
+	0x0056 00086 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	XORL	DI, DI
+	0x0058 00088 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	MOVL	$2, SI
+	0x005d 00093 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	XORL	R8, R8
+	0x0060 00096 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	LEAQ	command-line-arguments..autotmp_4+72(SP), AX
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	PCDATA	$1, $2
+	0x0065 00101 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:14)	CALL	runtime.selectgo(SB)
+	0x006a 00106 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:16)	MOVQ	command-line-arguments.ch2+56(SP), AX
+	0x006f 00111 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:15)	JMP	52
+	0x0071 00113 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:15)	NOP
+	0x0071 00113 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	PCDATA	$1, $-1
+	0x0071 00113 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	PCDATA	$0, $-2
+	0x0071 00113 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	CALL	runtime.morestack_noctxt(SB)
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	PCDATA	$0, $-1
+	0x0076 00118 (/home/xzl/work/golang-1.22/golang-1.22/test/codegen/select.go:9)	JMP	0
+	0x0000 49 3b 66 10 76 6b 55 48 89 e5 48 83 ec 68 48 8d  I;f.vkUH..H..hH.
+	0x0010 05 00 00 00 00 31 db e8 00 00 00 00 48 89 44 24  .....1......H.D$
+	0x0020 40 31 db 48 8d 05 00 00 00 00 e8 00 00 00 00 48  @1.H...........H
+	0x0030 89 44 24 38 44 0f 11 7c 24 48 44 0f 11 7c 24 58  .D$8D..|$HD..|$X
+	0x0040 48 8b 54 24 40 48 89 54 24 58 48 89 44 24 48 48  H.T$@H.T$XH.D$HH
+	0x0050 8d 5c 24 30 31 c9 31 ff be 02 00 00 00 45 31 c0  .\$01.1......E1.
+	0x0060 48 8d 44 24 48 e8 00 00 00 00 48 8b 44 24 38 eb  H.D$H.....H.D$8.
+	0x0070 c3 e8 00 00 00 00 eb 88                          ........
+	rel 17+4 t=R_PCREL type:chan int<0>+0
+	rel 24+4 t=R_CALL runtime.makechan<1>+0
+	rel 38+4 t=R_PCREL type:chan int<0>+0
+	rel 43+4 t=R_CALL runtime.makechan<1>+0
+	rel 102+4 t=R_CALL runtime.selectgo<1>+0
+	rel 114+4 t=R_CALL runtime.morestack_noctxt<0>+0
+go:cuinfo.producer.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.command-line-arguments<0> SDWARFCUINFO dupok size=0
+	0x0000 63 6f 64 65 67 65 6e                             codegen
+runtime.memequal64·f<0> SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal64<1>+0
+runtime.gcbits.0100000000000000<0> SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*chan int-<0> SRODATA dupok size=11
+	0x0000 00 09 2a 63 68 61 6e 20 69 6e 74                 ..*chan int
+type:*chan int<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 fb 1c b8 83 08 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*chan int-<0>+0
+	rel 48+8 t=R_ADDR type:chan int<0>+0
+type:chan int<0> SRODATA dupok size=64
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 f9 f3 92 ed 0a 08 08 32 00 00 00 00 00 00 00 00  .......2........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00  ................
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*chan int-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*chan int<0>+0
+	rel 48+8 t=R_ADDR type:int<0>+0
+type:.eqfunc32<0> SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	rel 0+8 t=R_ADDR runtime.memequal_varlen<1>+0
+type:.namedata.*[2]runtime.scase-<0> SRODATA dupok size=19
+	0x0000 00 11 2a 5b 32 5d 72 75 6e 74 69 6d 65 2e 73 63  ..*[2]runtime.sc
+	0x0010 61 73 65                                         ase
+type:*[2]runtime.scase<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 cd 2b 0d 8a 08 08 08 36 00 00 00 00 00 00 00 00  .+.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]runtime.scase-<0>+0
+	rel 48+8 t=R_ADDR type:[2]runtime.scase<0>+0
+runtime.gcbits.0f00000000000000<0> SRODATA dupok size=8
+	0x0000 0f 00 00 00 00 00 00 00                          ........
+type:.namedata.*[]runtime.scase-<0> SRODATA dupok size=18
+	0x0000 00 10 2a 5b 5d 72 75 6e 74 69 6d 65 2e 73 63 61  ..*[]runtime.sca
+	0x0010 73 65                                            se
+type:*[]runtime.scase<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 db 0a 7e 1d 08 08 08 36 00 00 00 00 00 00 00 00  ..~....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[]runtime.scase-<0>+0
+	rel 48+8 t=R_ADDR type:[]runtime.scase<0>+0
+type:[]runtime.scase<0> SRODATA dupok size=56
+	0x0000 18 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 ba 05 fc 0e 02 08 08 17 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[]runtime.scase-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[]runtime.scase<0>+0
+	rel 48+8 t=R_ADDR type:runtime.scase<0>+0
+type:[2]runtime.scase<0> SRODATA dupok size=72
+	0x0000 20 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00   ....... .......
+	0x0010 16 3e c6 ed 0a 08 08 11 00 00 00 00 00 00 00 00  .>..............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc32<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0f00000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]runtime.scase-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[2]runtime.scase<0>+0
+	rel 48+8 t=R_ADDR type:runtime.scase<0>+0
+	rel 56+8 t=R_ADDR type:[]runtime.scase<0>+0
+type:.namedata.*[4]uint16-<0> SRODATA dupok size=12
+	0x0000 00 0a 2a 5b 34 5d 75 69 6e 74 31 36              ..*[4]uint16
+type:*[4]uint16<0> SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 fa 60 c7 84 08 08 08 36 00 00 00 00 00 00 00 00  .`.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[4]uint16-<0>+0
+	rel 48+8 t=R_ADDR type:[4]uint16<0>+0
+runtime.gcbits.<0> SRODATA dupok size=0
+type:[4]uint16<0> SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 fd 85 41 c5 0a 02 02 11 00 00 00 00 00 00 00 00  ..A.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 04 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f<0>+0
+	rel 32+8 t=R_ADDR runtime.gcbits.<0>+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[4]uint16-<0>+0
+	rel 44+4 t=RelocType(-32763) type:*[4]uint16<0>+0
+	rel 48+8 t=R_ADDR type:uint16<0>+0
+	rel 56+8 t=R_ADDR type:[]uint16<0>+0
+gclocals·ykHN0vawYuq1dUW4zEe2gA==<0> SRODATA dupok size=8
+	0x0000 03 00 00 00 00 00 00 00                          ........
+gclocals·M5gL/1F/vWBBJ1PzOTgzaA==<0> SRODATA dupok size=11
+	0x0000 03 00 00 00 06 00 00 00 00 02 03                 ...........
+command-line-arguments.f.stkobj<0> SRODATA static size=24
+	0x0000 01 00 00 00 00 00 00 00 e0 ff ff ff 20 00 00 00  ............ ...
+	0x0010 20 00 00 00 00 00 00 00                           .......
+	rel 20+4 t=R_ADDROFF runtime.gcbits.0f00000000000000<0>+0
+aux for command-line-arguments.f<0> SDWARFLOC size=142
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 1c 00 00 00 00 00 00 00 2a 00 00 00 00 00 00 00  ........*.......
+	0x0020 01 00 50 2a 00 00 00 00 00 00 00 78 00 00 00 00  ..P*.......x....
+	0x0030 00 00 00 02 00 91 48 00 00 00 00 00 00 00 00 00  ......H.........
+	0x0040 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00  ................
+	0x0050 00 00 00 00 00 00 00 2f 00 00 00 00 00 00 00 65  ......./.......e
+	0x0060 00 00 00 00 00 00 00 01 00 50 65 00 00 00 00 00  .........Pe.....
+	0x0070 00 00 78 00 00 00 00 00 00 00 02 00 91 40 00 00  ..x..........@..
+	0x0080 00 00 00 00 00 00 00 00 00 00 00 00 00 00        ..............
+	rel 8+8 t=R_ADDR command-line-arguments.f<1>+0
+	rel 79+8 t=R_ADDR command-line-arguments.f<1>+0
+aux for command-line-arguments.f<0> SDWARFLINES size=56
+	0x0000 00 09 02 00 00 00 00 00 00 00 00 04 02 03 03 14  ................
+	0x0010 0a 73 38 06 55 06 88 06 23 06 55 06 41 06 44 06  .s8.U...#.U.A.D.
+	0x0020 4b 06 4c 06 41 06 42 3f 06 41 06 b9 06 43 06 40  K.L.A.B?.A...C.@
+	0x0030 03 7e 1f 02 07 00 01 01                          .~......
+	rel 3+8 t=R_ADDR command-line-arguments.f<1>+0
+aux for command-line-arguments.f<0> SDWARFFCN size=79
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 66 00 00 00 00 00 00 00  guments.f.......
+	0x0020 00 00 00 00 00 00 00 00 00 00 01 9c 02 00 00 00  ................
+	0x0030 09 01 0d 63 68 31 00 0a 00 00 00 00 00 00 00 00  ...ch1..........
+	0x0040 0d 63 68 32 00 0b 00 00 00 00 00 00 00 00 00     .ch2...........
+	rel 0+0 t=R_USETYPE type:[2]runtime.scase<0>+0
+	rel 0+0 t=R_USETYPE type:[4]uint16<0>+0
+	rel 26+8 t=R_ADDR command-line-arguments.f<1>+0
+	rel 34+8 t=R_ADDR command-line-arguments.f<1>+120
+	rel 56+4 t=R_DWARFSECREF go:info.chan int<0>+0
+	rel 60+4 t=R_DWARFSECREF <0>+0
+	rel 70+4 t=R_DWARFSECREF go:info.chan int<0>+0
+	rel 74+4 t=R_DWARFSECREF <0>+71

@@ -1,0 +1,9 @@
+# command-line-arguments
+build mode: c-archive, symbol table: on, DWARF: on
+HEADER = -H5 -T0x401000 -R0x1000
+loadinternal: cannot find runtime/cgo
+53069 symbols, 19054 reachable
+	22490 package symbols, 20522 hashed symbols, 7441 non-package symbols, 2616 external symbols
+79399 liveness data
+archive: ar -q -c -s $WORK/b001/exe/a.out.a /tmp/TestArchiveBuildInvokeWithExec1151232725/001/go.o
+invoking archiver with syscall.Exec()

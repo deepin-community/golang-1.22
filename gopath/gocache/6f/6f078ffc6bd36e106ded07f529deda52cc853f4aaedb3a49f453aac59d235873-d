@@ -1,0 +1,24 @@
+//line /tmp/cmd-cover-test-1169819266/004/linedup/linedup.go:1:1
+
+package linedup
+
+var G int
+
+func LineDup(c int) {goCover_0d0cc9d58a42__0[0] = 9 ; goCover_0d0cc9d58a42__0[1] = goCover_0d0cc9d58a42_P ; goCover_0d0cc9d58a42__0[2] = 0 ; goCover_0d0cc9d58a42__0[3]++;
+	for i := 0; i < c; i++ {goCover_0d0cc9d58a42__0[4]++;
+//line ld.go:100
+		if i % 2 == 0 {goCover_0d0cc9d58a42__0[8]++;
+			G++
+		}
+		goCover_0d0cc9d58a42__0[5]++;if i % 3 == 0 {goCover_0d0cc9d58a42__0[9]++;
+			G++; G++
+		}
+//line ld.go:100
+		goCover_0d0cc9d58a42__0[6]++;if i % 4 == 0 {goCover_0d0cc9d58a42__0[10]++;
+			G++; G++; G++
+		}
+		goCover_0d0cc9d58a42__0[7]++;if i % 5 == 0 {goCover_0d0cc9d58a42__0[11]++;
+			G++; G++; G++; G++
+		}
+	}
+}

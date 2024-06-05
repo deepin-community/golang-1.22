@@ -1,0 +1,7 @@
+./asan_test.go
+./cc_test.go
+./cshared_test.go
+./empty_test.go
+./libfuzzer_test.go
+./msan_test.go
+./tsan_test.go

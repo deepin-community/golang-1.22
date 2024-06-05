@@ -1,0 +1,9 @@
+./gomod.go
+./gover.go
+./local.go
+./mod.go
+./toolchain.go
+./version.go
+./gover_test.go
+./mod_test.go
+./toolchain_test.go

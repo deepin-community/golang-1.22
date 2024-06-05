@@ -1,0 +1,5 @@
+./binary.go
+./native_endian_little.go
+./varint.go
+./binary_test.go
+./varint_test.go
