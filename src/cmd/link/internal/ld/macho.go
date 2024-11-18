@@ -296,6 +296,8 @@ func getMachoHdr() *MachoHdr {
 	return &machohdr
 }
 
+// Create a new Mach-O load command. ndata is the number of 32-bit words for
+// the data (not including the load command header).
 func newMachoLoad(arch *sys.Arch, type_ uint32, ndata uint32) *MachoLoad {
 	if arch.PtrSize == 8 && (ndata&1 != 0) {
 		ndata++
@@ -850,6 +852,20 @@ func asmbMacho(ctxt *Link) {
 			}
 		}
 
+		if ctxt.IsInternal() && len(buildinfo) > 0 {
+			ml := newMachoLoad(ctxt.Arch, LC_UUID, 4)
+			// Mach-O UUID is 16 bytes
+			if len(buildinfo) < 16 {
+				buildinfo = append(buildinfo, make([]byte, 16)...)
+			}
+			// By default, buildinfo is already in UUIDv3 format
+			// (see uuidFromGoBuildId).
+			ml.data[0] = ctxt.Arch.ByteOrder.Uint32(buildinfo)
+			ml.data[1] = ctxt.Arch.ByteOrder.Uint32(buildinfo[4:])
+			ml.data[2] = ctxt.Arch.ByteOrder.Uint32(buildinfo[8:])
+			ml.data[3] = ctxt.Arch.ByteOrder.Uint32(buildinfo[12:])
+		}
+
 		if ctxt.IsInternal() && ctxt.NeedCodeSign() {
 			ml := newMachoLoad(ctxt.Arch, LC_CODE_SIGNATURE, 2)
 			ml.data[0] = uint32(codesigOff)
@@ -901,21 +917,25 @@ func collectmachosyms(ctxt *Link) {
 	// Add special runtime.text and runtime.etext symbols (which are local).
 	// We've already included this symbol in Textp on darwin if ctxt.DynlinkingGo().
 	// See data.go:/textaddress
+	// NOTE: runtime.text.N symbols (if we split text sections) are not added, though,
+	// so we handle them here.
 	if !*FlagS {
 		if !ctxt.DynlinkingGo() {
 			s := ldr.Lookup("runtime.text", 0)
 			if ldr.SymType(s) == sym.STEXT {
 				addsym(s)
 			}
-			for n := range Segtext.Sections[1:] {
-				s := ldr.Lookup(fmt.Sprintf("runtime.text.%d", n+1), 0)
-				if s != 0 {
-					addsym(s)
-				} else {
-					break
-				}
+		}
+		for n := range Segtext.Sections[1:] {
+			s := ldr.Lookup(fmt.Sprintf("runtime.text.%d", n+1), 0)
+			if s != 0 {
+				addsym(s)
+			} else {
+				break
 			}
-			s = ldr.Lookup("runtime.etext", 0)
+		}
+		if !ctxt.DynlinkingGo() {
+			s := ldr.Lookup("runtime.etext", 0)
 			if ldr.SymType(s) == sym.STEXT {
 				addsym(s)
 			}

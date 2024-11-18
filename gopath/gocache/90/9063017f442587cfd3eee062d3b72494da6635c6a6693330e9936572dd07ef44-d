@@ -1,8 +1,0 @@
-./dot_test.go
-./example_test.go
-./exec_linux_test.go
-./exec_posix_test.go
-./exec_test.go
-./exec_unix_test.go
-./lp_linux_test.go
-./lp_unix_test.go

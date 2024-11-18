@@ -1,3 +1,0 @@
-# command-line-arguments
-./opt-122.go:18:6: loop variable private now per-iteration, heap-allocated
-./opt-122.go:18:6: loop variable private now per-iteration, heap-allocated (loop inlined into ./opt-122.go:31)

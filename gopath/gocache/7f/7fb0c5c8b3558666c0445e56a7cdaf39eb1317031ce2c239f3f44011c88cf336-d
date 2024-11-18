@@ -1,7 +1,0 @@
-./auto_test.go
-./chacha8_test.go
-./example_test.go
-./pcg_test.go
-./race_test.go
-./rand_test.go
-./regress_test.go

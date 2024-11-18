@@ -1,4 +1,0 @@
-./chacha8.go
-./chacha8_generic.go
-./export_test.go
-./chacha8_amd64.s

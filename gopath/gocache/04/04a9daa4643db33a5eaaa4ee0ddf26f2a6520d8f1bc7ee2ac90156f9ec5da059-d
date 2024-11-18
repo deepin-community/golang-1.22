@@ -1,6 +1,0 @@
-./comment.go
-./gobuild.go
-./nodes.go
-./printer.go
-./performance_test.go
-./printer_test.go

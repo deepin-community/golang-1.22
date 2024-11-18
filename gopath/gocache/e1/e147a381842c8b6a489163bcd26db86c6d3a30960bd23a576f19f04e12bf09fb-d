@@ -1,5 +1,0 @@
-./equal_test.go
-./example_test.go
-./pkcs1v15_test.go
-./pss_test.go
-./rsa_test.go

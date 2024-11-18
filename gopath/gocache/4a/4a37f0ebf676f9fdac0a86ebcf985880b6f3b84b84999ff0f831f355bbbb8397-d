@@ -1,6 +1,0 @@
-./cache.go
-./default.go
-./hash.go
-./prog.go
-./cache_test.go
-./hash_test.go

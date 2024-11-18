@@ -1,8 +1,0 @@
-./example_custom_levels_test.go
-./example_level_handler_test.go
-./example_log_level_test.go
-./example_logvaluer_group_test.go
-./example_logvaluer_secret_test.go
-./example_test.go
-./example_wrap_test.go
-./slogtest_test.go

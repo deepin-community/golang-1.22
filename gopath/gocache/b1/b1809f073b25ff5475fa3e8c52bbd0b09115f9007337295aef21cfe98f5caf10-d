@@ -1,6 +1,0 @@
-# example.com/pgo/inline [example.com/pgo/inline.test]
-hot-callsite-thres-from-CDF=95.55555555555556
-hot-node enabled increased budget=160 for func=example.com/pgo/inline.(*BS).NS
-example.com/pgo/inline/inline_hot.go:81:38 (inline) [bisect-match 0x928e2ef7a146a7bc]
-pgohash triggered example.com/pgo/inline/inline_hot.go:81:38 (inline) 010001101010011110111100
-hot-budget check allows inlining for call example.com/pgo/inline.(*BS).NS (cost 106) at example.com/pgo/inline/inline_hot.go:81:38 in function example.com/pgo/inline.A

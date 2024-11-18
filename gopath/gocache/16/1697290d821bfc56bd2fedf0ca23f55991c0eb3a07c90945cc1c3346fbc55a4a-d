@@ -1,3 +1,0 @@
-./fuzz_test.go
-./netip_test.go
-./slow_test.go

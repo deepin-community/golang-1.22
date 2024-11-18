@@ -1,3 +1,0 @@
-./defs_linux_riscv64.go
-./syscall_linux.go
-./asm_linux_riscv64.s
