@@ -1,3 +1,9 @@
+golang-1.22 (1.22.6-1deepin1) unstable; urgency=medium
+
+  * fix: tls handshake test failed
+
+ -- hudeng <hudeng@deepin.org>  Fri, 15 Aug 2025 09:15:26 +0800
+
 golang-1.22 (1.22.6-1) unstable; urgency=medium
 
   * Team upload
