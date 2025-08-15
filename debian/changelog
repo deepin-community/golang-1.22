@@ -1,3 +1,9 @@
+golang-1.22 (1.22.12-3deepin1) unstable; urgency=medium
+
+  * feat: add sw64 support
+
+ -- hudeng <hudeng@deepin.org>  Thu, 04 Sep 2025 09:58:33 +0800
+
 golang-1.22 (1.22.12-3) unstable; urgency=medium
 
   * Team upload
