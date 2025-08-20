@@ -1,3 +1,4 @@
 0001-Skip-flaky-TestCrashDumpsAllThreads-on-mips64le.patch
 0002-Skip-flaky-TestCrashDumpsAllThreads-on-s390x.patch
 0003-fix-tls-handshake-test-failed.patch
+0001-feat-add-sw64-support.patch
